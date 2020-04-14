@@ -1,0 +1,29 @@
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: buster
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Tue, 14 Apr 2020 11:16:19 +0000
+MD5Sum:
+ 0511f33b11371d8d11017356c0d34899           318438 Packages
+ 0a3c4a20cb413579a7f84efd87660091           127830 Packages.gz
+ c8047d48ce5c0474437f20560bf8777d              186 Release
+ 0a3c4a20cb413579a7f84efd87660091           127830 Translation-en.gz
+SHA1:
+ 8b3e086a843edfa11971fbfc93e82cdf420f1a63           318438 Packages
+ 725ff290aae5e7248f54ca7623a3e57373b4d389           127830 Packages.gz
+ 9bdd193779ad90adb5aa05e7c890fa6853c071f4              186 Release
+ 725ff290aae5e7248f54ca7623a3e57373b4d389           127830 Translation-en.gz
+SHA256:
+ ce1e487452731866d117093d5c748e731e644f58e10f3926d22109b1505e6fcd           318438 Packages
+ 76a72b0a19bce8fcc084ff767fe647319937ec7a8a15557bfdc010d5d9819063           127830 Packages.gz
+ a586822f2d36fbfa8b8a7ebf4ec3393c3dcfd7b9af7636cc8ba817e1efc018c6              186 Release
+ 76a72b0a19bce8fcc084ff767fe647319937ec7a8a15557bfdc010d5d9819063           127830 Translation-en.gz
+SHA512:
+ 4f8ddc0f1f608fde0a2f0f84cf06d43105ea90dd5a004ceb9b4da64b0a133e1bbcfe97e5f071680299fc8fcc0ad424e1eeb91ee76a9b8484dc883d97c7ee47dd           318438 Packages
+ ca86f26b3732ae845ccb7955ee049c27bf024b5e8731bdf47194e08b72a322ff6bba2c0257d6b11cd3b3a24b8827a37bb7334086cf6c2e70fb67086a9ea569c1           127830 Packages.gz
+ 343e4d98b6e807736165e7301ff5a11e2d7c94b583942f23f7ff23dc75fcb113279e26782bb2fc398cc32281137334a851f5c07f891caf421a9f03a289708447              186 Release
+ ca86f26b3732ae845ccb7955ee049c27bf024b5e8731bdf47194e08b72a322ff6bba2c0257d6b11cd3b3a24b8827a37bb7334086cf6c2e70fb67086a9ea569c1           127830 Translation-en.gz

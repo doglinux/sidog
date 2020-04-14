@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: buster
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Tue, 14 Apr 2020 11:17:36 +0000
+MD5Sum:
+ fc736fdfcd037ca40935e3606c2a349e           277363 Packages
+ aa236a74083921307c1573f0084778cf           110293 Packages.gz
+ b9dd8fc5556424b2db2db47c58d8b9e4              186 Release
+ aa236a74083921307c1573f0084778cf           110293 Translation-en.gz
+SHA1:
+ fcaba7cef52caf47ac734a3cf14869dd83cc37d6           277363 Packages
+ 586426433dec65918395f64b558cf782013dfa75           110293 Packages.gz
+ 677765391dee514a602d42664aca325d6efe6a56              186 Release
+ 586426433dec65918395f64b558cf782013dfa75           110293 Translation-en.gz
+SHA256:
+ 92aa85c89575770633d42b6bfdeed1d8c3fe909d7a89a622b26bbb67d337dffb           277363 Packages
+ d640c7d4a5b9bb51e4becbecb74493bd390e17976c674a284e96f1cea21f630b           110293 Packages.gz
+ 9340823f833a13fce8b6d19ca191e7f68187b0d46520124034ae242dc6d0bfee              186 Release
+ d640c7d4a5b9bb51e4becbecb74493bd390e17976c674a284e96f1cea21f630b           110293 Translation-en.gz
+SHA512:
+ 44bf2fc49fea2fb0de0cd1fdfcd5a811ed75e326490d7d5e34583a0230fdc1f13a2c9987824017cc81f845160e240506082c42cb1b1b18b94c9c21b55131aff8           277363 Packages
+ 75f0c00b19655470101372c213d5860b55c8dfcb9079940e1c2ab64ffb08cc2d3a915519f06cdcdc9b7f38c06d5921448c11928bd74baa4a4456518ca88ffb54           110293 Packages.gz
+ e57cdcd45098a7d72e0a6542f35a0652f57742d5796d897a29f2077b39a8e3d410bd0c34f10c351ec82d4f8e9021c880196bfe8ac6e967c3d47a60ac85041d94              186 Release
+ 75f0c00b19655470101372c213d5860b55c8dfcb9079940e1c2ab64ffb08cc2d3a915519f06cdcdc9b7f38c06d5921448c11928bd74baa4a4456518ca88ffb54           110293 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl6Vm9EACgkQrYe8en1z
+CB0NjAgAoGgwglE9dM/WIBq+L0y/Gj7O8/GK56EOGq0Fg3umA7lz/AvsR7sSuyJL
+vkHGQ8jsRTai8pnVruMWC2AF0h93Qsmk2XetQlF9mohjelhA/Uz45PGc/2yCLH/0
+lapekvK02RE9V6JXBKGk2dq78z0O6gEhgzxFOUzHg6oIAvm+F4ebZuymN2/nd7dD
+tb4RMNiM4CF6s8mF/Z2bRk7wvUd85KO26+8mSj7/LxJNbPcrHEHpGu+YoPc6WpE4
+clBr9xTlwwWTI6h0v/1rJLs3pT+hPHIqORrSm4HomTm1Jv07WlXbUMUgxYRGd6YR
+sFNlpKtLtKgvPaizOtncLrZlahG3ww==
+=nN2e
+-----END PGP SIGNATURE-----
