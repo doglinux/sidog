@@ -5676,6 +5676,21 @@ SHA256: 1d049e23af9a47db7838f30621ac843096c9aa1daefde4f7f06764f923cb2431
 SHA512: 307bfb4e6c09352a4fb1e75f0512ad0be5dd1790da00dd66b995a8ef212a2cacb29c05442c6b7a92b994c8e4cb84d7492fa969e8f47b1c69f92693be4f98551b
 Description: DVD movie player
 
+Package: peasyport
+Architecture: i386
+Version: 3.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./peasyport_3.1_i386.deb
+Size: 11264
+MD5sum: ab1db59978a10d6484fb1ece7db2e148
+SHA1: 78049a1085b8de95525d544497b0d28dbd6ceafb
+SHA256: 07da4a890f8d6583e0b880741ed1bfe875904ecc0ad128711ff85c5e7f8e27b6
+SHA512: 318b685713d26281d7016b5366d568b1bd284f2d117395b7da89a82534b2c1a0c22645daea3449353aab3190ebf496f5b257782a6332ad9ffd76cc4d2093d6a3
+Description: Network port scanner
+
 Package: pburn
 Architecture: i386
 Version: 4.3.3-2
