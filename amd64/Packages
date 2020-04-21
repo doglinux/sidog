@@ -677,22 +677,6 @@ Description: user, seat and session management library
  symlinks to allow binaries linked against libsystemd0 to work with
  libelogind0. For full details of the compatibility see README.Debian.
 
-Package: create-portable
-Architecture: amd64
-Version: 1.0.2
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 1100
-Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
-Filename: ./create-portable_1.0.2_amd64.deb
-Size: 333820
-MD5sum: 4f291b47edeb4136e9fb5362ce47df19
-SHA1: de1667fa3d59d34c1025891f10c89a848f14d6a4
-SHA256: f694477b1cce5a72aa78805537ee4c1384c206e8379133b69ab5387eeeae80e1
-SHA512: ccddeb1c08b63b126dab14806ec26d593e7414d8f2e4f3c7cc20753ad86e28de8510813f0a5d2b0d13bbe5a874aae3ca1e941c0e57298af4ce7139732db20340
-Description: Create portable AppImage
-
 Package: mpv
 Architecture: amd64
 Version: 1:0.27.1-ddstretch
@@ -1275,6 +1259,22 @@ Description: Transitional package for libelogind0
  libelogind0.
  .
  It can be safely removed.
+
+Package: create-portable
+Architecture: amd64
+Version: 2.1.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./create-portable_2.1.0_amd64.deb
+Size: 148940
+MD5sum: 2ee654c5852af60721e2f5188febdf3e
+SHA1: b9962d74bc4a07623bc1e9321289911a68aedfc2
+SHA256: 4838801b453b950d14583964b19146d91d0843b189b22724cb87a34958724ca0
+SHA512: 559c91684b1669bab56b3125474511f6d22b49645147504a66c20d5e54cdf51fe050ffbf9ea482618faa0e0d3a6e73b41e8d0ccae89548f060d45782610bec97
+Description: Create portable AppImage v2.0
 
 Package: youtube-viewer
 Architecture: all
@@ -2966,22 +2966,6 @@ SHA256: 7de1656f29f7739a589648ed7ef13a2437e8f412a46dfdb5d9762a1ca2a1bf62
 SHA512: 266552cbdb4a29b4799ea6d84a5dfc1ca4f3e70e5ce1a68ef4d6796b7a12728dad08838cac65f1bedac660d5742b82141934f3b97319b6dcef2582e609f229fc
 Description: Manipulate PDF documents
 
-Package: create-portable
-Architecture: amd64
-Version: 2.0.1
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
-Filename: ./create-portable_2.0.1_amd64.deb
-Size: 285328
-MD5sum: a3f74d5ec82f15be1485448f9fed1efe
-SHA1: 4273e163c722eabcce6d5832566b11ec7e820cb2
-SHA256: 07dd8232e5c63e3a857fbd8c84767b3bc79800737f842091ca42b04374aa1b5e
-SHA512: 70ed356d7dd7646dc931f14a68cdc2c076b6c3ae89d6cda82df70426468d74a50ff6529d542c1cba333374547714fc4425fdf0f0c17bc1637f140860a5bd3eb7
-Description: Create portable AppImage v2.0
-
 Package: pavrecord
 Architecture: all
 Version: 9.0.5
@@ -3089,22 +3073,6 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
-
-Package: create-portable
-Architecture: amd64
-Version: 2.0.0
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
-Filename: ./create-portable_2.0.0_amd64.deb
-Size: 149572
-MD5sum: 7ab5de85cc881b1934d545ce5a0e2597
-SHA1: 41f327a09720cc3ec630f577162fa4506dfffb11
-SHA256: 745312de4121e6dc52ce32a396211b1a6549a6526b329f544e7ca85ca1316c09
-SHA512: 011d3c6e2b61d0feb14865de274ab63c538d0e08dbf511bf3d8053150b50a52d8a1d7175fe281e8d9b9b8ff9abed939169989f911fdedaef66dfc854301e7281
-Description: Create portable AppImage v2.0
 
 Package: libmusicbrainz3-6
 Architecture: amd64
@@ -4867,22 +4835,6 @@ SHA1: b597f14347c29b7e711d9bf3e2c1fe000600d362
 SHA256: 27b78c9ff2c58091cde671fa6f5c2494447563c35a5792898008ca3e98b76043
 SHA512: 3b366d110ab31a4c6e411294530af6d2c86884ea6f418f8d45420e61ff0624b92c6a831bb74ae46a51ea014529574733dcdab9268372fb6505699ec73de5a47b
 Description: mounts hand-held devices over USB
-
-Package: create-portable
-Architecture: amd64
-Version: 1.0.3
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, xorriso, yad, linux-user-chroot
-Filename: ./create-portable_1.0.3_amd64.deb
-Size: 86032
-MD5sum: cd1c544c95316856e9e2bddeb9bec109
-SHA1: 6429e454e822f9c2f24bef6895c8fbc3a8bd8a36
-SHA256: 8997091d236577e8b2f93d294d54db942c6c918141e307741fc8f3bc4c8bb6cd
-SHA512: 7eb6c544a74ca79a2ed41c529e122aefde6c2135b7c8dbb9d596f8c282b45c2bb92f35b4ec12f826a0d7a47e41e1366a920fb5c29a2ae1dcd14f8610c8a56741
-Description: Create portable AppImage
 
 Package: p910nd-print-server
 Architecture: amd64

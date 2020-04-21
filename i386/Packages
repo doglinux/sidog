@@ -271,22 +271,6 @@ SHA256: 8036d8013420e98cbec2e1ac637970dc44621e4f977a2fa01425dfd852943403
 SHA512: 99684e60ab9f03965a6c3e96a871cc025d58ecf43613ac1b680b06239f50ce7e3d9c330ec64e5733afc179f83761987da14accaea2574eecb03fc1e6dabce63c
 Description: Vnstat tray applet
 
-Package: create-portable
-Architecture: i386
-Version: 2.0.1
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
-Filename: ./create-portable_2.0.1_i386.deb
-Size: 314530
-MD5sum: 0b581503195065054bc0da1f33ac4bf5
-SHA1: ff35c1f28d5204c9cdb3f93d3101675d5c8b8b94
-SHA256: 9059b61f53495fa513e29802f632f8d957ac547b11d259e03865cfc9b2d853ab
-SHA512: a6d68eba96f0eef73a10c9d76b01b468e87f132dfd73fa825552d06033d6373f995d9b4508f76c8e5c8e7bd94a67808e8ac991c76fec4e299fa399181859ed8d
-Description: Create portable AppImage v2.0
-
 Package: conky-all-dbg
 Architecture: i386
 Version: 1.10.1-3
@@ -602,6 +586,22 @@ Description: mplayer/mplayer2 based video player, minimal build
  .
  This package is not part of Debian. It was created by mpv-build scripts with
  statically linked ffmpeg (not libav) and libass from upstream.
+
+Package: create-portable
+Architecture: i386
+Version: 2.1.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./create-portable_2.1.0_i386.deb
+Size: 314860
+MD5sum: 9ccaa60a9f1ad8ef11756ff990f447f9
+SHA1: 960388560e3db35629222d960c9706190a00a846
+SHA256: 079b0de6a02af4e5e86977663e4b1d3caed464d4860dcfd700eaa3f52dcae300
+SHA512: 421927387778f8ca04f8b4472c1df1ea091683e3e79c3e54fa2317f59ded802827718f23ecd925f22cd1a8ed9b2e7f9401ab553c1380091f806c5af873e0c716
+Description: Create portable AppImage v2.0
 
 Package: debdoginstallscripts
 Architecture: i386
@@ -4737,22 +4737,6 @@ SHA256: c16154fafab51047e4893107af4c11a92d0e4c07e637597abd7fbc1b0d7f5bd2
 SHA512: 6d540c2a28a18d05ac32e93e19fbb9ed07e9321710470283f71e3be4a558f86ab3bdf9ac9c0a82c6b401943cdedc3c400250997ff05e9de690c522251a16ab9e
 Description: Screen snapshot
 
-Package: create-portable
-Architecture: i386
-Version: 2.0.0
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
-Filename: ./create-portable_2.0.0_i386.deb
-Size: 175600
-MD5sum: ec740dc2947c5889b759b25d1fdcc6bd
-SHA1: e60a85ea0c2d2ded0efeb9d04539e2afb0d2dad6
-SHA256: 7f333f5d3c1374821b1cabb1b1a4c909e00578532b2b74e2d55817cd6c5ce5d1
-SHA512: 73668b4cb9790fd65d6fd2dd2a029f5dbf890555b2082b45bebd6ad7fcbd4a11f36cb32c496057eb01427c429232b779f18c298873b59c0b03d3bab9c35c6d86
-Description: Create portable AppImage v2.0
-
 Package: libpam-elogind-compat
 Architecture: i386
 Version: 1.3
@@ -5057,22 +5041,6 @@ SHA256: 7a8bb1232057712eced5d007a411f49da9fb4c161855f6d5ea11edeef8f98399
 SHA512: 082e76d915fd51064613db5f1889c82a05b45e561c07cd04c52528c77ac3a97fd0f0f388870ccda99d14e01bdd007f75c13c86f4d51d3f8d174e97b7c414c596
 Description: xlunch by Tomas M
  Graphical app launcher
-
-Package: create-portable
-Architecture: i386
-Version: 1.0.2
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
-Filename: ./create-portable_1.0.2_i386.deb
-Size: 264772
-MD5sum: da9a098d1cf14e64c8ff2e4018cc57a9
-SHA1: 265d408363d88d2ee1ac2ffe898da0fa63f78868
-SHA256: a8ace77a2c45b97f95e4864070f9fc604059813419d7af68cd56ca48e293935f
-SHA512: 4ec43fd234af991cc876f255fd3e063f457e6c3156f3465fc55b5062d080a31bb5d4b5ff54fc2be7d916bcb562a1000bf11b1086081b7ffaafffda87b35cf1dd
-Description: Create portable AppImage
 
 Package: yradio
 Architecture: i386
@@ -7229,22 +7197,6 @@ SHA256: 7ac11a22e7c8baf2c76fda49835ba51f552ddfab5e93092f9833e0ec58cdb5b1
 SHA512: 90884c9c47ed25c4f50954a954d2cd247f3e8de5bf7cc37955bb70449f3409569397b57ebba622316fde9cb1d251c3bcf414eed1e96464ffb58128264f502391
 Description: domyfile for DebianDog:
  domyfile by mcewanw
-
-Package: create-portable
-Architecture: i386
-Version: 1.0.3
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 900
-Depends: libc6, unionfs-fuse, xorriso, yad, linux-user-chroot
-Filename: ./create-portable_1.0.3_i386.deb
-Size: 100178
-MD5sum: 2ea620e65f8c041600ed8a17b67c8d89
-SHA1: f69d8d4776ce07b143af106a58c7c6ec3b5ed79e
-SHA256: 8075628cba7e2634bc10a5aaaace28a6823aed0fd94da55fae77fb5ef28d9d30
-SHA512: 8e17cd93efd5b3c11b17eec56c355e5397ce22d4fe2c138e700c74a7febe80ae7af8a9bf1229660c26effd3ffee8e89b2d7be4e8085f7d6b8beb495fded99211
-Description: Create portable AppImage
 
 Package: libhunspell-1.4-0
 Architecture: i386
