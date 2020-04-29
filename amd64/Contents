@@ -5127,7 +5127,6 @@ usr/local/bin/touchpad					    touchpad
 usr/local/bin/trans					    trans-tray
 usr/local/bin/trans_tray				    trans-tray
 usr/local/bin/txt2svg					    txt2svg
-usr/local/bin/tzupdate.py				    tzupdate
 usr/local/bin/uextract					    uextract
 usr/local/bin/umounting					    diff-sync-umount
 usr/local/bin/unzipper					    unzipper

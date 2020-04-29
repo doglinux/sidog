@@ -2125,7 +2125,6 @@ usr/local/bin/trans_tray				    trans-tray
 usr/local/bin/transmission				    transmission-2.31
 usr/local/bin/transmission-gtk				    transmission-2.31
 usr/local/bin/txt2svg					    txt2svg
-usr/local/bin/tzupdate.py				    tzupdate
 usr/local/bin/uextract					    uextract
 usr/local/bin/umounting					    diff-sync-umount
 usr/local/bin/unzipper					    unzipper

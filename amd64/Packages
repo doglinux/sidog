@@ -1065,22 +1065,6 @@ Description: Jwm custom setup for Debiandog, includes:
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
 
-Package: tzupdate
-Architecture: all
-Version: 1.1.1
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 47
-Depends: libc6, python-requests, ntpdate, gtkdialog
-Filename: ./tzupdate_1.1.1_all.deb
-Size: 10378
-MD5sum: ec62b188f7317ac884f1b1c283ffe609
-SHA1: 071b298ad81e259cdbdde69b12ef42743e960200
-SHA256: 9cf5167c4b1dd8fd33b715e47b40229cde345119e233aa6c02040b2cf16c2a63
-SHA512: 8be166817614eba54821eb3cd3c4c85d7fdf1360d2b7e98a50ae210af244f094e8349d527c7fc454f1228b73000b4b16f6d859c4f75a8f2c3aff7f938dfcdf60
-Description: Automatically detect timezone
-
 Package: quick-remaster
 Architecture: amd64
 Version: 1.1.7
@@ -1780,22 +1764,6 @@ SHA256: 4f52eabaddeff63732a469baaf31f327823efd0201dba32bd8ef19f5161359dc
 SHA512: 851e14164d831232a3e19ac1ad4a9d084f11394554a683137e22d06a90984107ddc57de5a0ef6de78572b3a1fd7256835c3320981641981f73040838e9e653f8
 Description: evince-converted-pet-to-deb
 
-Package: tzupdate
-Architecture: all
-Version: 1.1.3
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 47
-Depends: libc6, python-requests, ntpdate, gtkdialog, curl
-Filename: ./tzupdate_1.1.3_all.deb
-Size: 10500
-MD5sum: 50f11f15e01659bdf15367e9311411d3
-SHA1: 01f5bd618c2eb6b5c7d287e6706f151e77b650c5
-SHA256: abe55e642546e19a4b87c1e0cfc8ed09186da2a1133cd2fe16ed4ff78f0465e9
-SHA512: 8035f9051a983cb38c713a4820d984a85b8b2b0d7d83440d768818b3388f19405122446418e86eb487cc9f2f030cffc602416b08be48c971720bef2ddbc21b2c
-Description: Automatically detect timezone
-
 Package: hplip-print-scan
 Architecture: amd64
 Version: 3.18.3
@@ -1865,22 +1833,6 @@ Description: spell checker and morphological analyzer (shared library)
     forbidden words, pseudoroots and homonyms.
  .
  This package contains the shared library.
-
-Package: tzupdate
-Architecture: all
-Version: 1.1.2
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 47
-Depends: libc6, python-requests, ntpdate, gtkdialog
-Filename: ./tzupdate_1.1.2_all.deb
-Size: 10390
-MD5sum: e91a5ec7cd49d7592716986d5e2eb45f
-SHA1: bf71d86c4d4c9947e6ffe07c2e22cd3026dda0dd
-SHA256: 8bc5c64a1f1d82157ea5657d565969da387f7496f473effa824e0aa42f8f66f5
-SHA512: 07f7d2be33ff5f0f7025b21df9ff414e8e4a7391924e34dabb065adad870ef20c1e4a8feb1beb48645fb932f2292c8d548c8b7778701050f6223ac4f1b6d4340
-Description: Automatically detect timezone
 
 Package: libgbm1
 Architecture: amd64
@@ -3257,6 +3209,22 @@ SHA1: a44960bad806a5b4c20f014aaa1bd66389a9f90d
 SHA256: a82ef3f984889a569a96708afb2cae2b36b52eab9b47272d6f6955f57e4c4ea4
 SHA512: 4aa3b5042236fef07878e5a9d1c478ec75d4997347fdfb4c6d56ebd772bdb0e9557fd98c00c65bf222dc9946ebb705da2e207b7492bd6a1f99bd338b6b2298a7
 Description: Simple burning tool
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.5
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, ntpdate, gtkdialog, curl
+Filename: ./tzupdate_1.1.5_all.deb
+Size: 8194
+MD5sum: 35ab425715c47ab7ad550b860b6ee884
+SHA1: 8172f45daced2e684b2723aa2f7416b6f16e363a
+SHA256: 79c79e639e94c013f0c68d1770af5893e9c58aaee3ce1a3569f5d8a5d2b11f75
+SHA512: 41b986843c48f8d5350edf19ea211899fead8edcd78bc67db283be87d1bb67338e2cb5745f27d8352fd623671a5aa07aa4057af84aa5c962ff7f33c65c446b7b
+Description: Automatically detect timezone,using curl
 
 Package: pburn
 Architecture: amd64
