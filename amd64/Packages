@@ -1054,29 +1054,6 @@ SHA256: a02f20e4a87a1f0d7540a29222a0899304339c32193f18bbacef1c3f23c7eb38
 SHA512: ebc654576d9b98c3faa969168d00915a4cf54eecb69c7d18c972020168ff2eeee55f1318cd600a5c05610281a844ffcccdd7debd182db96a5b0e3a4f0fc46c69
 Description: Touchpad/mouse/touchscreen setup
 
-Package: quick-remaster
-Architecture: amd64
-Version: 1.1.8
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 336
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
-Filename: ./quick-remaster_1.1.8_amd64.deb
-Size: 159692
-MD5sum: e166eb0cf954fe0bf7ea29c41274beda
-SHA1: 72eba624c94952061f17323463fb0144cef1c412
-SHA256: 5c0bf43af2a8a1ce2d897d2de0837f7ec9acfb0605f3e10b070e4ea7a411d42b
-SHA512: 9f8ccb1a9eb393b58cbb2d7efc16193b1524d7ea22d044d5b5cfaa5693c5ae4d7298121da01618a6c180f2c5917b5a2b1b87643c9cbe4245cc0da2cda8e0ba4f
-Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
- Included GUI version using yad: quick-remastergui
- Bug fix: gz compression option not working in previous version 1.0.3
- Bug fix: set the correct permissions for /tmp 
- Fix in v 1.0.6: skip symlinks while cleaning man and doc files
- Version 1.0.7: added option to create ISO
- Version: 1.1.2, cleaning, do not remove /etc/rc.d
- Version: 1.1.3, added GUI progress bar
- Version: 1.1.5, for Devuan beowulf
- Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
-
 Package: jwmconf
 Architecture: amd64
 Version: 0.0.5
@@ -1096,29 +1073,6 @@ Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
-
-Package: quick-remaster
-Architecture: amd64
-Version: 1.1.7
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 336
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
-Filename: ./quick-remaster_1.1.7_amd64.deb
-Size: 159910
-MD5sum: 70073d2093cd1e3c05dfa79782f79a8c
-SHA1: 879e748ca2102b13a5bdf93ecc1a9f8854385571
-SHA256: a94863bd5934b432fda307f12038c44fd926ce95ec06751fe9d3df090f517149
-SHA512: 81faa887e122f24ab394920cada8f9322956a63c9ce561da3bd92343258f8cc0a201f032d92137338d20b51394d628c79a9e02eb565e8a907114fa50962cd563
-Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
- Included GUI version using yad: quick-remastergui
- Bug fix: gz compression option not working in previous version 1.0.3
- Bug fix: set the correct permissions for /tmp 
- Fix in v 1.0.6: skip symlinks while cleaning man and doc files
- Version 1.0.7: added option to create ISO
- Version: 1.1.2, cleaning, do not remove /etc/rc.d
- Version: 1.1.3, added GUI progress bar
- Version: 1.1.5, for Devuan beowulf
- Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
 
 Package: synaptic
 Architecture: amd64
@@ -2542,28 +2496,6 @@ SHA256: 8bdfee44956c703fdb027f2f9aa895a46fcb0605d91dfb8b9f7ba00b603124b7
 SHA512: da2cd2228f3f40a348ad406b7155360dc3df388e8d62842e45c4a62c3fba28defa8e33f14b7648a302126bc0f4f98883d327dc69182b5bc428302ba0acd14656
 Description: Mount images, savefile, modules
 
-Package: quick-remaster
-Architecture: amd64
-Version: 1.1.6
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 336
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
-Filename: ./quick-remaster_1.1.6_amd64.deb
-Size: 159848
-MD5sum: 153de13a789102aebd6f98f144fdf9e6
-SHA1: 3f7757e43bd1a01e10a9540442852fe05648a902
-SHA256: c30cdb229207c1b11507ea7f5eaa2f0ac63ae83835b651c370ea606e6d8f2c22
-SHA512: f41601d105bf05df641bc6714c577d326d05cd71392887c2140576eb59cc118874fb60fdcf42595ebeaa02ffcb5e1e0cfa18d984fd7934a3e8addbb56d03fc13
-Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
- Included GUI version using yad: quick-remastergui
- Bug fix: gz compression option not working in previous version 1.0.3
- Bug fix: set the correct permissions for /tmp 
- Fix in v 1.0.6: skip symlinks while cleaning man and doc files
- Version 1.0.7: added option to create ISO
- Version: 1.1.2, cleaning, do not remove /etc/rc.d
- Version: 1.1.3, added GUI progress bar
- Version: 1.1.5, for Devuan beowulf
-
 Package: esound-common
 Architecture: all
 Version: 0.2.41-11
@@ -2828,22 +2760,6 @@ Description: SSL shared libraries
  apache-ssl, telnet-ssl and openssh.
  .
  It is part of the OpenSSL implementation of SSL.
-
-Package: geany
-Architecture: amd64
-Version: 1:1.28
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 1200
-Depends: libatk1.0-0, libc6, libcairo2, libgcc1, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6
-Filename: ./geany_1.28_amd64.deb
-Size: 2892208
-MD5sum: 4453eaab7918acbf5f3d3991d0d743b1
-SHA1: ec04a4ebdbd37dab032a159e8b2be23688d87786
-SHA256: 64ee4210c80c89c2b415e132972db22d4878d1a509b8fd7cb28ff659c5f474a9
-SHA512: aab5e919892b23462f8e69d5f69166784ebd41803a04c24a2df4b47e92bb21d4f21138850b867803e1e887fa3e5c2c0b76c9bba514071cfb4041483dae927801
-Description: Advanced text editor
 
 Package: stream2chromecast
 Architecture: all
@@ -5125,6 +5041,32 @@ SHA256: 744603b68e8992d7888c79cb63532ffff99a335e0e73d9860c93f1e41596c191
 SHA512: ccffe7c2005683292f023cfa8da602d6dffcbea1e31d07133e729de4770cae193d9c48aa175144b5c15478475874a6fea4bad15cf85cf0a1f99aa13a00abb034
 Description: Get pictures from HTTP server, open in Viewnior
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.1_all.deb
+Size: 159078
+MD5sum: 3d436c2a978b98f17a0fe61c49f0158f
+SHA1: cdc3ab535e1b6c3d06823254c63a57951040fbef
+SHA256: 79064489380546d649d19c62faca71b7bd535ceee7f483c4979141feec1bf68f
+SHA512: f31092091db958689b05bb20e457dc98d90cb8385e0dc1229fa451e37f23e7d809b689e4d3f65aae6d988c861060f4482fe9754170a3363abac013a566513612
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+
 Package: gtkdesklet
 Architecture: amd64
 Version: 1.0.2
@@ -6353,28 +6295,6 @@ SHA512: cb331334fe4ba08cc5159a68ca0268a17a18ec36af56e76856198a470c92b1d6e89216a7
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
 
-Package: quick-remaster
-Architecture: amd64
-Version: 1.1.4
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 336
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
-Filename: ./quick-remaster_1.1.4_amd64.deb
-Size: 159812
-MD5sum: 8e88d6ed3dc9e163469e7bd9fb205e6f
-SHA1: 4cdf1e6dfed9a2f6cf74b2ae02e87bd57f17cd5e
-SHA256: 49e50a599f79ad6bf03225df2689f5e06dfe37c27c2b393042bb82a221c6d891
-SHA512: 0c32bd95fe8a48013163afed7b1d841a3e48614469f3f9dd9dfa7a724d56be2c0dcd172dbdb32823d932984b8a97afddc3bb74cf596d95166026aa7beeb605cf
-Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
- Included GUI version using yad: quick-remastergui
- Bug fix: gz compression option not working in previous version 1.0.3
- Bug fix: set the correct permissions for /tmp 
- Fix in v 1.0.6: skip symlinks while cleaning man and doc files
- Version 1.0.7: added option to create ISO
- Version: 1.1.2, cleaning, do not remove /etc/rc.d
- Version: 1.1.3, added GUI progress bar
- Version: 1.1.5, for Devuan beowulf
-
 Package: youtube-viewer
 Architecture: all
 Version: 3.5.4-0-buster
@@ -6538,26 +6458,4 @@ Description: library for SSA/ASS subtitles rendering
  advanced subtitles than the conventional SRT and similar formats.
  .
  This package contains the shared library for libass.
-
-Package: quick-remaster
-Architecture: amd64
-Version: 1.1.5
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 336
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
-Filename: ./quick-remaster_1.1.5_amd64.deb
-Size: 159896
-MD5sum: e0a57931f663005271ece083509563dd
-SHA1: c9243eb2ded0854463578d5cfdde756e68566124
-SHA256: 5d0c549c41dc09675988386343f27b3c6071304dffd695cf8f0119a4b84dbae1
-SHA512: 9ffc24405beca5949d71e941eb7125890fc843bb8888778741ecaa48f0b5aa38de620d0da9145a7f12ad61f6620882e5e361496b83575a8d893e018d04dd0b29
-Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
- Included GUI version using yad: quick-remastergui
- Bug fix: gz compression option not working in previous version 1.0.3
- Bug fix: set the correct permissions for /tmp 
- Fix in v 1.0.6: skip symlinks while cleaning man and doc files
- Version 1.0.7: added option to create ISO
- Version: 1.1.2, cleaning, do not remove /etc/rc.d
- Version: 1.1.3, added GUI progress bar
- Version: 1.1.5, for Devuan beowulf
 
