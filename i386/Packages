@@ -1987,11 +1987,11 @@ Maintainer: fredx181
 Installed-Size: 2800
 Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
 Filename: ./upgrade-kernel_1.0.2_all.deb
-Size: 1039250
-MD5sum: 3af1124d88c055bdade156dcd4ef4bf5
-SHA1: fa745fbe0fb94f826977daf2d043a63539d5f96a
-SHA256: 6da481ae2b848ed8659ebe6e2c6ee6bca22ab425715dc66730c432d8eba6b78d
-SHA512: b91cb120773d5ee9d3af34facfc50349452fc619e39c8d54be0b420c73a82339da18f0a44893653afa58cf894fdb8eedf4a48eca3379470481b3ad40864e4dc4
+Size: 1039160
+MD5sum: bd08dee7a2901dfaf9ad6a4d5a42b127
+SHA1: fe37b2043242822ff45b54ddb4e736be20740da4
+SHA256: 26209e052619a3d728794342727cd93578fe3e224a9f57a9d6a6c8727b7e4e38
+SHA512: 872a8e16886ee3f3f1ecc0be8e1ab9578d58b57d0159454749cf64653f71216316c1f433ee7c31af2066c3dcf6cb4c39097f9ce9d702e38cf2f16e7e7f0301cf
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
 
