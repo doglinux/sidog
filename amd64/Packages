@@ -77,6 +77,34 @@ SHA256: 45d40e5565d2c982dca2c33f90cedbacca39fa2924555656129cdcef4e49a152
 SHA512: 665e6769b545eb3c732df62f7df843e1f227d62557627b61882a1a332f8365f54a2beb403a5a74ddd59e42afd13f11592601741aa6f26cccdb3f3c1b1b16bfd8
 Description: Screen snapshot
 
+Package: palemoon
+Architecture: amd64
+Version: 28.9.3
+Priority: optional
+Section: web
+Maintainer: fredx181 <fredx@nomail.nl>
+Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
+Installed-Size: 61619
+Provides: x-www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
+Suggests: gstreamer0.10-ffmpeg
+Filename: ./palemoon_28.9.3_amd64.deb
+Size: 40098816
+MD5sum: d443fba4ed2f60ba979605fb07b33f5b
+SHA1: 7c6329e66aba07ab35615bcf5fb504dea11aed1b
+SHA256: cc01e4ab2721e4f00592cc584509b816983ecf762b6f52b60964fd7a2c395887
+SHA512: 25ba225b607a076aa94fcc6378315d628716678f77fb559a46f2811d1899515c15237d2d0e944b01293bdc2be1fe749ce7efdc492f49377696b1f544ab0056fa
+Homepage: http://www.palemoon.org/
+Description: Firefox-based, efficient and easy to use web browser
+ Pale Moon offers selected features and optimizations to maximize
+ the browser's speed, stability and user experience, while maintaining
+ compatibility with the thousands of Firefox extensions you have come
+ to love and rely on.
+ .
+ Pale Moon requires a processor that supports the SSE2 instruction set.
+ Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
+ that your processor supports it.
+
 Package: dogradio
 Architecture: amd64
 Version: 0.0.9-1
@@ -502,34 +530,6 @@ SHA1: 29541cb61fb229c9fc1a449a7e33b43baaa6f8dc
 SHA256: 57bd5cdb62a22eab144504f709f16a34d519995a9dfc3573a66c1574a8d9512c
 SHA512: 045c74d056425a979e89a717ef838091e6c0639a192d410b48a8eba727349e1fd261a6cc4b1ecdef08c3ccae7560f95094bf2f44326f4e601463baa90d3338d2
 Description: packit-converted-pet-to-deb
-
-Package: palemoon
-Architecture: amd64
-Version: 28.7.1
-Priority: optional
-Section: web
-Maintainer: fredx181 <fredx@nomail.nl>
-Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
-Installed-Size: 61619
-Provides: x-www-browser
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
-Suggests: gstreamer0.10-ffmpeg
-Filename: ./palemoon_28.7.1_amd64.deb
-Size: 43229524
-MD5sum: 4bfe748f7d3c8638959a398a218f9451
-SHA1: c8dcd9c642e5dd4d8a45c144cac1853884d0da44
-SHA256: 4be0c8697733c7c5b0f413860a205b870aebeb8d10f34d08a587c895c5b663e7
-SHA512: ff66aed4aa3581cde87ace9778d020541ca385cd1374c2abe339d7fcc0314d67f67d2da1fd87e938826b3ea3f57711e08ba451c21ad0a0fc0a26a9fee3f4c732
-Homepage: http://www.palemoon.org/
-Description: Firefox-based, efficient and easy to use web browser
- Pale Moon offers selected features and optimizations to maximize
- the browser's speed, stability and user experience, while maintaining
- compatibility with the thousands of Firefox extensions you have come
- to love and rely on.
- .
- Pale Moon requires a processor that supports the SSE2 instruction set.
- Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
- that your processor supports it.
 
 Package: takeagif
 Architecture: all
@@ -2203,34 +2203,6 @@ SHA1: 78ce9ee2ba8e311774e8af9b0444cd8ac36d45ef
 SHA256: 7c6a6c1f9b98d0d588cbf681052f3f63c958c06ee4add96f09e59eb755a5d948
 SHA512: 581b0796904fa4bbd53957561b828f2a69079d80fa19798d262230e97c692734c28abdb4e4e3b8cefd0893a437efbf5309d7f8c968f049c7d0a7ecacc9ef7d68
 Description: TAS Screenshot utility, by SFR
-
-Package: palemoon
-Architecture: amd64
-Version: 28.3.1
-Priority: optional
-Section: web
-Maintainer: fredx181 <fredx@nomail.nl>
-Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
-Installed-Size: 61619
-Provides: x-www-browser
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
-Suggests: gstreamer0.10-ffmpeg
-Filename: ./palemoon_28.3.1_amd64.deb
-Size: 41300984
-MD5sum: 7f21b6d6bf83b295e0601404e795b784
-SHA1: c312746a14c6719a92785366e51fae0d0637cb6a
-SHA256: f9e43b6702a9ca730c83e04a1e2e4d9ac7a0da1a8ee1fedffabf2abb133bc19e
-SHA512: d16bf78a1476a49c119fa3ec4373e64b0caacbe2db894d3dbbaecfddc856e06890418d44c8f4156b1b236b6df03f9e6882e6dd44f270287d5446b81b47e9cf7d
-Homepage: http://www.palemoon.org/
-Description: Firefox-based, efficient and easy to use web browser
- Pale Moon offers selected features and optimizations to maximize
- the browser's speed, stability and user experience, while maintaining
- compatibility with the thousands of Firefox extensions you have come
- to love and rely on.
- .
- Pale Moon requires a processor that supports the SSE2 instruction set.
- Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
- that your processor supports it.
 
 Package: peasyglue
 Architecture: all

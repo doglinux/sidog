@@ -4407,7 +4407,9 @@ usr/lib/palemoon/browser/searchplugins/ekoru.xml	    palemoon
 usr/lib/palemoon/browser/searchplugins/twitter.xml	    palemoon
 usr/lib/palemoon/browser/searchplugins/wikipedia.xml	    palemoon
 usr/lib/palemoon/browser/searchplugins/yahoo.xml	    palemoon
+usr/lib/palemoon/browser/ua-update.json			    palemoon
 usr/lib/palemoon/chrome.manifest			    palemoon
+usr/lib/palemoon/components/Keyboard.jsm		    palemoon
 usr/lib/palemoon/defaults/pref/channel-prefs.js		    palemoon
 usr/lib/palemoon/dependentlibs.list			    palemoon
 usr/lib/palemoon/dictionaries/en-US.aff			    palemoon
