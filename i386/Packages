@@ -1308,16 +1308,16 @@ Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
 Installed-Size: 7950
 Provides: udev (= 1:3.2.9-7)
 Pre-Depends: debconf
-Depends: libblkid1 (>= 2.25), libc6 (>= 2.28), libkmod2 (>= 5~), libselinux1 (>= 2.1.9), adduser, libeudev1 (= 3.2.9-7), lsb-base (>= 3.0-6), util-linux (>= 2.27.1), procps
+Depends: libblkid1 (>= 2.25), libc6 (>= 2.28), libkmod2 (>= 5~), libselinux1 (>= 2.1.9), adduser, libeudev1 (= 233:3.2.9-7), lsb-base (>= 3.0-6), util-linux (>= 2.27.1), procps
 Conflicts: hal, udev (<< 1:3.2.9+devuan4)
 Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (>> 220)
 Replaces: bash-completion (<< 1:2.1), udev (>= 215)
 Filename: ./eudev_3.2.9-7_i386.deb
-Size: 1080776
-MD5sum: b3c6186c52603a1443fd672227152628
-SHA1: 6193f377125f9ae235404007ad627ee9de4270ee
-SHA256: 219f0672a4b5d7acfd35b30e0de4e42d4ac4c76d955f732d3cf389386e62660c
-SHA512: 7f54e7883ad0fc8b6766fcf2c25c39c4a6e1e57a6459223f00ca3f9334ed5af1c4bbd300611668474538312f0aa3af88479853699694eee8a1b6788084dea017
+Size: 1080732
+MD5sum: 0f676ced9e09afee15b58e7b8e3cf0c1
+SHA1: 35262895e66b5da9f65090f5ac990382d566860c
+SHA256: 3ce4c0d8036630c3b1697948abd26c7e01f4f81789842f9f57fa4c1eddb73a08
+SHA512: 162c081759f035908230d05bbaa023449ab746224a95ba096b03bdb501b412834fd11504320662ca8ab28a48d6311e45a486bcc1942fb9d948652bb3b1ba7f9a
 Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
 Description: /dev/ and hotplug management daemon
  eudev is a daemon which dynamically creates and removes device nodes from
@@ -2876,15 +2876,15 @@ Origin: Devuan
 Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
 Installed-Size: 356
 Provides: libudev-dev (= 1:3.2.9-7)
-Depends: libeudev1 (= 3.2.9-7)
+Depends: libeudev1 (= 233:3.2.9-7)
 Conflicts: libudev-dev (<< 1:3.2.9+devuan4)
 Replaces: libudev-dev (>= 215)
 Filename: ./libeudev-dev_3.2.9-7_i386.deb
-Size: 120752
-MD5sum: 6b5ed8c4ee5173abd98d49a99bf40b98
-SHA1: d5d972d71db8ca2cb810808d794e03e77e778622
-SHA256: 264b11916b3ab369a58d1ddb0607b53650ced80631a8be75321ecb4f24fdebda
-SHA512: 709c3c0acb34289c19c3fd64c8a9529e1ecd1f4301a2afb0ee47ede433f4ad32e175b0ac70396f135644560cfa8f52a8d793c3623f398b4af8494f855f88e009
+Size: 120820
+MD5sum: 8fef42d8d79021125ea34dad96522820
+SHA1: 3d2c37e5a6444bfb309f561b40913eab1c627a21
+SHA256: fa3b9a942618828d734393cfcea5191b336f9a24502089f1688ec4adaff8ce1d
+SHA512: ab2715644b485996139bd70e3528acf9bbeed3f606c3d9465e47b02bd76719be9b5f171005260503a3069cc3d9c2e69d065eb3439ad6735c0ef07fb67def4700
 Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
 Description: libeudev development files
  This package contains the files needed for developing applications that
