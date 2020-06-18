@@ -1061,7 +1061,7 @@ Description: /dev/ and hotplug management daemon
 
 Package: eudev
 Architecture: amd64
-Version: 3.2.9-7
+Version: 233:3.2.9-7
 Multi-Arch: foreign
 Priority: important
 Section: admin
@@ -1075,11 +1075,11 @@ Conflicts: hal, udev (<< 1:3.2.9+devuan4)
 Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-7), systemd (>> 220)
 Replaces: bash-completion (<< 1:2.1), udev (>= 215)
 Filename: ./eudev_3.2.9-7_amd64.deb
-Size: 1068176
-MD5sum: b041373477672fdf57bc3fa5b869c2fe
-SHA1: bea9708dbdc922ed86ec0e3fc57c79557f8e8f19
-SHA256: 12cd7f37da10d6fc8049df01ac39fac70320ea658b74b5af395d135c6f9e9670
-SHA512: 1e1716ba6b19e0e63cea711b1617dfae5f524f72213eedad13e22ac76c7c8cb47c5d4c2cb25360dd8862a128e3fdf53384fb1dfa69ef08ec47417750b7c6a9e1
+Size: 1069136
+MD5sum: e84b3751fd4424601b8800cb3a6c35cd
+SHA1: 17805c061ef5f85b1379fae47e8828c733523ac4
+SHA256: b5214506b8bdb7062a58128847e6ce9516915e9b2da45eef4c7ba34f10e478f2
+SHA512: 176463e4d1443e77a99e4d8826213af824457c606ac5e308b550989aa01b1e2e95e0faca17d74c6d6e83012c2649249191c3d4b113b1464899eff60111ddd2a9
 Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
 Description: /dev/ and hotplug management daemon
  eudev is a daemon which dynamically creates and removes device nodes from
@@ -2722,7 +2722,7 @@ Description: libeudev shared library
 
 Package: libeudev1
 Architecture: amd64
-Version: 3.2.9-7
+Version: 233:3.2.9-7
 Multi-Arch: same
 Priority: optional
 Section: libs
@@ -2735,11 +2735,11 @@ Depends: libc6 (>= 2.17), libselinux1 (>= 2.1.9)
 Conflicts: libudev1 (<< 1:3.2.9+devuan4)
 Replaces: libudev1 (>= 215)
 Filename: ./libeudev1_3.2.9-7_amd64.deb
-Size: 95600
-MD5sum: 034faea01cc40538545c5c3d9fd99a15
-SHA1: df91ea0c1f2542a6a9260452612ad87a0d35978c
-SHA256: 40c391f6f8d55a7ee437a76b2a92422e2d3bb68a4297a144ae29208c24bf4154
-SHA512: b5697be22c855d632e82ad163d70430ba4205d45c1afb6d7454b3852b5fcba57413cffcf655fdb2563f3026bda9992133fa42faf798d7294cbf8f7de8767486e
+Size: 95664
+MD5sum: e99a623def8bd627803e17dc607c4660
+SHA1: d5e607a54b2cbb0c2c80185904d732e9c60b63a3
+SHA256: 94e51df9a4553d004397f076d2cd2f8560cb97984f7634403be23283345c80a7
+SHA512: db30b21d41ba8700a795fd2da1b2b07557bbee65b91b05b2711f29cf682e0429e95ab822815f8a6d78388b4871a9aab2b011f75e34ac66d5266a17cbc67fb483
 Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
 Description: libeudev shared library
  This library provides access to eudev device information.
