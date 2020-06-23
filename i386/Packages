@@ -4407,6 +4407,23 @@ SHA256: 37d51bb0c9019f78722a558862f05ef27e41d0c2b64df49ebbda922d3f59ed36
 SHA512: 4af79a46a3c895b5a43ba3b3d89c9c04eebf1dbd24d194d0b490aecb0f344e50df8ad90ff862a78bf811f38afff67fc422c907741623845ab9c86287d4a92411
 Description: lumina - light window manager - home page: https://github.com/pcbsd/lumina
 
+Package: peasyscan
+Architecture: i386
+Version: 2.16
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./peasyscan_2.16_i386.deb
+Size: 50012
+MD5sum: 869c546b39baebf350d507141eb0fb7b
+SHA1: c56ac8f18076322b8cdff8b33b885a4a86302a73
+SHA256: 4abdb424bf73388b7b81dc559f715d92aedaf3fa82d11b263634d4d1b461b297
+SHA512: fdcebe0d5fbee86591e36b8ab778f6d2d9f25d1c3fcc0a7edcf674708b3452c6e4b985ed0f968a5106b489dbbcc4409001373e59135f36cd61680fea6a7e7fd5
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
 Package: libxml2
 Architecture: i386
 Version: 2.9.1+dfsg1-5+deb8u3
@@ -6041,6 +6058,21 @@ Description: The iupluacontrols-stretch-gtk2:
  provides additional graphical toolkit widgets for additional
  functionality such as matrix drawing.
  iupluacontrols-stretch-gtk2 by tecgraf-pkg-wiak.
+
+Package: peasypdf
+Architecture: all
+Version: 4.4-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc
+Filename: ./peasypdf_4.4-1_all.deb
+Size: 6806
+MD5sum: cfc1ce6cc6fa165e2689b7df0083e303
+SHA1: a035e2ea147019b09d9394d7ff3b70add19b77f6
+SHA256: f88b5e3d7ca7261cb275d9135f892ee5ce74449a184e1eb33d455639506776a6
+SHA512: 377e3060be40f9e847c64fe41cca13593b82a8bb733b09829b37382359156f24e9df2cbd9342d639b6005337ec97badd3f5dd1b3b9af63535592adb8640c6ff8
+Description: Manipulate PDF documents
 
 Package: libelogind0
 Architecture: i386
