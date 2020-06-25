@@ -615,6 +615,32 @@ opt/docs/portablesfs-chroot.template			    portablesfs-loadsfs-fuse
 opt/docs/portablesfs.template				    portablesfs-loadsfs-fuse
 opt/lib/libdaemon.so.0					    sns
 opt/lib/libdaemon.so.0.5.0				    sns
+opt/master-pdf-editor-4/fonts/standard/Courier-Bold.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Courier-BoldOblique.ttf master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Courier-Oblique.ttf  master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Courier.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Helvetica-Bold.ttf   master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Helvetica-BoldOblique.ttf master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Helvetica-Oblique.ttf master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Helvetica.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Times-Bold.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Times-BoldItalic.ttf master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Times-Italic.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/fonts/standard/Times-Roman.ttf	    master-pdf-editor
+opt/master-pdf-editor-4/lang/en_en.qm			    master-pdf-editor
+opt/master-pdf-editor-4/lang/en_en.ts			    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_de_de.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_el_gr.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_es_es.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_fr_fr.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_it_it.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_pl_pl.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_pt_br.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_ru_ru.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_sl_si.qm		    master-pdf-editor
+opt/master-pdf-editor-4/lang/qt/qt_sv_se.qm		    master-pdf-editor
+opt/master-pdf-editor-4/license.txt			    master-pdf-editor
+opt/master-pdf-editor-4/masterpdfeditor4		    master-pdf-editor
 opt/stream2chromecast/LICENSE				    stream2chromecast
 opt/stream2chromecast/README.md				    stream2chromecast
 opt/stream2chromecast/cc_device_finder.py		    stream2chromecast
@@ -637,6 +663,7 @@ opt/tmp/snapmergepuppy					    porteusbootscripts
 opt/tmp/wmpoweroff					    porteusbootscripts
 opt/tmp/wmreboot					    porteusbootscripts
 root/.asoundrc						    peasymp3
+root/.config/Code Industry/Master PDF Editor.conf	    master-pdf-editor
 root/.config/rox.sourceforge.net/MIME-types/application	    jwmconf,jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwmconf,jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf,jwm-setup
@@ -896,6 +923,7 @@ usr/bin/lumina-screenshot				    lumina-desktop-debdog
 usr/bin/lumina-search					    lumina-desktop-debdog
 usr/bin/lumina-xconfig					    lumina-desktop-debdog
 usr/bin/madedit						    madedit
+usr/bin/masterpdfeditor4				    master-pdf-editor
 usr/bin/midori						    midori
 usr/bin/mkplaylist					    ffconvert
 usr/bin/mksquashfs					    squashfs-tools
@@ -908,7 +936,7 @@ usr/bin/network_tray					    wifibox-dhcpcd,ceni,frisbee
 usr/bin/network_tray.sh					    frisbee,ceni
 usr/bin/nicinfo						    ceni
 usr/bin/nmblookup					    yassm-smbclient-mpscan
-usr/bin/notecase					    notecase-portable
+usr/bin/notecase					    notecase-portable,notecase
 usr/bin/obkey						    obkey
 usr/bin/obxprop						    openbox
 usr/bin/openbox						    openbox
@@ -1993,6 +2021,7 @@ usr/local/bin/gdrive_gui2				    googledrivegui2
 usr/local/bin/gentriesquick				    xlunch
 usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gethosts					    debdog-advert-blocker
+usr/local/bin/gfontviewer				    font-viewer
 usr/local/bin/gifdance					    gifdance
 usr/local/bin/gifenc					    gifenc
 usr/local/bin/gifenc-sel				    gifenc
@@ -2158,6 +2187,7 @@ usr/local/bin/xluncher2					    xlunch
 usr/local/bin/xluncher3					    xlunch
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/xwd					    snappie
+usr/local/bin/yad-fontview				    font-viewer
 usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
@@ -4161,6 +4191,7 @@ usr/local/isodata/isolinux/menu.cfg			    quick-remaster
 usr/local/isodata/isolinux/splash.png			    quick-remaster
 usr/local/isodata/isolinux/stdmenu.cfg			    quick-remaster
 usr/local/isodata/isolinux/vesamenu.c32			    quick-remaster
+usr/local/isodata/live/beowulf-x86_64.sgn		    quick-remaster
 usr/local/lib/X11/mini-icons				    wifibox-dhcpcd,ceni,frisbee
 usr/local/lib/X11/mini-icons/info16.xpm			    sns
 usr/local/lib/X11/mini-icons/mini-camera.xpm		    takeashot
@@ -5459,6 +5490,7 @@ usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
 usr/share/applications/MakeScreenshot.desktop		    scrotdlg
+usr/share/applications/MasterPDFEditor.desktop		    master-pdf-editor
 usr/share/applications/PackIt.desktop			    pack-it
 usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
@@ -5519,6 +5551,7 @@ usr/share/applications/flburn.desktop			    flburn
 usr/share/applications/freememapplet-off.desktop	    freememapplettray
 usr/share/applications/freememapplet-on.desktop		    freememapplettray
 usr/share/applications/frisbee.desktop			    frisbee
+usr/share/applications/gfontview.desktop		    font-viewer
 usr/share/applications/gnetcat.desktop			    gnetcat
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.7
 usr/share/applications/googledrivegui.desktop		    googledrivegui
@@ -5544,7 +5577,7 @@ usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/mplayer.desktop			    gmplayer
 usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/my-squash-loader.desktop		    my-squash-loader
-usr/share/applications/notecase.desktop			    notecase-portable
+usr/share/applications/notecase.desktop			    notecase-portable,notecase
 usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup
 usr/share/applications/osmo.desktop			    osmo-portable
@@ -5623,6 +5656,7 @@ usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlunch-help.desktop		    xlunch
 usr/share/applications/xrecord.desktop			    xhippo
 usr/share/applications/xvidcap.desktop			    xvidcap
+usr/share/applications/yad-fontview.desktop		    font-viewer
 usr/share/applications/yarlm-alarm-scheduler.desktop	    yalarm2
 usr/share/applications/yassm.desktop			    yassm
 usr/share/apport/package-hooks/conky.py			    conky-all,conky-std,conky-cli
@@ -6191,7 +6225,7 @@ usr/share/doc/nls/grub4dosconfig/grub4dosconfig.pot	    grub4dosconfig
 usr/share/doc/nls/websearch/websearch.pot		    websearch
 usr/share/doc/nls/yalrm/pot_generate			    yalarm2
 usr/share/doc/nls/yalrm/yalrm.pot			    yalarm2
-usr/share/doc/notecase/help.ncd				    notecase-portable
+usr/share/doc/notecase/help.ncd				    notecase-portable,notecase
 usr/share/doc/obkey/changelog.Debian.gz			    obkey
 usr/share/doc/openbox/AUTHORS				    openbox
 usr/share/doc/openbox/COMPLIANCE			    openbox
@@ -9602,7 +9636,7 @@ usr/share/menu/midori					    midori
 usr/share/menu/mount-wizard				    mount-wizard
 usr/share/menu/mount-wizard-2				    mount-wizard-2
 usr/share/menu/move-in-crypt				    move-in-crypt
-usr/share/menu/notecase					    notecase-portable
+usr/share/menu/notecase					    notecase-portable,notecase
 usr/share/menu/osmo					    osmo-portable
 usr/share/menu/palemoon					    palemoon
 usr/share/menu/pavrecord				    pavrecord
@@ -9631,7 +9665,7 @@ usr/share/menu/xvidcap					    xvidcap
 usr/share/menu/youtube-get				    youtube-get
 usr/share/menu/youtube-get2				    youtube-get2
 usr/share/metainfo/elogind.metainfo.xml			    elogind
-usr/share/mime/packages/notecase.xml			    notecase-portable
+usr/share/mime/packages/notecase.xml			    notecase-portable,notecase
 usr/share/motion-trunkREV561/examples/motion.init-Debian    motion-light
 usr/share/motion-trunkREV561/examples/thread1.conf	    motion-light
 usr/share/motion-trunkREV561/examples/thread2.conf	    motion-light
@@ -9800,6 +9834,7 @@ usr/share/pixmaps/MPlayer.png				    gmplayer
 usr/share/pixmaps/PackIt.png				    pack-it
 usr/share/pixmaps/QtWeb.png				    qtweb
 usr/share/pixmaps/UExtract.png				    uextract
+usr/share/pixmaps/abc.png				    font-viewer
 usr/share/pixmaps/abiword48.png				    abiword-portable
 usr/share/pixmaps/alarm_142x164.png			    yalarm
 usr/share/pixmaps/alsamixertray.png			    alsamixer-tray
@@ -10013,6 +10048,7 @@ usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwmconf,jwm-setup
 usr/share/pixmaps/madedit.xpm				    madedit
 usr/share/pixmaps/makedebpkg.png			    makedebpackage
+usr/share/pixmaps/masterpdfeditor4.png			    master-pdf-editor
 usr/share/pixmaps/mk-initrd.png				    upgrade-kernel
 usr/share/pixmaps/mkinitrd.png				    upgrade-kernel
 usr/share/pixmaps/mkiso.png				    quick-remaster
@@ -10053,7 +10089,7 @@ usr/share/pixmaps/netmon_wce/qual_7.svg			    frisbee
 usr/share/pixmaps/netmon_wce/qual_8.svg			    frisbee
 usr/share/pixmaps/netmon_wce/qual_9.svg			    frisbee
 usr/share/pixmaps/network-workgroup.png			    sns
-usr/share/pixmaps/notecase.xpm				    notecase-portable
+usr/share/pixmaps/notecase.xpm				    notecase-portable,notecase
 usr/share/pixmaps/openbox.png				    openbox
 usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/osmo.png				    osmo-portable

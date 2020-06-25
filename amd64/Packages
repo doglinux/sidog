@@ -473,6 +473,22 @@ SHA256: 5bf3b8be570754ee314f25d49a5cb8c7e7d726f972dcd5cb0de270523885ba76
 SHA512: 0b570d392a4058031bccf4d6925bfa71f9bf72912daa64dc413511630975e72f1515e9afa40265f5aa89a2b6f139bcf4969e1fea05287d81cf8936e5999ffcf5
 Description: Internet Radio Player
 
+Package: yalarm2
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm2_0.0.3_all.deb
+Size: 119546
+MD5sum: 2d61fb40af772005d10556581f42ed0c
+SHA1: 27c84c92294046b6a02899970351f5095b06a633
+SHA256: 7a649a20c084043f03c6106089a783ff7e671fe2ff9409e9de4b61dde1701f15
+SHA512: 6751891c85584f03b97d10e8b629814f33fd816f660b344477c378bd2c885a5f84d2bad99194f5a91f7bd56d5c6567ab9ebb478f40d38765f80dee70528b963a
+Description: Alarm scheduler v2 by fredx181 and Argolance
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -936,6 +952,22 @@ SHA256: 61f0d22c3b6d51c49d7e2f2cfa0365069ce523d35254c73c0c1c4ce9164b4018
 SHA512: 47945e3e76006175756fbdea54c921a95e0488555bfd91722a92aeba0790b9f7b769da120eec8e25a9c947a714966febd756e45e1ecf39dd50183f6f962b85d1
 Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
 
+Package: font-viewer
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 834
+Depends: libc6, yad, gtkdialog
+Filename: ./font-viewer_0.0.1_all.deb
+Size: 13986
+MD5sum: 86732071975357be4a1523a41967d76f
+SHA1: 47baca021328fa233c012935d15ce118db45bd92
+SHA256: 0246ed4bb8a31b4cda215885b6853d1f036000b3e1f080f984072ed5d16439d3
+SHA512: 4dee1ce3d6011cbda9c21b7655eb1e354503de29756df94fbd6983c17ea7c0e0b531531d15e62a15eed75598e59b19c7eb0f92a490c74a3ad2832527de2b329d
+Description: Font Viewer
+
 Package: googledrivegui2
 Architecture: amd64
 Version: 2.1.1
@@ -1090,6 +1122,29 @@ Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
+
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.7
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.1.7_amd64.deb
+Size: 159910
+MD5sum: 70073d2093cd1e3c05dfa79782f79a8c
+SHA1: 879e748ca2102b13a5bdf93ecc1a9f8854385571
+SHA256: a94863bd5934b432fda307f12038c44fd926ce95ec06751fe9d3df090f517149
+SHA512: 81faa887e122f24ab394920cada8f9322956a63c9ce561da3bd92343258f8cc0a201f032d92137338d20b51394d628c79a9e02eb565e8a907114fa50962cd563
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
 
 Package: synaptic
 Architecture: amd64
@@ -3004,6 +3059,21 @@ SHA256: fd778f93287adb23a84da100484e47cae07378b7043a73e738057e4478f599e6
 SHA512: c14b42908d2ca70d71c66aae28b0391ad18a246caa2fac3126d1d0dc4d7873ba4584ebe57b0f272351e4c5a1397e2c7a3c1ab2678b3d358dae68f918c397ef64
 Description: Touchpad/mouse/touchscreen setup
 
+Package: peasyprint
+Architecture: all
+Version: 4.2
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, poppler-utils, libtiff-tools, peasyscale, cups-client, dc
+Filename: ./peasyprint_4.2_all.deb
+Size: 8252
+MD5sum: 10135012d494db643bb0f0756cfb2276
+SHA1: fd9bcee1f0bd998bacb91c614ae44bd2d29aa5b2
+SHA256: 8294f7e1c7da9997c9880e93df28e6307c0823b88cf33447fb93e214492b78b3
+SHA512: e6beda5f8731d71ce5c1512645977319e2fa995bde2049f172df4053ea453e20c785f7d75058b22fd26a52dc7353a1bfcee3a2e2a9e1f99bc8615d617dae4dc5
+Description: prints graphic files
+
 Package: gtkdialog
 Architecture: amd64
 Version:  0.8.7-wiak-B-3
@@ -3698,6 +3768,24 @@ SHA256: 8298a9d4151ddf46cc23406aa03ff3ad6353c31b8f4309719b59e3870246f58f
 SHA512: 1697cd482081dc47fc149aaa045a220b632597c100033d3eb2fb46a79b8927beef23ebbc6dfb829415978c05b5fc45a5800bca81c90d5ca78a7ad456c14c38ac
 Description: File system type CLI tool from Puppy linux.
 
+Package: notecase
+Architecture: amd64
+Version: 1.9.8
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 834
+Depends: libc6, libcairo2, libgcc1, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libgtksourceview2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6, libx11-6
+Conflicts: notecase-portable
+Replaces: notecase-portable
+Filename: ./notecase_1.9.8_amd64.deb
+Size: 228024
+MD5sum: d8ee69446d62fb2d87ba9f75c6542c46
+SHA1: 3fc6259d64db84c9b62c33e675794563e9baa9cd
+SHA256: bc83627011f3d04cfbdf7f7fdab7a7b89101619149b8b8eaf1dbd7d99c324c34
+SHA512: 4b7c4e3c6590645aa103dcf70f3252b47b50d111d7704f2c6124a25fc2f4edb2068ba02c25d98e3786a5044dabb9e743935de8dc16e7329cbfb242715b027013
+Description: Hierarchical Note Manager
+
 Package: jwm-setup-dd64
 Architecture: amd64
 Version: 0.0.2
@@ -3772,6 +3860,22 @@ SHA1: 004a7a8d2bac546af674481fcd8daf1eaa454e96
 SHA256: 46dc2a50ece69db78f02a539ad15155b884411ae0e18fd4d11e65ce5e27b3e29
 SHA512: 64c194840a829cd4df5a91ac1ba2d63957dec596b349207a2b1efca8b10f3492ae47f9830c941954ec631fa37dc07813b84576f428fcd8b55c418e3ec74dd2db
 Description: Create portable AppImage v2.0
+
+Package: yalarm
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./yalarm_0.0.3_all.deb
+Size: 39416
+MD5sum: c46dcb433107a731d3c882fb58e258d6
+SHA1: 030370389fe7c1d0e363469c43387eee2e5e5f6c
+SHA256: 82bacd6b59fb6631249e66ecd1d705b44d8bef09dc7f827c1771b9a6f69f3e98
+SHA512: 42be6c27dbedeea33852cb0d7dcd43771a2f941b1cd9a4ce495eef1ea9761ebfd4fdebee96e0ad348c0290d7da168ebea3b152ab7e3383edbe66703fa230faa0
+Description: Alarm scheduler
 
 Package: fixdepinstall
 Architecture: all
@@ -4396,6 +4500,22 @@ SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
 SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
 Description: Makes a WiFi access point, needs iptables for internet
 
+Package: master-pdf-editor
+Architecture: amd64
+Version: 4.3.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 30000
+Depends: libsane, libqt4-svg, libqt4-network
+Filename: ./master-pdf-editor_4.3.61_amd64.deb
+Size: 9721386
+MD5sum: a7ed8f9f7acb4a2d374694feda8d0791
+SHA1: 6b9e18216f5c359070916ac02cde88c61130ce61
+SHA256: 3db31787d27b1adbfdc7f5a316258e7074f6b5d50fe473b90b2bde555d01e122
+SHA512: 9642ce1a295dc93c9fc0119c79669c2666297231b872ffcaf454524be78b05dd488e8efb13141ad0af525df5247c4fed2e10c3cbd2b8c3ec46e81bd844ae4d8b
+Description: Master PDF Editor https://code-industry.net/masterpdfeditor/
+
 Package: scrox
 Architecture: amd64
 Version: 0.8-17
@@ -4961,6 +5081,24 @@ SHA1: a7bc279c0ca0052d429281c57f2a67e9202042b9
 SHA256: b925b30cec71c4f3ad760b371e4fd8af1bec7cabd6ed7e09510a1a76122b5085
 SHA512: ad0b6193acc8ca733da2bc25c6b4485e91f8c19d1459d1a4bd617ffc203112192b88a747ad425157ae93107d3a8539e6993f028020570692251759621e5a3ab9
 Description: Create GIF from dancing letters
+
+Package: peasyfwmon
+Architecture: amd64
+Version: 2.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 163
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy
+Replaces: firewall-puppy
+Filename: ./peasyfwmon_2.2_amd64.deb
+Size: 28416
+MD5sum: adfd411ae14e1078eff2352f87c3a987
+SHA1: c2a92caede08b9c507d8ebcfeb69194a629409d2
+SHA256: 714f74355a072712427430be9ece7fcee2d139d8bc43f2a0f591a41590c57943
+SHA512: 22905d8a88de745ba3c7e6d92c157de4506cf0642488b638890b13b625c9043a96d92e5f78fcdd54cf4fd89ac0bc856f38149f9ec393bcbd82d080f6e6ca679c
+Description: Peasy Firewall Monitor
 
 Package: gmplayer
 Architecture: amd64
@@ -6406,6 +6544,28 @@ SHA256: dc6c0b152b7125843c8e2241285388daf4ad2bb7c7cfdb4bb4953c1dd37ec965
 SHA512: fcbfaf96283b76b2a1cd882d4ce2a926663d54228c120f903c4ba9f22578e2fd1320bd27d17c03c7a8a4c207726c5db04a1a4a9d04ff9a5a6dab46671d221d92
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
+
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.9-wiak-B-1
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./gtkdialog_0.8.9-wiak-B-1_amd64.deb
+Size: 120452
+MD5sum: 634cd93eae906158331f21b1bd93d692
+SHA1: 49f7069691fe30f792e1db20ef4840536ee6a0ac
+SHA256: 43b7ba16c3380ace3c40c95b5a72a8585e55672bdf4e0349253debadf9fb9db0
+SHA512: b6fb4f6587db61ebb54e60f38f382e37c36a584f2c74f76e6fe7f2448b2cd33da3bf0e2b188858b970ae4a6c6f154296632f44575e01f7e466468cbfbf837e0c
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
 
 Package: madedit
 Architecture: amd64
