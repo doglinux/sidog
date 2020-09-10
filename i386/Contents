@@ -4414,6 +4414,7 @@ usr/local/pmusic/themes/Gtk/icon_genre.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_go_left.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_go_right.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_import.svg		    pmusic
+usr/local/pmusic/themes/Gtk/icon_info.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_next.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_pause.svg		    pmusic
 usr/local/pmusic/themes/Gtk/icon_play.svg		    pmusic
@@ -6252,6 +6253,7 @@ usr/share/doc/libxml2/copyright				    libxml2
 usr/share/doc/linux-user-chroot/NEWS.gz			    linux-user-chroot
 usr/share/doc/linux-user-chroot/README			    linux-user-chroot
 usr/share/doc/linux-user-chroot/changelog.Debian.gz	    linux-user-chroot
+usr/share/doc/linux-user-chroot/changelog.Debian.i386.gz    linux-user-chroot
 usr/share/doc/linux-user-chroot/copyright		    linux-user-chroot
 usr/share/doc/lumina/LICENSE				    lumina-desktop-debdog
 usr/share/doc/lumina/README.md				    lumina-desktop-debdog

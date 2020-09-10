@@ -942,6 +942,30 @@ Description: user, seat and session management daemon
  elogind is a session management daemon extracted from systemd project's
  logind
 
+Package: elogind
+Architecture: amd64
+Version: 249.7-1.0antix1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 1978
+Pre-Depends: debconf
+Depends: libacl1 (>= 2.2.23), libaudit1 (>= 1:2.2.1), libc6 (>= 2.28), libcap2 (>= 1:2.10), libselinux1 (>= 2.0.65), libudev1, libelogind0 (= 249.7-1.0antix1), lsb-base (>= 3.1), dbus (>= 1.9.14)
+Recommends: libpam-elogind, policykit-1
+Conflicts: systemd
+Filename: ./elogind_249.7-1.0antix1_amd64.deb
+Size: 570148
+MD5sum: e6fd4827b0dc20cccf7c872584cd946e
+SHA1: 7f7ce77005688d139a92d35fed076e0352c29007
+SHA256: 0509e20a4978473e178a130063cefcf44258da7811516d3cf479c9d9c9cd26f0
+SHA512: f37783d78955dcbcfee2cf1eab49aca2276a128b24eab42e659b68938d650dd2b15bbf2a36b709634d7f3cb02ed3457fb06d6e0077fce1ff58d93a4d5b8e6dd3
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ logind
+
 Package: emelfm2
 Architecture: amd64
 Version: 0.9.1-1~trusty~ppa1
@@ -2701,6 +2725,34 @@ Description: user, seat and session management library
  symlinks to allow binaries linked against libsystemd0 to work with
  libelogind0. For full details of the compatibility see README.Debian.
 
+Package: libelogind0
+Architecture: amd64
+Version: 249.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 632
+Provides: libsystemd0 (= 246.4-1)
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10)
+Conflicts: libsystemd0
+Replaces: libsystemd0
+Filename: ./libelogind0_249.7-1.0antix1_amd64.deb
+Size: 228676
+MD5sum: aa2017f669138c8ddadec11826346a85
+SHA1: 5cd6b68b6efb92402c255228fa3251025db2329f
+SHA256: 3187ded014bcad59edf5c528e9f218f011229cdb3881007490b9c9cf055647fb
+SHA512: cdb1ce9258d3db7e68d2d66442f9fb33944e678077aedeecf29a5b7e156a3ae752ed1f6bbf302321800691adf018951aa10c7026cd4f9162a6ab0faf23046bdc
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+ .
+ The library is ABI compatible with libsystemd0 and provides the necessary
+ symlinks to allow binaries linked against libsystemd0 to work with
+ libelogind0. For full details of the compatibility see README.Debian.
+
 Package: libesd0
 Architecture: amd64
 Version: 0.2.41-11
@@ -3286,6 +3338,29 @@ Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
 
+Package: libpam-elogind
+Architecture: amd64
+Version: 249.7-1.0antix1
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 358
+Provides: logind
+Depends: libc6 (>= 2.28), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (>= 243.3-2+antix1), libpam-runtime
+Conflicts: libpam-ck-connector, logind
+Replaces: logind
+Filename: ./libpam-elogind_249.7-1.0antix1_amd64.deb
+Size: 140560
+MD5sum: ef9634efe18f47eff8959423c71bc19a
+SHA1: e969de161a3f1ec057fbd6c163f8637204540c6b
+SHA256: 79978c7b88f17f7f7272e05683968a8ad402d7ba72100f94e7f94d306b28bd7d
+SHA512: e5897a32a333d9fd191a1e615189f8c695484962504bf85cc703d378c227d8cc5e06d3e188b1ea94e157806a4fc7d23ec3782e26d85dcb1b89926f2ee392f308
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
+
 Package: libpango1.0-0
 Architecture: amd64
 Version: 1:1.42.4-8
@@ -3724,6 +3799,27 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 
+Package: linux-user-chroot
+Architecture: amd64
+Version: 2013.1-2+b1
+Priority: optional
+Section: devel
+Source: linux-user-chroot (2013.1-2)
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 34
+Depends: libc6 (>= 2.8)
+Filename: ./linux-user-chroot_2013.1-2+b1_amd64.deb
+Size: 9704
+MD5sum: ce11fc1b2d96bfef017a8ff8ad0e8a92
+SHA1: 8dfca439fa1ac56c3e38a4d115d7d04409b56f12
+SHA256: 8a9db16cd396b9895a8cca2eba650f0c8201db9338fb293b3c680923e62d0d2f
+SHA512: 536c2ee7c3cb050fd2c0173429b091751c88d59bb912c7ca65d10472c854bcf28c9b6711d6ac0a5bf848016f038085d2a71277a9154a19f14a31737594b7bacd
+Homepage: https://git.gnome.org/browse/linux-user-chroot/
+Description: setuid helper for making bind mounts and chrooting
+ This tool allows regular (non-root) users to call chroot(2), create Linux
+ bind mounts, and use some Linux container features.  It's primarily intended
+ for use by build systems.
+
 Package: locale-conf
 Architecture: all
 Version: 1.0.0-s
@@ -4107,6 +4203,39 @@ MD5sum: 2e84e4efd28619a060957fedee65667e
 SHA1: b18a5d6ba527ac0796abd99a5549260655293f24
 SHA256: a6782de96034e28f9fb705a1e3756fb227936fb3136610fe0fcf253c99e69f8f
 SHA512: a36a3113075fd502121c9d4d82ee0fa0ce8ec047225e2c88e7874ddd56b4f15859913217bb115ca15d728d47e8ce8216dc0e4fb59bf12a76400c580f0cd28461
+Homepage: https://github.com/luffah/obkey
+Description: Openbox Key Editor
+ .
+ A keybinding editor for OpenBox, it includes launchers and window management keys.
+ .
+ It allows to:
+     * can check almost all keybinds in one second.
+     * add new keybinds, the default key associated will be 'a' and no action will be associated;
+     * add new child keybinds;
+     * setup existing keybinds :
+         * add/remove/sort/setup actions in the actions list;
+         * change the keybind by clicking on the item in the list;
+     * duplicate existing keybinds;
+     * remove a keybind.
+ .
+ The current drawbacks :
+     * XML inculsion is not managed. If you want to edit many files, then you shall open them with ;
+     *  conditionnal tag is not supported (but did you knew it exists).
+
+Package: obkey
+Architecture: all
+Version: 1.3.1-2
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 157
+Depends: python2.7, python-gi, libgtk-3-0, gir1.2-gtk-3.0
+Filename: ./obkey_1.3.1-2_all.deb
+Size: 25860
+MD5sum: a4894ece9f188addd7b93f7cf5829a6c
+SHA1: 27d8af2ea4260196dd2c9b13a5cccc1e355aab7c
+SHA256: 4686371aae203ff7103f6ac4de4a8669bc0d343213ca9e8301988554c1fc41e4
+SHA512: 2bae53894efb0f17eb3063f30034e51d85bd9bfc4f92a4b4dca902271d7559166c4e8179ddf9a7bd32af271cd1fe822d8f7e34b4becb3203f5d1c9000043fdd5
 Homepage: https://github.com/luffah/obkey
 Description: Openbox Key Editor
  .
@@ -4566,6 +4695,21 @@ SHA256: f88b5e3d7ca7261cb275d9135f892ee5ce74449a184e1eb33d455639506776a6
 SHA512: 377e3060be40f9e847c64fe41cca13593b82a8bb733b09829b37382359156f24e9df2cbd9342d639b6005337ec97badd3f5dd1b3b9af63535592adb8640c6ff8
 Description: Manipulate PDF documents
 
+Package: peasypdf
+Architecture: all
+Version: 4.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc
+Filename: ./peasypdf_4.5_all.deb
+Size: 7058
+MD5sum: 1703d89ba26ddf06192d9152bc599264
+SHA1: ee2733f11d5ac396a51b75d2120ef270c7d0ed6f
+SHA256: 8123b84c9f57537cd2d58df54e96f230f24d1c1fa165569c47317dcd407823ce
+SHA512: 57fdc3699c80bfce49f8f3fbff6ff9eb71f9b10690750d11533ace6861ffd2e3adfefc1d800d0b51d757066c9284156cff3e365c1699b73c6ac64b08631183ae
+Description: Manipulate PDF documents
+
 Package: peasyport
 Architecture: all
 Version: 2.5-1
@@ -4884,6 +5028,22 @@ MD5sum: 415c38e0d6be502e66d79a2326a2b097
 SHA1: 99ac0594144a7082638bf22793fa2344bda6fc42
 SHA256: 2d7181428397c09f9f132b9050c72238c83ed09c106ffb5d95e4c6d937a49999
 SHA512: 9717dd2436fdeaa3f719872910746089e5ef81fdf888095ed4a5778c7ae04803cd6d1e1df7d041ef1ba2606d256ca58535e1ea36a576f1261c283f07cb4aba29
+Description: -Radio -Podcast -Music
+
+Package: pmusic
+Architecture: all
+Version: 6.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: ffmpeg, gtkdialog
+Filename: ./pmusic_6.0.1_all.deb
+Size: 129896
+MD5sum: 5a46d7a389b19909313abab860581229
+SHA1: 9e9b737dcc28516a0fc0e1260abd7e828760c508
+SHA256: aeb14bfd1b3505ad4531efbf4260349fd648e433f268fd6cf7dc4946b50410d8
+SHA512: 56c758cd1897826fd172a094f5d61dda7ca6ba0a8c467564ecdf998d77cf2686dab75e70f2f53ca036da64e44514b6be0e8e108c647eeacb9d705ed69d88d3e3
 Description: -Radio -Podcast -Music
 
 Package: portablesfs-loadsfs-fuse
@@ -5583,6 +5743,29 @@ MD5sum: 4fd6558b8213141aab4cca32a815c76b
 SHA1: c8a00c995b64cac24a86a56e28c6c9c1c03f1b5f
 SHA256: ae6125685bd1a83311d4faf9fcae8e88db17249c059cf05c628e38ceb11d4013
 SHA512: 45ca9d24ae1f4a2a3871d322da60fbaa26e31d0470d42b2c92e78fe51f03df8ebb01e959dc69890002966e8f91420cddf326938464193f58505757298a356e88
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: straw-viewer
+Architecture: all
+Version: 0.0.5-3
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python2.7, curl, libgtk3-perl,liblwp-protocol-https-perl,  wget
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./straw-viewer_0.0.5-3_all.deb
+Size: 236468
+MD5sum: 70b1c40f357a0fb918fb0e7398547ffc
+SHA1: f219987f5334ae69c401826d3eec72799e510f18
+SHA256: 530a98cbc1304e5de0f2565eff66f416e47774e95980d46762a94b325ec10678
+SHA512: 52e55af938adbc48de0e78ce565317cf349d35d6b89899a6db5cfc638902590fd64be231f9e03b0e7e829d91cef0284deb5b186c8bdb1ff14e919a0fde5fbd73
 Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-StrawViewer - a very easy interface to YouTube.
@@ -6634,6 +6817,28 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
 
+Package: youtube-get2
+Architecture: all
+Version: 0.2.1
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.1_all.deb
+Size: 1589360
+MD5sum: 4dd8be265dbd5965639fe83d076c7e84
+SHA1: 3ceaad1b7a5e67d77f02f9ad5c93d75ecd1afee7
+SHA256: 354fffa978e7f64bf437c97532a2650d2d8d827b4097ed31abb543bc834bdd20
+SHA512: 024278ab1c58c20882ebb3da003aa24cd7120461f32e19126f0c60c976feedbb117fcc5910559d81de83f54a71cbb82e7a49b494e65daf1464a3a83bc1a9a391
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+
 Package: youtube-get
 Architecture: all
 Version: 0.1.1
@@ -6673,6 +6878,29 @@ MD5sum: d4c8d9b3bedce41b613f5e77350a56e9
 SHA1: 72912b252b7e2cb4b4c9d0f7a96dbef9e6193466
 SHA256: 1db7e88e6975351a87a5b919bf04f0c908c5fbb4d30858a5c379bc244572be89
 SHA512: 085644ba85b1f52605cc9857d6cf208a4f809cee387e44da2ae3be99eb233d2e709cc3dbea9fdefec8457d156fb5773711057827ac6211ff666b879ac5faa583
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.6-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python2, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./youtube-viewer_3.7.6-1_all.deb
+Size: 235972
+MD5sum: 951b551475de3a0134331a12b6134ea8
+SHA1: 920c4c6b60e0133079abfe948ae8544549eee1ab
+SHA256: 5f7c3a07883a0c45158f0368551786d7efa52425f1fb93fe9689e8a96776bffc
+SHA512: 67dac7f3cc437b362e8c274bfea95c2f07a4ac96297b2a6a81ef8092050d5e8d6c0ccda381d884da902af1266663506c6caced4b5acc60e4d174b16a3682816e
 Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
