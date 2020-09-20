@@ -797,7 +797,7 @@ usr/bin/gftp-text					    gftp-text
 usr/bin/gmplayer					    gmplayer
 usr/bin/gtk-splash					    yalarm2
 usr/bin/gtk-straw-viewer				    straw-viewer
-usr/bin/gtk-youtube-update				    youtube-viewer,straw-viewer
+usr/bin/gtk-youtube-update				    straw-viewer,youtube-viewer
 usr/bin/gtk-youtube-viewer				    youtube-viewer
 usr/bin/gtk2-youtube-viewer				    youtube-viewer
 usr/bin/gtkdialog					    gtkdialog
@@ -7962,7 +7962,7 @@ usr/share/applications/Dancing Letters Generator (HTML).desktop dancing-letters
 usr/share/applications/Dancing Letters Generator (forum).desktop dancing-letters
 usr/share/applications/Dancing Letters to GIF.desktop	    gifdance
 usr/share/applications/DogRadio.desktop			    dogradio
-usr/share/applications/GTK-YouTube-Updater.desktop	    youtube-viewer,straw-viewer
+usr/share/applications/GTK-YouTube-Updater.desktop	    straw-viewer,youtube-viewer
 usr/share/applications/GifenC (video to _gif).desktop	    gifenc
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
@@ -8030,7 +8030,7 @@ usr/share/applications/gnetcat.desktop			    gnetcat
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.6
 usr/share/applications/googledrivegui.desktop		    googledrivegui
 usr/share/applications/googledrivegui2.desktop		    googledrivegui2
-usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer,straw-viewer
+usr/share/applications/gtk-youtube-viewer.desktop	    straw-viewer,youtube-viewer
 usr/share/applications/inkgui.desktop			    inkgui
 usr/share/applications/jwm-theme-change.desktop		    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/applications/jwm.desktop			    jwm-setup,jwm-setup-dd64
@@ -10916,12 +10916,12 @@ usr/share/pixmaps/dload.png				    youtube-get2
 usr/share/pixmaps/drive.png				    mount-wizard
 usr/share/pixmaps/drive24.png				    mount-wizard
 usr/share/pixmaps/dropbox.png				    dropboxgui
-usr/share/pixmaps/emblem-default.png			    youtube-viewer,straw-viewer
-usr/share/pixmaps/emblem-documents.png			    youtube-viewer,straw-viewer
-usr/share/pixmaps/emblem-downloads.png			    youtube-viewer,straw-viewer
-usr/share/pixmaps/emblem-favorite.png			    youtube-viewer,straw-viewer
-usr/share/pixmaps/emblem-important.png			    youtube-viewer,straw-viewer
-usr/share/pixmaps/emblem-shared.png			    youtube-viewer,straw-viewer
+usr/share/pixmaps/emblem-default.png			    straw-viewer,youtube-viewer
+usr/share/pixmaps/emblem-documents.png			    straw-viewer,youtube-viewer
+usr/share/pixmaps/emblem-downloads.png			    straw-viewer,youtube-viewer
+usr/share/pixmaps/emblem-favorite.png			    straw-viewer,youtube-viewer
+usr/share/pixmaps/emblem-important.png			    straw-viewer,youtube-viewer
+usr/share/pixmaps/emblem-shared.png			    straw-viewer,youtube-viewer
 usr/share/pixmaps/emelfm2.png				    emelfm2
 usr/share/pixmaps/emelfm2/add_mark_bottom_48.png	    emelfm2
 usr/share/pixmaps/emelfm2/add_mark_top_48.png		    emelfm2
@@ -11062,7 +11062,7 @@ usr/share/pixmaps/google-drive-128.png			    googledrivegui2,googledrivegui
 usr/share/pixmaps/gtk-go-back.png			    youtube-get2
 usr/share/pixmaps/gtk-go-forward.png			    youtube-get2
 usr/share/pixmaps/gtk-info.png				    youtube-get2
-usr/share/pixmaps/gtk-youtube-viewer.png		    youtube-viewer,straw-viewer
+usr/share/pixmaps/gtk-youtube-viewer.png		    straw-viewer,youtube-viewer
 usr/share/pixmaps/hound1-r.png				    frisbee
 usr/share/pixmaps/hound1.png				    frisbee
 usr/share/pixmaps/hound2.png				    frisbee
@@ -11218,7 +11218,7 @@ usr/share/pixmaps/xhippo/stop.png			    xhippo
 usr/share/pixmaps/xlunch-logo.png			    xlunch
 usr/share/pixmaps/xvidcap.png				    xvidcap
 usr/share/pixmaps/yassm.png				    yassm
-usr/share/pixmaps/youtube.svg				    youtube-viewer,straw-viewer
+usr/share/pixmaps/youtube.svg				    straw-viewer,youtube-viewer
 usr/share/pixmaps/yt.png				    youtube-get2
 usr/share/pixmaps/ytt.png				    youtube-get2,youtube-get
 usr/share/pixmaps/yyt.png				    youtube-get2
