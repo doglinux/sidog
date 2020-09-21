@@ -2702,6 +2702,33 @@ SHA256: 8bdfee44956c703fdb027f2f9aa895a46fcb0605d91dfb8b9f7ba00b603124b7
 SHA512: da2cd2228f3f40a348ad406b7155360dc3df388e8d62842e45c4a62c3fba28defa8e33f14b7648a302126bc0f4f98883d327dc69182b5bc428302ba0acd14656
 Description: Mount images, savefile, modules
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.7.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ccrypt
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./peasywifi_4.7.0_amd64.deb
+Size: 16420
+MD5sum: 11dbd177ae7cff9cf6e41e511a978898
+SHA1: 11db026dbca612152c4ddda604a439663fcea891
+SHA256: 425deb68639c353a0d6680b36f9bcd9fd4758929a426fb234247a24eadad5522
+SHA512: 6996165b185619167cc853f87bfb37b905b8737d51bb98f5d8e98bc507bb94ddf3f61f90a6d4eab9de42f41abf2202fad00663cc865edc71530fad791d626113
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+ Changes in v4.7:
+ 1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
+ 2. There are improved instructions for setting up an alternate Ethernet interface like usb0
+
 Package: esound-common
 Architecture: all
 Version: 0.2.41-11
@@ -5894,6 +5921,36 @@ SHA256: 964abb26098a89614ee79798d886abe38ac2b11b90c24ab2a72e3b6421c4ae6b
 SHA512: 97704ad1713a033aa47edec79da016e6a7a751454fedcab006c40295cf083f0846ee5163c7dd6e85e900d97067580755471d56fddea134f17f8d07b9625cd8fc
 Description: Utilty for save file resizing.
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.5
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.5_all.deb
+Size: 159552
+MD5sum: 875c522e2b2f2301f747ef81d844207d
+SHA1: ae108407da67c4b90db9e7d9ffacdb38068a1388
+SHA256: 23a8ceafc016c2b9f4bcfd55d6df144770b6e0317ed3874a4226aa8368212569
+SHA512: 2b4d5158dcbbd621f5c05f9e05f293164802006d5f50317b29617d20772cb6f11929b028f1864d58ec0d86b3271e24a342cec60a96b4c13403df669e6db8f558
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded squashfs modules or not.
+ Version 1.2.5, fix in mkiso script, previously sometimes couldn't find frugal install path
+
 Package: flashplayerchoice
 Architecture: amd64
 Version: 1.0.4
@@ -5947,6 +6004,22 @@ SHA1: a035e2ea147019b09d9394d7ff3b70add19b77f6
 SHA256: f88b5e3d7ca7261cb275d9135f892ee5ce74449a184e1eb33d455639506776a6
 SHA512: 377e3060be40f9e847c64fe41cca13593b82a8bb733b09829b37382359156f24e9df2cbd9342d639b6005337ec97badd3f5dd1b3b9af63535592adb8640c6ff8
 Description: Manipulate PDF documents
+
+Package: locale-conf
+Architecture: all
+Version: 1.0.2-s
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 50
+Depends: libc6, httpfs2, yad
+Filename: ./locale-conf_1.0.2-s_all.deb
+Size: 16728
+MD5sum: 087c43c6c52da9d615cf95588e8eb9d4
+SHA1: eb2ef398104b12adcc45d7827b8dae09000b53bf
+SHA256: 2926f84b4b8bfec28fb64d840a26776d8d87a2bc979769d848f869e452b97d12
+SHA512: 472746bffcd801a972d6f570c609d58031e93282896cafc5b49be0fd42c78732e75f67dfec59892d5d2f8b37c2a454162dc6bf45beef8cb5bab015a2270e33d1
+Description: Set system locale
 
 Package: cputemp
 Architecture: amd64
