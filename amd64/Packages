@@ -2573,6 +2573,29 @@ SHA512: 66834c968129d71a26762d2bdcbfa08d4ed964e7e82a333e2dd5e81d24c0d18ba5e954c7
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
 
+Package: straw-viewer
+Architecture: all
+Version: 0.0.9-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python2, curl, libgtk3-perl,liblwp-protocol-https-perl,  wget
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./straw-viewer_0.0.9-1_all.deb
+Size: 237136
+MD5sum: 6ae3ca9e09a0c26eb1577f52e0db720a
+SHA1: b29cbc5e1f7271fb1c6f39d79fe9f7e831d65d4b
+SHA256: b09831659cdb2489df309757b3f6022d2f7a6efac8c7de3abe21ad34681c1bc9
+SHA512: ee401963399130433be77f6778197effacaa7b03fcbaf3cd3285cc4df6d1a6d9dc21b07f53bc98fc8a2d1e25b5b4716e1a690b1194c8b3c2d76e79824665373d
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
 Package: findnrun-doc
 Architecture: all
 Version: 1.10.6-1
