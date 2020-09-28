@@ -4127,6 +4127,21 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 
+Package: peasy-dvd-player
+Architecture: all
+Version: 1.7-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xterm, eject, gmplayer | gnome-mplayer-1.0.6, libdvdcss
+Filename: ./peasy-dvd-player_1.7-1_all.deb
+Size: 4896
+MD5sum: c4f3b3a3ac4714647b27bfabe7c748ed
+SHA1: 265fb2fc25e22e047bcd62660b35110d311aa874
+SHA256: 70ad96f220171e07c6e1ec655810ad3fe517e61dc236203b488f3d878d76b2e6
+SHA512: efa045e93456b24d04beb1955106bf5527dec8624e6a10774bc8a248b91d7c5a951333b43b29b4b892784d0629814a42533b498dea33d58bdd261f261e6fc040
+Description: DVD movie player and ripper
+
 Package: create-portable
 Architecture: amd64
 Version: 2.0.2
@@ -5177,6 +5192,21 @@ SHA256: 38952df97e1d8dbc3d99019c16acc456d36348cd21193934bf623d066f833b75
 SHA512: 4c784390c6a31a052466699e4043d7969114e3922cd6e41444164272a6e0253e1cd779f5df1695805ee9e145b46f8c8395bd02fd45fef1e411622470d5e67dad
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
+
+Package: libdvdcss
+Architecture: amd64
+Version: 1.4.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./libdvdcss_1.4.2_amd64.deb
+Size: 15512
+MD5sum: 33fe24549adbc4e8fdaa48b3932a55e4
+SHA1: dbcffc484c367f801a7d527815f71c976e0463b3
+SHA256: b406370b78f59bd8553e2e3bc71f38f777e5e2aa2c54772b9e887bc041c3fac8
+SHA512: 6b942c6efa8d95e77e1c0924549482f7e5971365616fb4cef55190ab452b6421c02c1e0f25dd1362efdb4aa467e4c971b827717a9db5af37b9da37cef6758b0c
+Description: DVD decryption library
+  compiled from source in Buster-Live-64bit
 
 Package: azpainter
 Architecture: amd64
