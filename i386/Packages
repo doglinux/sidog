@@ -152,6 +152,22 @@ Description: Video Acceleration (VA) API for Linux -- runtime
  .
  This package provides the main libva library.
 
+Package: peasy-dvd-player
+Architecture: all
+Version: 1.7-4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xterm, eject, libdvdcss, vamps
+Filename: ./peasy-dvd-player_1.7-4_all.deb
+Size: 5312
+MD5sum: 4f2651115cc0d45c9d0bf24919811d10
+SHA1: 6d167ff80912498cbced9bf5e4739235b0ba87c2
+SHA256: d97ea877b7ba77b679d92fb6dea72bfd23c62157ed25e5a9101278f0810b5de5
+SHA512: 7f0751f479466ae5919c46167780321d48c9a2092c0f3fdaa90d26bed0cf511883764eba7675dc82f76d75c1ebcac71df2f0a79dd0e11741db478567e79eeff9
+Description: DVD movie player and ripper
+  Install mplayer separately
+
 Package: dmmediaconverter
 Architecture: i386
 Version: 1.0.0
@@ -6448,25 +6464,6 @@ SHA256: f3b63bbe6c55eb2efce18ff799f765788122cd217f2ad902bc196226370e9328
 SHA512: 4d537f80be7ad8f240b2b92fd0b693fa1664b50a2b11a5dcf333751ea71f86704c0332ad5176c021c2c8fc7ce0b70cfc32c6960cdc08d3904c610496acb1bb9f
 Description: xhippo-converted-pet-to-deb
 
-Package: samba-tng-rcrsn-0.5-rc1-debdog
-Architecture: i386
-Version: 0.5-rc2
-Priority: optional
-Section: net
-Source: samba
-Maintainer: root
-Installed-Size: 5300
-Depends: libc6, gtkdialog, libreadline6, libncurses5, adduser, gsu
-Recommends: libc6-i686
-Conflicts: samba4-clients, smbclient, samba
-Filename: ./samba-tng-rcrsn-0.5-rc1-debdog_0.5-rc2_i386.deb
-Size: 709776
-MD5sum: 86ab5aa23c8a473b07c47e4f6e60b547
-SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
-SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
-SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
-Description: SMB/CIFS clients for Unix
-
 Package: findnrun-nls
 Architecture: all
 Version: 1.10.6-1
@@ -6888,21 +6885,6 @@ SHA256: f59d65b56687d06fbdb598e18ee7afbe0aa2506e4c506f84e537b35fe3cb194f
 SHA512: a851b29a5d475351324f6e3f2da2f3c0412b662bb846f974a30a2de98503e467ecdbe44d00e8e7909fad2b7702e094c960b2439ac7271dd57d9e8723512404ba
 Description: Install kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
-
-Package: samba4-control
-Architecture: all
-Version: 2.2
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: gtkdialog
-Filename: ./samba4-control_2.2_all.deb
-Size: 6292
-MD5sum: 595c32e60ce6ec9cb2d95b4156f92637
-SHA1: 61771d627b0d534b6e9c92378c163499a7de15e3
-SHA256: f9f8e42696753cddc44a58cb1b3eb2c76574c99d3b10cdbfa839b943559310cb
-SHA512: 92d6d0de4bf048800add8414342abfc1992399c35b39cb20a970aea52716ffcb0d7349ba8fc684a43ddda0c855fb854750ad2119cdd342570c388cf316328a59
-Description: Samba server control panel
 
 Package: isotools
 Architecture: all
