@@ -2130,6 +2130,37 @@ SHA256: be68830a685ee894778998062c5547a3f0870a00cf7f8148f462cf930d3238e3
 SHA512: 1d960bcedc328a55b1c51e529d69a2cf8454278f736db468758d9e74edffc5dd54af688cbe56162651a8309ff5006925b3f3c22402e7fba7c18d60f8dfa446fb
 Description: Manage encrypted save file utility.
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.6
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.6_all.deb
+Size: 159646
+MD5sum: a301e585a9f50edd96943ecc3760ca63
+SHA1: 974b7feb79dfd9df4094889f2a824fb3e291f845
+SHA256: 6e666e1bfd80f61771c25fb39c75816f3ca44514d3fa953a92de2b6e3cac16a9
+SHA512: d180187b63c27cdf209f8a9dd672ed84a4fe630e37d94a90c82efabe8fb0e883ececa36e7ce5a501acd20299b4dbe5d49f7ead93fedfdd062ed6d4c3315b91cd
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now 
+ Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
+
 Package: xinit
 Architecture: i386
 Version: 1.3.4-1
