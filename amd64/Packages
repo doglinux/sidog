@@ -537,6 +537,27 @@ Description: Conky-clock v2 Luxe edition, choose analog clock display on the Des
  Choice from 300 clock images with the appropriate hands
  Option to display the date on the clock
 
+Package: fdkaac
+Architecture: amd64
+Version: 0.6.2-dmo2
+Priority: optional
+Section: sound
+Source: fdkaac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 131
+Depends: libc6 (>= 2.14), libfdk-aac1 (>= 1:0.1.4)
+Filename: ./fdkaac_0.6.2-dmo2_amd64.deb
+Size: 41228
+MD5sum: 3b338a76e155c10fd5bc89a4ead873f8
+SHA1: 110938b9e923006d76a9c189366e60d71d637179
+SHA256: 850ab9e7e066c36084c0a0653b00d869c17e933c8bc1f45114af421b377fda6e
+SHA512: b119b8a28f788dfd90c60e259ea34f7c23a344609aab07bcc401359bc318d771a1e035ffafac9052403bb5b6fc920a59a9f45e80647004be8526ccf0f19448bf
+Homepage: https://github.com/nu774/fdkaac
+Description: command line encoder frontend for libfdk-aac
+ Command line encoder frontend for libfdk-aac with more options than aac-enc
+ from libfdk-aac.
+
 Package: straw-viewer
 Architecture: all
 Version: 0.0.9
@@ -1678,6 +1699,29 @@ Description: user, seat and session management library
  other functions returning -ENOSYS and sd-hwdb(3) contains stubs returning
  -ENOSYS.
 
+Package: libfdk-aac1
+Architecture: amd64
+Version: 1:0.1.4-dmo1
+Multi-Arch: same
+Priority: extra
+Section: libs
+Source: fdk-aac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 762
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14)
+Filename: ./libfdk-aac1_0.1.4-dmo1_amd64.deb
+Size: 350218
+MD5sum: ecb3c117fe6b866362b8c6e76b742b29
+SHA1: 0856b68b68df70516b90cc1eec2586b1d66f8c27
+SHA256: c0f205359d06d78a180fd5bef2e744fec591cbc3b3c5c4b7238bb740924c3526
+SHA512: 2e26aea7480d6414453b3cecb808cba22360daa7cca2e645fb8a90af36726ea53884be8e03345ca45f45f5b37ca57bdd098e60a35bfe9bbcdd6c682e8d577817
+Homepage: http://www.iis.fraunhofer.de/en/bf/amm/implementierungen/fdkaaccodec.html
+Description: Fraunhofer FDK AAC codec library.
+ Fraunhofer IIS software implementations of the open ISO MPEG audio codecs
+ AAC, HE-AAC, HE-AACv2 and AAC-ELD.
+
 Package: locale-conf
 Architecture: all
 Version: 1.0.0-s
@@ -2540,6 +2584,29 @@ SHA512: be02f3b11ce5da79cbf777aa84dbe188679e1b6de9cc3ec6877eb3a8bef3786e258aabf8
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
+
+Package: youtube-get2
+Architecture: all
+Version: 0.2.2
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.2_all.deb
+Size: 1704146
+MD5sum: 7b06b78099636ab800f4e791a922d0ec
+SHA1: 8a4b36cc6b615b072a175d8e1b405eaf91b27367
+SHA256: f65e1f6ef88d6b8f084b263eb35d247fb0c48dee690829015c052fa35fad5410
+SHA512: a76f4e5ab1c90dea1a37f65846e9929deac0df13ee90f5dc7637eaacbf49731685ae803225c8e15ee9fb3216017cea92030012b131c7668d1c7b26a3b629f41e
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - v0.2.1 Speedup waiting time for downloads to be started
 
 Package: porteusbootscripts
 Architecture: all
@@ -4713,6 +4780,39 @@ Description: library for GIF images (library)
  .
  This package contains the library.
 
+Package: monkeys-audio
+Architecture: amd64
+Version: 4.11-u4-b5-s7-dmo1
+Priority: optional
+Section: sound
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 51
+Depends: libc6 (>= 2.3.4), libgcc1 (>= 1:4.1.1), libmac2, libstdc++6 (>= 4.1.1)
+Filename: ./monkeys-audio_4.11-u4-b5-s7-dmo1_amd64.deb
+Size: 12384
+MD5sum: 1066ea0690fa67aac429e13adee0c873
+SHA1: 8560e1c0841fcba7454e968444eb2b033fb5a898
+SHA256: a0913bf5e2211a87146745b1cf3c24f12439cc043aaa333cc8f3f0053d57f81e
+SHA512: 9b8833b28e5cf6ab56ed0cdd83a0894fd0b259de2480c919e2e6aa6b5c9fb190a3420baec00fce085ebf981d71fe89f22e876a9d8dd8529788e4743062249a7a
+Description: monkey's audio lossless audio codec - binary
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+ .
+ Support for file format before 3.99 has been removed. If you have old files
+ use the mac-old binary from the monkeys-audio-old package (support for all
+ files before 3.99) or ffmpeg 2.0 (support from 3.93 to 4.11).
+
 Package: move-in-crypt
 Architecture: all
 Version: 1.0.1
@@ -5075,6 +5175,51 @@ SHA512: e9e39786fb9479ee2255d94ea7c9c4d8a24910384212311ee641e50481924a90ddb6d165
 Description: libudev shared library
  This library provides access to udev device information.
 
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.5
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./my-squash-loader_1.5_amd64.deb
+Size: 6672
+MD5sum: aa3a728bd6a2bfff5420d679b1963594
+SHA1: c03396df83b423c5b6df27414cfa77318d94b845
+SHA256: 186c1d3737336f9a399f3015d190caec99e3de7648f167ff195cadba138acfc1
+SHA512: 1dbefd9c53020f9417c06a961a00a5274c5d89ef9f4adabd3b9503eb1efb2337e097ddacc18ffad37ac4f8ea07f669760247821b3af8beb45a890bc60d4555df
+Description: Load squashfs modules on-the-fly
+
+Package: libmac2
+Architecture: amd64
+Version: 4.11-u4-b5-s7-dmo1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: monkeys-audio
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 188
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Filename: ./libmac2_4.11-u4-b5-s7-dmo1_amd64.deb
+Size: 60544
+MD5sum: ea254cb8fcd1de29385974fdeffc5e02
+SHA1: 061ff6dae77213a8a01380e718847a5af8171dd3
+SHA256: 5aa2b8c6636f98117f27a23dd38695bc6caeb8863f1a36365a745039f6ccebff
+SHA512: 2cf27ba60b6b8b5f6c8c7afc1c18be4dd22b690fc17c1fc197c787b73180b3f42c9dd1a5503e4147e3be4e72f665841db4209d75dbffa19134077fff554661ed
+Description: monkey's audio lossless audio codec - library
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+
 Package: SaveFolderBackup
 Architecture: all
 Version: 1.2-1
@@ -5199,6 +5344,33 @@ Description: shared files for other gFTP packages
    * stop button, and many more features.
  .
   Author:   Brian Masney <masneyb@gftp.org>
+
+Package: youtube-get3
+Architecture: all
+Version: 1.3.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.3.0_all.deb
+Size: 1732424
+MD5sum: 45b3a9b7940f8eced754b3fdcf9d1b5d
+SHA1: fd8138f29fa59dabc78eff5be15c09c83b81cd94
+SHA256: 930df46e0017066b683d3ea98e5eb65e0e2121331edc2160fdb715fa92483475
+SHA512: d8a6ef3c1d6f2e329fd917ea298c8fba66569eb4ad6c7fedc9e3bdd6b6193ea04e5fa186d1c5991d9682378691b64c8cb5b2329a7b7014628c2298ee6598da01
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button
 
 Package: peasypartview
 Architecture: all

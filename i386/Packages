@@ -2646,6 +2646,29 @@ SHA256: a85f617aae83c2903bea6b7c811e915ed2eb7bd5a1a8fa095dbb8c5d401340bd
 SHA512: 12785dbd777215b3c14efba50222cfd94c1cd5ece14cf51261ec91c33be3844f8aa949fce250bfefd9b8e18aa7bc407086fe6f5a22dbf1fb3e737f83d9976c97
 Description: graphic-utility
 
+Package: youtube-get2
+Architecture: all
+Version: 0.2.2
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get
+Filename: ./youtube-get2_0.2.2_all.deb
+Size: 1704146
+MD5sum: 7b06b78099636ab800f4e791a922d0ec
+SHA1: 8a4b36cc6b615b072a175d8e1b405eaf91b27367
+SHA256: f65e1f6ef88d6b8f084b263eb35d247fb0c48dee690829015c052fa35fad5410
+SHA512: a76f4e5ab1c90dea1a37f65846e9929deac0df13ee90f5dc7637eaacbf49731685ae803225c8e15ee9fb3216017cea92030012b131c7668d1c7b26a3b629f41e
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - v0.2.1 Speedup waiting time for downloads to be started
+
 Package: filemnt-thunar
 Architecture: i386
 Version: 1.0.1
@@ -5487,6 +5510,33 @@ SHA256: 11c708a3a3587c872c531f15d8cac4091df4f957e68f90b5616b51c6f1465b55
 SHA512: f330fdc98d44b0582e658d9cd98d3296c9f843266a2bf75ee418ff93db5940e5eb10fd293390a14944aaea0c8870569b1f21d38255672b461e5acf1dad4036b2
 Description: Create portable AppImage v2.0
 
+Package: youtube-get3
+Architecture: all
+Version: 1.3.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python2.7, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./youtube-get3_1.3.0_all.deb
+Size: 1732424
+MD5sum: 45b3a9b7940f8eced754b3fdcf9d1b5d
+SHA1: fd8138f29fa59dabc78eff5be15c09c83b81cd94
+SHA256: 930df46e0017066b683d3ea98e5eb65e0e2121331edc2160fdb715fa92483475
+SHA512: d8a6ef3c1d6f2e329fd917ea298c8fba66569eb4ad6c7fedc9e3bdd6b6193ea04e5fa186d1c5991d9682378691b64c8cb5b2329a7b7014628c2298ee6598da01
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button
+
 Package: peasypartview
 Architecture: all
 Version: 1.1-3
@@ -5836,6 +5886,37 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - Latest version from Adobe (= 16 Mb uncompressed)
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 18 Mb uncompressed)
 
+Package: libmac2
+Architecture: i386
+Version: 4.11-u4-b5-s7-dmo3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: monkeys-audio
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 169
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Filename: ./libmac2_4.11-u4-b5-s7-dmo3_i386.deb
+Size: 65952
+MD5sum: 744aa828eb6786b52a6d093929263ddf
+SHA1: 41d7db9742407a961adf9dd25fb91ce2e14c4151
+SHA256: 6d489fd4f5c522e0e02829d1a5a08d9a72f79d9766128b1bf165669d4da28b17
+SHA512: 9aff66fd1ac7c8de54968edeb7aa3a0910246d0ba5da6a27cb1a272ddc0071e5883a99d004d51c3b30257b7827ec439f4c45f7b8d53f66f1b5405db5f450f2cd
+Description: monkey's audio lossless audio codec - library
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+
 Package: sound-card-selector
 Architecture: all
 Version: 1.4
@@ -5926,6 +6007,39 @@ Description: Perl interface to the 2.x series of the Gimp Toolkit library
  Offering a complete set of widgets, the Gtk+ is suitable for projects ranging
  from small one-off tools to complete application suites. Find out more about
  Gtk+ at http://www.gtk.org.
+
+Package: monkeys-audio
+Architecture: i386
+Version: 4.11-u4-b5-s7-dmo3
+Priority: optional
+Section: sound
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 32
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.0), libmac2, libstdc++6 (>= 5)
+Filename: ./monkeys-audio_4.11-u4-b5-s7-dmo3_i386.deb
+Size: 12976
+MD5sum: 59944388b528f77c34aae7c121fa0658
+SHA1: 6128d1c59cb55994486cd0f52873025d405b6016
+SHA256: 9b045b242917504d262809d0ec4a27c9a997cda179a134c76e1b9260493ab8a5
+SHA512: eb810391988d960a9097562cfb17f175c7efd52cc854615497bc501b4cb94a9a2eabd3510063820fb8751c275ceb06ca00e28dc6bd5ea60a28e183b616195de0
+Description: monkey's audio lossless audio codec - binary
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+ .
+ Support for file format before 3.99 has been removed. If you have old files
+ use the mac-old binary from the monkeys-audio-old package (support for all
+ files before 3.99) or ffmpeg 2.0 (support from 3.93 to 4.11).
 
 Package: yad
 Architecture: i386
@@ -6090,6 +6204,28 @@ SHA1: 2ac2e934292b5a2d5ca88b42c20632e427411308
 SHA256: b7848cdfc14c385676ebfa5bf6200298cfe356e5cb4f02b559f750f79aa36dd8
 SHA512: 6f1282ba2ceb2b801c5e0a12c75a71bcef90590221a334aaa8aff391b191996e10e6ae370c83ab05082f8d3b8e061af263ea55ae4cc7e6769450d3636a06b7fb
 Description: CPU temperature monitor
+
+Package: libfdk-aac2
+Architecture: i386
+Version: 1:2.0.1-dmo1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: fdk-aac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 1421
+Depends: libc6 (>= 2.4)
+Filename: ./libfdk-aac2_2.0.1-dmo1_i386.deb
+Size: 633136
+MD5sum: f32fe4a736ff87671596b6bc148f0633
+SHA1: eaf6a305df3a97f76ce63960687027c8134dae32
+SHA256: 2949c11930e2d41675e55b47b28a61eab9c6d1e0f514021aa09878b39b2c2535
+SHA512: 40842b34d7cfbfa1cc2180ea28784a3006b37f66190d3df22810edc5167b2aa86b19f5061d670b4052e5a78ee44d0ffe2df9dab2da4f7252f8532864262fd936
+Homepage: http://www.iis.fraunhofer.de/en/bf/amm/implementierungen/fdkaaccodec.html
+Description: Fraunhofer FDK AAC codec library.
+ Fraunhofer IIS software implementations of the open ISO MPEG audio codecs
+ AAC, HE-AAC, HE-AACv2 and AAC-ELD.
 
 Package: master-pdf-editor
 Architecture: i386
@@ -7795,6 +7931,27 @@ SHA1: 93d2aa6ffd897672c605e78e92f34e1bc3910e89
 SHA256: e6e797aa81148805a557f56f6c3a6b9898a305914eb0fc5aec6aca90a6957b1e
 SHA512: c49b643c3c5f2ce317593ceb7caaab3b273395643d5c51646cd928ab5d5798b6ae1abc6e9ee50ef10150665652d072fdd62824ea43abda191a59cae84e64b4cc
 Description: Bluetooth manager and audio playeer
+
+Package: fdkaac
+Architecture: i386
+Version: 1:1.0.1-dmo1
+Priority: optional
+Section: sound
+Source: fdkaac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 114
+Depends: libc6 (>= 2.7), libfdk-aac2 (>= 1:2.0.1)
+Filename: ./fdkaac_1.0.1-dmo1_i386.deb
+Size: 45488
+MD5sum: 8758f5628b8821be58289d9f8d650e32
+SHA1: 83611befac7bc08a3b25279e615b3ee1345a42de
+SHA256: fca4d00f2e307163013e81dad32d5df688e210706fd6ba82b18a81eff4420a59
+SHA512: 66b418f3bbd8bf0ead8f3bad2bb3d057d43107e60490a30fcba210b48099f994c36f4e0aa9525e1d41900fa008f6aaeb8f5d7f98643613c2618dcdaee0924797
+Homepage: https://github.com/nu774/fdkaac
+Description: command line encoder frontend for libfdk-aac
+ Command line encoder frontend for libfdk-aac with more options than aac-enc
+ from libfdk-aac.
 
 Package: run-as-user
 Architecture: i386

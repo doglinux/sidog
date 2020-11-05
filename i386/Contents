@@ -876,6 +876,7 @@ usr/bin/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/bin/emelfm2						    emelfm2
 usr/bin/empty						    empty-expect
 usr/bin/epdfview					    epdfview
+usr/bin/fdkaac						    fdkaac
 usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
 usr/bin/ffmpeg						    ffmpeg
@@ -922,6 +923,7 @@ usr/bin/lumina-open					    lumina-desktop-debdog
 usr/bin/lumina-screenshot				    lumina-desktop-debdog
 usr/bin/lumina-search					    lumina-desktop-debdog
 usr/bin/lumina-xconfig					    lumina-desktop-debdog
+usr/bin/mac						    monkeys-audio
 usr/bin/madedit						    madedit
 usr/bin/masterpdfeditor4				    master-pdf-editor
 usr/bin/md2html-gui					    md2html
@@ -1330,6 +1332,8 @@ usr/lib/i386-linux-gnu/libesd.so.0			    libesd0
 usr/lib/i386-linux-gnu/libesd.so.0.2.39			    libesd0
 usr/lib/i386-linux-gnu/libevent-2.0.so.5		    libevent-2.0-5
 usr/lib/i386-linux-gnu/libevent-2.0.so.5.1.9		    libevent-2.0-5
+usr/lib/i386-linux-gnu/libfdk-aac.so.2			    libfdk-aac2
+usr/lib/i386-linux-gnu/libfdk-aac.so.2.0.1		    libfdk-aac2
 usr/lib/i386-linux-gnu/libfusion-1.2.so.9		    libdirectfb-1.2-9
 usr/lib/i386-linux-gnu/libfusion-1.2.so.9.0.1		    libdirectfb-1.2-9
 usr/lib/i386-linux-gnu/libgnome-keyring.so.0		    libgnome-keyring0
@@ -1348,6 +1352,8 @@ usr/lib/i386-linux-gnu/libhunspell-1.4.so.0		    libhunspell-1.4-0
 usr/lib/i386-linux-gnu/libhunspell-1.4.so.0.0.0		    libhunspell-1.4-0
 usr/lib/i386-linux-gnu/libjpeg.so.8			    libjpeg8
 usr/lib/i386-linux-gnu/libjpeg.so.8.4.0			    libjpeg8
+usr/lib/i386-linux-gnu/libmac.so.2			    libmac2
+usr/lib/i386-linux-gnu/libmac.so.2.0.0			    libmac2
 usr/lib/i386-linux-gnu/libnettle.so.4			    libnettle4
 usr/lib/i386-linux-gnu/libnettle.so.4.7			    libnettle4
 usr/lib/i386-linux-gnu/libnl.so.1			    libnl1
@@ -2193,9 +2199,11 @@ usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
+usr/local/bin/youtube-dlc				    youtube-get3
 usr/local/bin/youtube-get				    youtube-get
 usr/local/bin/youtube-get-xterm				    youtube-get
 usr/local/bin/youtube-get2				    youtube-get2
+usr/local/bin/youtube-get3				    youtube-get3
 usr/local/bin/yradio					    yradio
 usr/local/bin/zenity					    zenity-portable
 usr/local/conky-clock/Analog_clock/choice.sh		    conkyclock
@@ -4833,6 +4841,15 @@ usr/local/youtube-get2/icons/yt-playlist.pngg		    youtube-get2
 usr/local/youtube-get2/icons/yt-search.png		    youtube-get2
 usr/local/youtube-get2/icons/yt-url.png			    youtube-get2
 usr/local/youtube-get2/icons/yt-user.png		    youtube-get2
+usr/local/youtube-get3/1url.desktop			    youtube-get3
+usr/local/youtube-get3/2playlist.desktop		    youtube-get3
+usr/local/youtube-get3/3ytuser.desktop			    youtube-get3
+usr/local/youtube-get3/4search.desktop			    youtube-get3
+usr/local/youtube-get3/icons/yt-playlist.png		    youtube-get3
+usr/local/youtube-get3/icons/yt-playlist.pngg		    youtube-get3
+usr/local/youtube-get3/icons/yt-search.png		    youtube-get3
+usr/local/youtube-get3/icons/yt-url.png			    youtube-get3
+usr/local/youtube-get3/icons/yt-user.png		    youtube-get3
 usr/local/yradio/icons/edit.png				    yradio
 usr/local/yradio/icons/fav.png				    yradio
 usr/local/yradio/icons/gtk-help.png			    yradio
@@ -5506,6 +5523,7 @@ usr/share/applications/YRadio.desktop			    yradio
 usr/share/applications/Yalarm Alarm scheduler.desktop	    yalarm
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
+usr/share/applications/YouTube-Get3.desktop		    youtube-get3
 usr/share/applications/abiword-portable.desktop		    abiword-portable
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
@@ -5993,6 +6011,9 @@ usr/share/doc/eudev/README.Debian.gz			    eudev
 usr/share/doc/eudev/changelog.Debian.gz			    eudev
 usr/share/doc/eudev/changelog.gz			    eudev
 usr/share/doc/eudev/copyright				    eudev
+usr/share/doc/fdkaac/changelog.Debian.gz		    fdkaac
+usr/share/doc/fdkaac/changelog.gz			    fdkaac
+usr/share/doc/fdkaac/copyright				    fdkaac
 usr/share/doc/findnrun/CREDITS.md			    findnrun
 usr/share/doc/findnrun/LICENSE.md			    findnrun
 usr/share/doc/findnrun/LUBUNTU.md			    findnrun
@@ -6069,6 +6090,9 @@ usr/share/doc/libeudev1/copyright			    libeudev1
 usr/share/doc/libevent-2.0-5/changelog.Debian.gz	    libevent-2.0-5
 usr/share/doc/libevent-2.0-5/changelog.gz		    libevent-2.0-5
 usr/share/doc/libevent-2.0-5/copyright			    libevent-2.0-5
+usr/share/doc/libfdk-aac2/changelog.Debian.gz		    libfdk-aac2
+usr/share/doc/libfdk-aac2/changelog.gz			    libfdk-aac2
+usr/share/doc/libfdk-aac2/copyright			    libfdk-aac2
 usr/share/doc/libgnome-keyring-common/AUTHORS		    libgnome-keyring-common
 usr/share/doc/libgnome-keyring-common/NEWS.gz		    libgnome-keyring-common
 usr/share/doc/libgnome-keyring-common/README		    libgnome-keyring-common
@@ -6115,6 +6139,13 @@ usr/share/doc/libjpeg8/README.gz			    libjpeg8
 usr/share/doc/libjpeg8/changelog.Debian.gz		    libjpeg8
 usr/share/doc/libjpeg8/changelog.gz			    libjpeg8
 usr/share/doc/libjpeg8/copyright			    libjpeg8
+usr/share/doc/libmac2/AUTHORS				    libmac2
+usr/share/doc/libmac2/NEWS.gz				    libmac2
+usr/share/doc/libmac2/README				    libmac2
+usr/share/doc/libmac2/TODO				    libmac2
+usr/share/doc/libmac2/changelog.Debian.gz		    libmac2
+usr/share/doc/libmac2/changelog.gz			    libmac2
+usr/share/doc/libmac2/copyright				    libmac2
 usr/share/doc/libmusicbrainz3-6/AUTHORS.txt		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/NEWS.txt.gz		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/README.txt		    libmusicbrainz3-6
@@ -6216,6 +6247,13 @@ usr/share/doc/lumina/ROADMAP				    lumina-desktop-debdog
 usr/share/doc/madedit/changelog.Debian.gz		    madedit
 usr/share/doc/madedit/changelog.gz			    madedit
 usr/share/doc/madedit/copyright				    madedit
+usr/share/doc/monkeys-audio/AUTHORS			    monkeys-audio
+usr/share/doc/monkeys-audio/NEWS.gz			    monkeys-audio
+usr/share/doc/monkeys-audio/README			    monkeys-audio
+usr/share/doc/monkeys-audio/TODO			    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.Debian.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/copyright			    monkeys-audio
 usr/share/doc/multiarch-support/changelog.Debian.gz	    multiarch-support
 usr/share/doc/multiarch-support/changelog.gz		    multiarch-support
 usr/share/doc/multiarch-support/copyright		    multiarch-support
@@ -9468,6 +9506,7 @@ usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/empty.1.gz				    empty-expect
 usr/share/man/man1/epdfview.1.gz			    epdfview
+usr/share/man/man1/fdkaac.1.gz				    fdkaac
 usr/share/man/man1/firefox-esr.1.gz			    firefox-esr
 usr/share/man/man1/gdm-control.1.gz			    openbox
 usr/share/man/man1/httpfs2.1.gz				    httpfs2
@@ -9862,7 +9901,7 @@ usr/share/pixmaps/dillo.xpm				    dillo
 usr/share/pixmaps/dirs.png				    jwmconf,jwm-setup
 usr/share/pixmaps/disc.png				    mount-wizard
 usr/share/pixmaps/disc2.png				    mount-wizard-2
-usr/share/pixmaps/dload.png				    youtube-get2
+usr/share/pixmaps/dload.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/dmmediaconverter.png			    dmmediaconverter
 usr/share/pixmaps/drive.png				    mount-wizard
 usr/share/pixmaps/drive2.png				    mount-wizard-2
@@ -10007,13 +10046,13 @@ usr/share/pixmaps/gif-file.png				    gifondesktop
 usr/share/pixmaps/gifencc.png				    gifenc
 usr/share/pixmaps/gnetcat.png				    gnetcat
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
-usr/share/pixmaps/go-next.png				    youtube-get2
-usr/share/pixmaps/go-previous.png			    youtube-get2
+usr/share/pixmaps/go-next.png				    youtube-get2,youtube-get3
+usr/share/pixmaps/go-previous.png			    youtube-get2,youtube-get3
 usr/share/pixmaps/google-drive-128.png			    googledrivegui,googledrivegui2
 usr/share/pixmaps/gtk-about.png				    sns
-usr/share/pixmaps/gtk-go-back.png			    youtube-get2
-usr/share/pixmaps/gtk-go-forward.png			    youtube-get2
-usr/share/pixmaps/gtk-info.png				    youtube-get2
+usr/share/pixmaps/gtk-go-back.png			    youtube-get2,youtube-get3
+usr/share/pixmaps/gtk-go-forward.png			    youtube-get2,youtube-get3
+usr/share/pixmaps/gtk-info.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/gtk-network.png			    sns
 usr/share/pixmaps/gtk-youtube-viewer.png		    straw-viewer,youtube-viewer
 usr/share/pixmaps/help-about.png			    sns
@@ -10051,7 +10090,7 @@ usr/share/pixmaps/mk-initrd.png				    upgrade-kernel
 usr/share/pixmaps/mkinitrd.png				    upgrade-kernel
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
-usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get
+usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get,youtube-get3
 usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/netmon_wce/cell1_0.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_1.svg		    frisbee
@@ -10221,10 +10260,10 @@ usr/share/pixmaps/xlunch-logo.png			    xlunch
 usr/share/pixmaps/xvidcap.png				    xvidcap
 usr/share/pixmaps/yassm.png				    yassm,yassm-smbclient-mpscan
 usr/share/pixmaps/youtube.svg				    straw-viewer,youtube-viewer
-usr/share/pixmaps/yt.png				    youtube-get2
+usr/share/pixmaps/yt.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/ytb.png				    youtube-get
-usr/share/pixmaps/ytt.png				    youtube-get2
-usr/share/pixmaps/yyt.png				    youtube-get2
+usr/share/pixmaps/ytt.png				    youtube-get2,youtube-get3
+usr/share/pixmaps/yyt.png				    youtube-get2,youtube-get3
 usr/share/pkgconfig/adwaita-icon-theme.pc		    adwaita-icon-theme
 usr/share/pkgconfig/udev.pc				    eudev
 usr/share/polkit-1/actions/com.ubuntu.pkexec.synaptic.policy synaptic
