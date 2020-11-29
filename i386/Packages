@@ -88,6 +88,30 @@ Description: Warning - This package works only in XenialDog! Fix: Force being us
  - Output from apt-get through xterm (instead using yad in previous versions)
  Fix in v 1.1.0: skip symlinks while cleaning man and doc files
 
+Package: apt2sfs
+Architecture: i386
+Version: 1.1.3
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 72
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./apt2sfs_1.1.3_i386.deb
+Size: 9872
+MD5sum: 433f51579c08faad60c243bc3ef81691
+SHA1: ce09aa8ed614390ffea7452d84994b0d49f18027
+SHA256: 7c912376b40fd6bb224331c3b94a8295032c5bee714dd9e7c78ea66c766ecc83
+SHA512: ddd79905617845df7c6ac73e88f1ebd192130f2adb062b4bb6e65ed8cd52d65506c1a5583503ac29bf4ac8ad1a986e9863be914bab8f00f1944032be810d4d6b
+Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+ - Choice dialog now for compression algorthim: xz, gz or lz4
+ - Output from apt-get through xterm (instead using yad in previous versions)
+ Fix in v 1.1.0: skip symlinks while cleaning man and doc files
+
 Package: apulse
 Architecture: i386
 Version: 20171016-1
@@ -793,6 +817,20 @@ MD5sum: 2569a023a520c464bd01d036618c143b
 SHA1: 8ea9cdcfc6b8c45235bc6447243302f8948c7129
 SHA256: 09fd5431e4780103c3150d474a436d9dcf2ef949dcf6edf394b953a6f47fc37a
 SHA512: 36802a5091c8e9cf433ef9f3b87b54c32f6f23cd7c335d9dc85bb5dc13e676aa770818fda833f7462a59f20db1dc099a1e03c8b41aee0d1731487986348121dd
+Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
+
+Package: debdoginstallscripts
+Architecture: i386
+Version: 1.1.4
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./debdoginstallscripts_1.1.4_i386.deb
+Size: 435712
+MD5sum: 3c1328f1401f5fb30cc317b753bdfdf4
+SHA1: 69857db82fc832e2d75923ad605f6044f3bae646
+SHA256: 8d7dcc95eda897b40f11507faaee952cfc3ba6ea1cb6c255b79c0c1ea2423968
+SHA512: fdcf32c0c9a73e7cb1a40103fc9538ab1223144e6bcc700c4fcca7dfa525df39e08fc0aca0e96fa7fac98c6d693d27649b979faa1a69d078c5131f5400d1c610
 Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: debdogmountscripts
@@ -5838,6 +5876,25 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  This is on purpose because the scrips are essential for porteus-boot to work
  Bug fix: set the correct permissions for /tmp (save2flash script)
 
+Package: porteusbootscripts
+Architecture: all
+Version: 0.0.8
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
+Filename: ./porteusbootscripts_0.0.8_all.deb
+Size: 19404
+MD5sum: e957a7289d013a89384fe5580157b0e5
+SHA1: caed406fae0ca21923083927aae06279b509822a
+SHA256: af7e82ecd8ee43bd5c0977a6b659c41d12ab3806c9f33f3f8d641dc5c330d3f7
+SHA512: e1f079435d92d3c63c39b4941373467b990ddaf3933fd1cb59aa1f0603127ccc73d6d63e1515e792ab56d18ae5b240bdd8c4e2edeb5bc60d798347336635c2cc
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ Bug fix: set the correct permissions for /tmp (save2flash script)
+
 Package: probepart
 Architecture: i386
 Version: 1.0.1
@@ -6132,11 +6189,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 336
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
 Filename: ./quick-remaster_1.2.7_all.deb
-Size: 159728
-MD5sum: 16ff734f84362ed698d118ee48cd91b5
-SHA1: b7255a7fbce730ef144b4cb116cfdb64fd3a1348
-SHA256: 0310f0ac923467c871f27454073da5210c68ff933f54c672f8dcf8fa94d8773e
-SHA512: 1fe000c869973bcc018cd3e1d7d6f20972643cd783aeb4e790fc3149546934c0fb4de78242e3be4f4cb904e29ccc084eb835cd8766ef68b83ca3af49af97f988
+Size: 159760
+MD5sum: f7a5d4ff66bfa0dab4e0a4f431eaee5b
+SHA1: 8024e13d491f420a8124eccfbf37b031153d4c61
+SHA256: 4b0feb0080ff00817b19b56ceeaac9ab2434fb0071c8d7fdbff8a0371ecc7a46
+SHA512: 6e1bcf4d058032764ead4bd500e0ce7cc62f2f884475c8b6f038100a5231a4c9a1fbffaf9c2df8d348d317a92945f04eff55d2be8bda470ee95814491027cc52
 Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
  Included GUI version using yad: quick-remastergui
  Bug fix: gz compression option not working in previous version 1.0.3
@@ -6204,14 +6261,14 @@ Architecture: all
 Version: 1.0.6
 Maintainer: fredx181 dog@root.nl
 Installed-Size: 57
-Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, menu
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
 Filename: ./remaster-scripts_1.0.6_all.deb
-Size: 8842
-MD5sum: 7b7d140f947d36348a1863f9c1a6d04b
-SHA1: dd8daf9543a5c9aaa843f41900f96fd4eabab6f7
-SHA256: 2bcf9045752f4aec7a58934944a33a2e6b3b45dd387adbd7190a7db2b50e738e
-SHA512: 6b13edf15fac31e3194162d622586abb0c3f209ab9e12b7761c4dc79b09d11409bf2f4c309eaa5a863193d9d02ee5eb10573450cb2ca543ab6367863a236c667
-Description: Warning - This package works only in DDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
+Size: 8044
+MD5sum: 122f86a9bf1e8a8c6c7b9c7b8e52d42e
+SHA1: d94a324a0d82e7a48059eebc9e68a0dfe0e13a77
+SHA256: fb3d4651536aba8ca14ba8409c2c46fcfd80a9532bdae3cc36f0a55bf065282f
+SHA512: 595d4da93607041777c006c1c6afc72f0b0e8a70c8a41d6ffe8a3808011e19f244629c61bc11d703544fc4b758b67cffe12f4a22574c6a2da56705dcd6c66e80
+Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
@@ -7325,6 +7382,23 @@ SHA1: 9ae0fd8091b97c3160eb01939e355df05f39fbd2
 SHA256: 4dd387c8376d74adf52aa1e9ca16600cda9b9fe14ad0a115b9cd6e0c16487797
 SHA512: 66834c968129d71a26762d2bdcbfa08d4ed964e7e82a333e2dd5e81d24c0d18ba5e954c716b73082b1183bbc8efa2869eab107f8d1347fc6404b08d7c3bdc1ef
 Description: Install kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.4_all.deb
+Size: 1120780
+MD5sum: 9c1babffcde4f417808e6922c04bf3d3
+SHA1: b9f932a19db3cb509721db4b47bdc52a30723ac0
+SHA256: fc6d6aa2f0400d8423848e2e31e6a1bcd64ea36ddff6942dce84d450cdd9e198
+SHA512: 4e9a7fff69b0ed6935fad96ae9ae90900251df5574bfefcc3a70e661cab4ad7404f5cea2ddcee94c18b395a396b44f1b1e3f0057ed80f2121e93ff82cd16aab9
+Description: Install kernel in chroot
  And create initrd1.xz and initrd.img
 
 Package: vnstat-tray
