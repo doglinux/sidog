@@ -6349,6 +6349,38 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
  Version 1.2.7, run save2flash in case of booting with EXIT parameter
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.8
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.2.8_all.deb
+Size: 160108
+MD5sum: 83f0b13e23532af60d4720e47a306099
+SHA1: 598595d16fa3dc3b81dc19d571c7b884ff32e714
+SHA256: 23a637ebb9e1e3e8d231c603bc03e3ffe5a61b3f1dea9bcef27394f5608366fd
+SHA512: 7346e62db0887460dd48491fbb887d68c80b1878deea114a1fee812a1ae7f999527854af13ec87bd358947e91864f7adc3b7d1ab5be8f1c7fb7413e6ef6f6bb0
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now 
+ Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
+ Version 1.2.7, run save2flash in case of booting with EXIT parameter
+
 Package: redshift-gui-lite
 Architecture: i386
 Version: 0.0.3
@@ -7547,6 +7579,23 @@ MD5sum: 9c1babffcde4f417808e6922c04bf3d3
 SHA1: b9f932a19db3cb509721db4b47bdc52a30723ac0
 SHA256: fc6d6aa2f0400d8423848e2e31e6a1bcd64ea36ddff6942dce84d450cdd9e198
 SHA512: 4e9a7fff69b0ed6935fad96ae9ae90900251df5574bfefcc3a70e661cab4ad7404f5cea2ddcee94c18b395a396b44f1b1e3f0057ed80f2121e93ff82cd16aab9
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./upgrade-kernel_1.0.5_all.deb
+Size: 1121108
+MD5sum: d096b4fe75373b92e37e2a673ef5a883
+SHA1: 5ec335b44f8ef1de796f1c363e0d8d16167fecda
+SHA256: 434b3ccbe6ec4396d341b1256e11044745a719860e19c66eb1a7c3b9282bb139
+SHA512: d311b07c0773f68e9d8fc8d7bb286cbf85fa6232a992c7040c9457e151c78fdea8328810207c13e15c5a4179497ee447c079deaeefb3c387d73f2a43247836ee
 Description: Install kernel in chroot
  And create initrd1.xz and initrd.img
 

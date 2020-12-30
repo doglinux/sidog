@@ -7004,6 +7004,7 @@ usr/local/cr-initrd/initramfs/lib/libuClibc-0.9.33.2.so	    upgrade-kernel
 usr/local/cr-initrd/initramfs/lib/libuuid.so.1		    upgrade-kernel
 usr/local/cr-initrd/initramfs/lib/libuuid.so.1.3.0	    upgrade-kernel
 usr/local/cr-initrd/initramfs/linuxrc			    upgrade-kernel
+usr/local/cr-initrd/initramfs/modlist			    upgrade-kernel
 usr/local/cr-initrd/initramfs/modulelist		    upgrade-kernel
 usr/local/cr-initrd/initramfs/usr/bin/blkid		    upgrade-kernel
 usr/local/cr-initrd/initramfs/usr/bin/e2fsck		    upgrade-kernel
