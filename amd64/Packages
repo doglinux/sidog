@@ -6006,6 +6006,22 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
+Package: repo-conf
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 42
+Depends: apt, yad
+Filename: ./repo-conf_1.0.1_amd64.deb
+Size: 4572
+MD5sum: 666aad41d729aa16105485a383a97b61
+SHA1: da1b8783b79512c1f6262ac542430b7661865c5b
+SHA256: 26813d226c8f2be46f27237de9b866a1b50994d48ba99f844d061d1a2f56d01a
+SHA512: c6f05d66c5aa554396a868f2aa4d462645b522f352312ca0e0761ef82e0e625a9fc29a4e6f720195fd2ae812c433e57480c37a3c532ff7ec58ddce84a4f1667a
+Description: Switch from standard to static repository (from snapshot.debian)
+
 Package: resize-save-file
 Architecture: all
 Version: 1.0.0-2
