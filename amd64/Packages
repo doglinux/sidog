@@ -6360,6 +6360,21 @@ SHA256: 029bcc22ae5d541b3033a7c3fd36045bb65d01479f0d835c813115e916c262d1
 SHA512: 80cc0ceb8e4ef5da1112593c7f84967eaed6db57ce7f5ff6845e71fa93620d0bbe8545f8a3028656ad820b271adf9f0eb7b9a226a4f890f9697fc69305f9c8d8
 Description: Load a *.squashfs or *.sfs module.
 
+Package: sfsload
+Architecture: all
+Version: 1.0.9
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 47
+Depends: libc6, yad, gsu | gksu, porteusbootscripts
+Filename: ./sfsload_1.0.9_all.deb
+Size: 8144
+MD5sum: 3b479036ff5e890f46780af0aeacd7c7
+SHA1: 4bbfb5309a7857058d765db4cf9404f300d86765
+SHA256: 9a5b64914b1d96d3f83d2c23dfff96e57f57e30c6ca3e7d115e1baea32213c29
+SHA512: d90fa4f6025d5de437891bb6b61838aa8dcf6673b9c09e11ed8ac1b440e5b62c2b29258ebcb26c22d49fe1b88f16c3fc22e670b6101ae2ed1b45df8142fd8f60
+Description: Load a *.squashfs or *.sfs module.
+ v1.0.9 added service to unload sfs module at shutdown
+
 Package: simple-python-http-server
 Architecture: all
 Version: 1.2
