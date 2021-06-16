@@ -186,6 +186,21 @@ SHA256: 47512f3e7fc822f0e57994d8a019820e1ee73c4bc78a0974c71e3c23d3fa172a
 SHA512: 99ea423a3348e3e43c2adfd5e9c65ab291e59f9f342f33b25a75baf77b8b9cf9125f0a04efea6b1fd2d4b901bd16a5d38550c2fb36534bd1a27f4737da109c75
 Description: converts mp3/ogg/wav/flac/webm/aac files
 
+Package: av-converter
+Architecture: all
+Version: 2.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame, vorbis-tools, flac
+Filename: ./av-converter_2.0_all.deb
+Size: 6652
+MD5sum: 0e4a1a3695188a78035f0b67d67a12e5
+SHA1: c30d885cecd3041cf577a30ff4bea4f39dcaeb3e
+SHA256: 8cd5700700ff93a54dc72a481d9648f9588ee438a7a4af599e1c9ad8fe6953a1
+SHA512: 7dcdbd911dd49bc3ce4083c693f7d1cce352680dfba492e6d5301c559c64d612d760b2242269e6dec3f883a350738b4bfcbfaeaa22409a462b0ad997b3080f10
+Description: converts various av formats
+
 Package: azpainter
 Architecture: i386
 Version: 2.1.1
