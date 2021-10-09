@@ -5307,13 +5307,14 @@ Priority: optional
 Section: x11
 Maintainer: fredx181
 Installed-Size: 157
-Depends: python3, python3-gi, libgtk-3-0, gir1.2-gtk-3.0
+Depends: python2, libgtk-3-0, gir1.2-gtk-3.0
+Replaces: python-gi
 Filename: ./obkey_1.3.1-3_all.deb
-Size: 25860
-MD5sum: 6a0e1611939fb8d9b65c75cdd2433ce5
-SHA1: d57b88adfdbe61616c9e3294630108e1d6a16572
-SHA256: d07886dcdb5f6b25fcaa488ba39099454ee3d521411acd8d03d1ed8ceb470dd2
-SHA512: 34bccb721ea79dcb3c422091cf1b19e19ac9709b169c0b68c5136002707f5cd35d243430d668b768fc363c8890e9d1f95ebbe5a4b0564dde097a66e0f4702d01
+Size: 182608
+MD5sum: 2594d668b407876f996d701c4e56f890
+SHA1: beb3957118114a4063c609f2ee6b86b222b8aa0c
+SHA256: 9d5fa69e196b83966b4aa4bf110f9ead5ef669dc2d8ffc89bb0a9cf6c32d333a
+SHA512: b78093df715d3ed1843204b6c3eb016c1b38074d5e2305c4f2f4761c2c25be0af9e1303e980704a5ab39a20ecba92a8ba7fb601d13f7e7275833e96f7a5711c6
 Homepage: https://github.com/luffah/obkey
 Description: Openbox Key Editor
  .
