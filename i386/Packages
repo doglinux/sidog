@@ -186,6 +186,30 @@ SHA256: 47512f3e7fc822f0e57994d8a019820e1ee73c4bc78a0974c71e3c23d3fa172a
 SHA512: 99ea423a3348e3e43c2adfd5e9c65ab291e59f9f342f33b25a75baf77b8b9cf9125f0a04efea6b1fd2d4b901bd16a5d38550c2fb36534bd1a27f4737da109c75
 Description: converts mp3/ogg/wav/flac/webm/aac files
 
+Package: aufs-tools
+Architecture: i386
+Version: 1:4.14+20190211-1
+Priority: optional
+Section: kernel
+Maintainer: Jan Luca Naumann <j.naumann@fu-berlin.de>
+Installed-Size: 264
+Depends: libc6 (>= 2.28)
+Recommends: aufs-dkms
+Filename: ./aufs-tools_4.14+20190211-1_i386.deb
+Size: 106016
+MD5sum: 752cda25c46935ae64b180006bd5a601
+SHA1: e2796482e52868e04ff1b1d91bbb0555b5509d3c
+SHA256: b9a65b88c422ca6a0d3c40adf7acdba30be892130c9c14fd5adf90bc3ffbbd8f
+SHA512: 4850d83eceff7550264ab2af27dd37e833224530d8c5500f8145eade52f2c1e46967eec172de8120575818bf132aef813afb17a15718ba2004f2f00ba797dbdb
+Homepage: http://aufs.sourceforge.net/
+Description: Tools to manage aufs filesystems
+ The aufs driver provides a union mount for Linux filesystems. It allows one
+ to virtually merge the contents of several directories and/or stack them, so
+ that file changes in the aufs union mount end up as changes in only one
+ of the source directories.
+ .
+ This package contains utilities needed to configure aufs containers on-the-fly.
+
 Package: av-clipper-joiner
 Architecture: all
 Version: 1.0
@@ -4345,6 +4369,40 @@ Description: Layout and rendering of internationalized text (transitional packag
   - Native fonts on Microsoft backends
  .
  This is a transitional package.
+
+Package: libpangox-1.0-0
+Architecture: i386
+Version: 0.0.2-5.1
+Multi-Arch: same
+Priority: extra
+Section: oldlibs
+Source: pangox-compat
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 147
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.34.0), libpango-1.0-0 (>= 1.32.5-3~), libx11-6
+Breaks: libpango1.0-0 (<< 1.32.5-2)
+Replaces: libpango1.0-0 (<< 1.32.5-2)
+Filename: ./libpangox-1.0-0_0.0.2-5.1_i386.deb
+Size: 43908
+MD5sum: 1fcb5cdbdf513921cbb20aa096618a76
+SHA1: aea509fc41a3be2bf4f5d045b63e9233599ac354
+SHA256: 0a7c9c4bbe54086ea1d2091673ddad06516a1cc61608f42e69abbc0d93914598
+SHA512: 9f9fae7541935fa359789c212c5095f5c6d52e537e5e27ad8b1f1628943fff796cd454e7f82bb6fc1e8e8c01df46743ff60beffab383299ddc55e4a2025bd279
+Description: pango library X backend
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the Core X backend.
 
 Package: libpng12-0
 Architecture: i386
