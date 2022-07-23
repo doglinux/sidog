@@ -20,6 +20,51 @@ Description: default icon theme of GNOME
  The icons are used in many of the official gnome applications like eog,
  evince, system monitor, and many more.
 
+Package: alsa-capture
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame
+Filename: ./alsa-capture_1.4_all.deb
+Size: 1412
+MD5sum: 1d8a00253e147528481217c0981feee6
+SHA1: 29528c2fbede889d173e27dd07a8b35cd8ceff22
+SHA256: c64f5f2ce6efadad4f2eec3880081becef4394ab21e73a2bbf555413eae4dc97
+SHA512: a217ebfc64071fbe811172a5fc6fc2c41433c457da4ce075f71e3a82ce2a2acb6845637964c88e48378f98162fc3e93c4518e437acb11a94701359d818aa1af0
+Description: capture ALSA audio output to a file
+
+Package: alsacapgui2
+Architecture: all
+Version: 2.1
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: ffmpeg, gtkdialog
+Filename: ./alsacapgui2_2.1_all.deb
+Size: 6260
+MD5sum: e086767cf0166f5dc0109509d4055632
+SHA1: d827bc471a96ef0393e50f98e397940d1d16ab33
+SHA256: 5d586df462e28b3b66138808323b1a6989dc834601e85a0d07c44d4af8cd42d8
+SHA512: 2e105cfb44729f49337613298a371846375c025b041021aca0b9a0a10f4b18c651961542666c1a59897036e7f0cef6fb6e9c9879d06a1cc88996c832e25f1f80
+Description: capture ALSA audio output to a file
+
+Package: alsacapgui
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: lame, ffmpeg, vorbis-tools
+Filename: ./alsacapgui_1.0_all.deb
+Size: 6316
+MD5sum: 623ce1afc7e00d29beaf918bdeedd570
+SHA1: 99c2de8c3ef8b25a4c097d0478efa4a3dd3c5983
+SHA256: 42694596b6e7207ba1fe7a9839c4c0caa3028f6ddf337c046646403830c120f1
+SHA512: 89e1375e2c879a06c582b4d02dfada97412b81865c99bad069f8054073f3c26e1819764566737a725856cb8b21e05a097373ed5c283d8192e1f7f27ac9197782
+Description: capture ALSA audio output to a file
+
 Package: alsamixer-tray
 Architecture: amd64
 Version: 1.0
@@ -674,6 +719,21 @@ SHA256: 6edc8e6cb8df581ee9e9729053bed2fa7269cd3ee3f92e499b87f609c70fe3ae
 SHA512: 69156e96fa733cbe683e09f9ae6c211fa5bc5e64e7541b6ac23fc2895cd49e790186a4e727cc07bf7f3502ce7f8a5246d06e63b53cb059bce9162dbc07278773
 Description: mounts hand-held devices over USB
 
+Package: camphonetab
+Architecture: all
+Version: 1.8
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs
+Filename: ./camphonetab_1.8_all.deb
+Size: 3570
+MD5sum: 31b68b6d1e6dec8766f7f4fb903863cd
+SHA1: 3af8dd0f089572cc39d5a34710ae2d388abf04fa
+SHA256: 82b140bcdfa5d8b4f413ad238dc7071b0da8cfff470696344b52e142eda1f79a
+SHA512: 1666c6e1bedfd1866a4bdcc28f7c43066e6c82dca13886e6aed4c47043333d44d072f9baed21cc3edef4acc86ca3e18baddfa96e1c699d0a5fd6102a96ea112d
+Description: mounts hand-held devices over USB
+
 Package: cast2chrome
 Architecture: all
 Version: 0.0.4-2
@@ -998,6 +1058,32 @@ SHA1: bae467bcfd146de782107b9c7f10879b722f6b96
 SHA256: dc9a625ca61602b9ae37d98a4e238476bf79c02c2808d01ce688b750f7864b3c
 SHA512: 04ad1f5294cb25acf0884c96d1920d26cf933d8b158d9582ae218f916ff33aad3cb38322ba43f138165fa3c73c5e4c298336e33d0733f463d557aff081bccc79
 Description: Dancing Letters Generator (forum and HTML)
+
+Package: dash
+Architecture: amd64
+Version: 1:0.5.11+git20210903+057cd650a4ed-8
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 214
+Pre-Depends: libc6 (>= 2.33)
+Depends: debianutils (>= 5.6-0.1), dpkg (>= 1.19.1)
+Filename: ./dash_0.5.11+git20210903+057cd650a4ed-8_amd64.deb
+Size: 115796
+MD5sum: 832779db54e208eab6ee2377fb13ff34
+SHA1: b7598d7a57f8c36f001d469b4a24d0420956801d
+SHA256: aaaff412c3f2bd774259f781cf619658b7dba4fab9a23478ac6b5596d805a6dd
+SHA512: e5d15d3284a4712d85465a320184504d77fd9bb6bfe20c3d94b7bd405aade5fff0ad6d6c57f00de1d88f90d0388f7110790acf3d424d617e72c74237c7fdf585
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
 
 Package: deadbeef-static
 Architecture: amd64
@@ -1562,6 +1648,31 @@ MD5sum: e6fd4827b0dc20cccf7c872584cd946e
 SHA1: 7f7ce77005688d139a92d35fed076e0352c29007
 SHA256: 0509e20a4978473e178a130063cefcf44258da7811516d3cf479c9d9c9cd26f0
 SHA512: f37783d78955dcbcfee2cf1eab49aca2276a128b24eab42e659b68938d650dd2b15bbf2a36b709634d7f3cb02ed3457fb06d6e0077fce1ff58d93a4d5b8e6dd3
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ logind
+
+Package: elogind
+Architecture: amd64
+Version: 250.10-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 2252
+Pre-Depends: debconf, init-system-helpers (>= 1.54~)
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.33), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libudev1, libelogind0 (= 250.10-5), lsb-base (>= 3.1), procps, dbus (>= 1.9.14)
+Recommends: libpam-elogind, policykit-1
+Breaks: udev (<< 1:3.2.2+devuan1)
+Replaces: udev (<< 1:3.2.2+devuan1)
+Filename: ./elogind_250.10-5_amd64.deb
+Size: 657332
+MD5sum: f27d88235cc79a36a40286501b295fb2
+SHA1: 6503eb354d4f27fc80ac573b0a24f935374f77bc
+SHA256: a803013f5d5072ca3f7380b47970c01a8397e3eda6597729080fc903fad4001e
+SHA512: 0558ff193da46275d79d0107a7ee6a996e323ef3032da59b258e91150e7d3b5ab32870ce87909f02fa19b08196e530cd3cfcf253889027793d37f1fcbc8c3594
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management daemon
  elogind is a session management daemon extracted from systemd project's
@@ -3369,6 +3480,31 @@ Description: library to read and control CD-ROM
  so applications that use this library also have the ability to read
  disc images as though they were CD's.
 
+Package: libcrystalhd3
+Architecture: amd64
+Version: 1:0.0~git20110715.fdd2f19-13
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: crystalhd
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 135
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.1.1)
+Suggests: firmware-crystalhd
+Filename: ./libcrystalhd3_0.0~git20110715.fdd2f19-13_amd64.deb
+Size: 45900
+MD5sum: f52241155f42b4d2cb72736b6260f7c8
+SHA1: 52a58cfb0ecf2d3f5a27efc2c8bb8af907c1b686
+SHA256: e2dab38126a0b92abdc149397307f9af3f04f5aa26ae08a1ed461a0178f4b1fe
+SHA512: f02fd39f65e633de322f40522b5fdd7866edac6ee71495b54b87987e865e8c4fddec0da81f2a81e33891bba2ea0efe2459c5f9ee73f46c165099c17e50a40630
+Homepage: http://www.broadcom.com/support/crystal_hd/
+Description: Crystal HD Video Decoder (shared library)
+ Crystal HD Solution is a product offered by Broadcom. It is used to enable
+ flawless playback of 1080p high definition video across a wide range of
+ systems.
+ .
+ This package contains the shared library.
+
 Package: libdirectfb-1.2-9
 Architecture: amd64
 Version: 1.2.10.0-8
@@ -3466,6 +3602,34 @@ Description: library for reading DVDs
  decrypt sections of the DVD as necessary. libdvdcss needs to be installed from
  third-party repositories (see README.css), it's not included in Debian.
 
+Package: libelogind-compat
+Architecture: amd64
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 19
+Provides: libsystemd0 (= 246.10)
+Depends: libelogind0, systemd-standalone-tmpfiles
+Conflicts: libsystemd0
+Breaks: libelogind0 (<< 246.10-4~)
+Replaces: libsystemd0
+Filename: ./libelogind-compat_250.10-5_amd64.deb
+Size: 6704
+MD5sum: 759ac992aeed223c3194c3c3b353ecb6
+SHA1: 3c8d338e155b969230b696ec524109077a3617b3
+SHA256: ec158a863e277bff5ecd4f02e06a92d46e304602307718257ea11fd4182a49a5
+SHA512: 442629bc8224b1dd488655365facc9008152aee81fc951d9a27fc068f4ee0406be77e8c14b9287864d69dd0a9ea8601591a03200984b88f08aeefa2b3cec8376
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library compatibility
+ The libelogind0 library is ABI compatible with libsystemd0. This package
+ provides the necessary symlinks to allow binaries linked against libsystemd0
+ to work with libelogind0. For full details of the compatibility see
+ README.Debian.
+
 Package: libelogind-dev
 Architecture: amd64
 Version: 243.7-1.0antix1
@@ -3488,6 +3652,29 @@ Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library (development files)
  This package contains the files needed for developing applications that
  use libelogind
+
+Package: libelogind-dev
+Architecture: amd64
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 167
+Depends: libelogind0 (= 250.10-5)
+Suggests: libelogind-dev-doc
+Filename: ./libelogind-dev_250.10-5_amd64.deb
+Size: 27248
+MD5sum: 4c5e0d7c5a586da0913a3eefd9f97adc
+SHA1: 793fe1089a46313ca62491a63ad276544713e24c
+SHA256: fb55d15da442209e13f259ba7bc6813942b71a026f07f0dc64251818b8c5e7d8
+SHA512: 8fd1fa7a3a752e652b04f4eed7e1adbb5156b7af53c05a26b20c460c204e181ff2b17e5181200692ecd7aa0de1d865b86171580479aa79c12164068e340e5766
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library (development files)
+ This package contains the files needed for developing applications that use
+ libelogind
 
 Package: libelogind0
 Architecture: amd64
@@ -3610,6 +3797,27 @@ Description: user, seat and session management library
  The library is ABI compatible with libsystemd0 and provides the necessary
  symlinks to allow binaries linked against libsystemd0 to work with
  libelogind0. For full details of the compatibility see README.Debian.
+
+Package: libelogind0
+Architecture: amd64
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 683
+Depends: libc6 (>= 2.33), libcap2 (>= 1:2.10)
+Filename: ./libelogind0_250.10-5_amd64.deb
+Size: 249152
+MD5sum: ec3eabcd0181f1232be4948ae9e3d35b
+SHA1: ad8930b81d3a15b29be5ea35ee067a62db74367b
+SHA256: 28471a058515a3b901a725916a7cff403f302d9a6a26fa4aba0991179778adf1
+SHA512: 48bdb2f7ccc4d2227ae409174dd57877a5f7b91a6f9a149782f7163a9ab6d0cd3255c1f0f5222a4aaa0608f27166c58690431f8570171fbbfbe0b9c921402c3c
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
 
 Package: libesd0
 Architecture: amd64
@@ -4402,6 +4610,31 @@ MD5sum: ef9634efe18f47eff8959423c71bc19a
 SHA1: e969de161a3f1ec057fbd6c163f8637204540c6b
 SHA256: 79978c7b88f17f7f7272e05683968a8ad402d7ba72100f94e7f94d306b28bd7d
 SHA512: e5897a32a333d9fd191a1e615189f8c695484962504bf85cc703d378c227d8cc5e06d3e188b1ea94e157806a4fc7d23ec3782e26d85dcb1b89926f2ee392f308
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
+
+Package: libpam-elogind
+Architecture: amd64
+Version: 250.10-5
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 555
+Provides: default-logind, libpam-systemd, logind
+Depends: libc6 (>= 2.33), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 250.10-5), libelogind-compat, libpam-runtime
+Conflicts: libpam-ck-connector
+Breaks: libpam-systemd
+Replaces: libpam-systemd
+Filename: ./libpam-elogind_250.10-5_amd64.deb
+Size: 208708
+MD5sum: 5638262e807a4d24593396efbbce66c1
+SHA1: 37281fc5527aa963d29236147c70f639b923d8cf
+SHA256: 03865e3c100f86aa24aee780d61989a80a315826879b20861d89f0b730672e19
+SHA512: a5d34b96ae2d7bd68d850728dbf6fc361f8cd15813910bec1bbad999abc81d2131ede8ff4b34d01d4cf2e43bcd800ba2464b5e50fa90e93daa03b655ba8d1e20
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
@@ -6090,6 +6323,20 @@ SHA256: 58ffb3411c304685a30b6e75403282a3e69c1d00220efa53c3ed3a332724ab59
 SHA512: 3abd0b15023bafc70bd4ab67f654ef0331f0ecb18d206bdab540f1ed0b648ccc258e5dcf8b38dd51672cdbb74746dea99ba930815b9d3a728214427f9eaf45f5
 Description: Information about drive partitions
 
+Package: peasypartview
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./peasypartview_1.2_all.deb
+Size: 7188
+MD5sum: 58d57064e7c65759b85a90e9d875ef51
+SHA1: df27345cb9b104510f7c42507b69bec9834c884c
+SHA256: 98c885631b1fb0640e4cad9c0c8d96c0ba1e8d3ae8123ff77bd968e476587002
+SHA512: 47b496146f0ea2724067fd2d7ac7ab7724bb42f93f14a297302327a2bdf9263ba724128d3adfa4e11477ece45b9bc5c1725836bf800d4e5e5dd1784e233b3056
+Description: Information about drive partitions
+
 Package: peasypdf
 Architecture: all
 Version: 4.2-2
@@ -6556,6 +6803,29 @@ MD5sum: c95e29e63446684ce0a227209995cc76
 SHA1: 4460eaec551af0f0af04e127bf58ccd8c9d8d3a9
 SHA256: b92681387b331f348b6620ccdecc82098988274c49535946df262647a36fd442
 SHA512: 84761edfb208795e61946d843b57ffef6245c2707e69340885f46320ca7e8d26e7bac467b0ccbcb88ff0e7d4637eb2f92d07cec31681f85165c131cebe80335a
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-PipeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer
+
+Package: pipe-viewer
+Architecture: all
+Version: 0.2.2
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, curl, libgtk3-perl, liblwp-protocol-https-perl, wget, fonts-symbola
+Recommends: youtube-get3
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: straw-viewer
+Replaces: youtube-viewer, straw-viewer
+Filename: ./pipe-viewer_0.2.2_all.deb
+Size: 253760
+MD5sum: a7560c8d597922243201f64f29c16e3a
+SHA1: 339866bcf84ef96e12bdfb390f580fca91c54c31
+SHA256: d5077260fe5e93099c469b7ca02b53a55a94467dbfe1f311362763f339bef626
+SHA512: d5c8feb155b8d8b4ccde8ae61f8d0451851d342721d7877062e3a7670ca696cc6d30b07074bdc3d633d81b21fabe034e7b95fd3fb481e5d6b1379f4db8480e26
 Homepage: https://github.com/trizen/youtube-viewer
 Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-PipeViewer - a very easy interface to YouTube.
@@ -7608,6 +7878,21 @@ SHA256: af57400b6ea4f6bfb6d7940fd9b1e15489e2763cf6992b53f2d44ea4dcad7a04
 SHA512: 325d7a85aef8c9488337ef69cbf161ae3ce22d4dcc529a0ab65b11f91bd1720769283f5d2f3c63e7f88ef60a443b15a40305863dadcf9266207e4c6f13553a80
 Description: Makes a basic LAN web server
 
+Package: simple-python-http-server
+Architecture: all
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: python
+Filename: ./simple-python-http-server_1.3_all.deb
+Size: 9022
+MD5sum: f4d768e6c1710b23f5deb9d364c34bdb
+SHA1: ee61e5c4eb1b409294ade80c073d397b82ef24b9
+SHA256: 42008bd0a0bd519b5009608fb60b65158de52194e0d8228f8f293b6987c26f21
+SHA512: 516a4fb0f9294d079e202791e49f6ce20000819e73ed0f28d670d1b9e5c08167dcbf2e55a64328b969105f8b1fe2a6998f313737ec6859d091fd1cb1324ca8f9
+Description: Makes a basic LAN web server
+
 Package: snappie
 Architecture: amd64
 Version: 1.1-1
@@ -8158,6 +8443,22 @@ SHA256: d50222b8c0926741eabcca0daeb62ab242456379826fed71d2d096e7de9110e1
 SHA512: ff84c81ee0b24b2cfce390957b323e37deec4d8f1ad61f823246a139375ff8ca608c0d78d62bc195ef443663e3fd1e8d96a63de2a56b97efef254999765ddf2e
 Description: Run application as unprivileged user (from root account)
 
+Package: trans-tray
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 90
+Depends: libc6, yad, xclip, gawk
+Filename: ./trans-tray_1.0.1_all.deb
+Size: 58696
+MD5sum: c28037eb1ce1ce9fc5f234a636038412
+SHA1: 7393ccc3e9b9dbf1c86da2236dbf9b1007494e88
+SHA256: 565f3be8b69565aee93ee29a0d77ffbe0d577677fa5d086bfdf07397cf49a19d
+SHA512: 6ff2fb33f9debbfb7b0d89ed395eabf296f7a0304c9c20ba17166e988ca54b651f5994092125c9069ee9ceb534c0971f4d3b2a76e9ee6d261b2913d75d12626c
+Description: Run application as unprivileged user (from root account)
+
 Package: txt2svg
 Architecture: amd64
 Version: 20170601
@@ -8679,6 +8980,20 @@ MD5sum: 71a6dcd008256e97c1f44a0b5e603f10
 SHA1: 5f4c461676b9ebeef3e8d92411a484059fe50dc2
 SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
 SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
+Description: Makes a WiFi access point, needs iptables for internet
+
+Package: wlanmaker
+Architecture: all
+Version: 2.1
+Priority: extra
+Maintainer: rcrsn51
+Depends: hostapd
+Filename: ./wlanmaker_2.1_all.deb
+Size: 1632
+MD5sum: d2069e4e99059fc037f77eebe961da22
+SHA1: 2b7c5b6219bc6c0edb5cf244972fabc60c29cd24
+SHA256: 33d0473c4ddaab510b6174bdb0ad9d49936b78eb9e21c2f204a4f713df62f5f5
+SHA512: 3c0d615ea703bba5d9b639cb0c7f18490201a049f987f99cc833b63743b9d5f1a677216160b7f5f86d231f591d0a88aac38cbfd01bf3b5d0224b4a4fbc77d902
 Description: Makes a WiFi access point, needs iptables for internet
 
 Package: x11-xserver-utils

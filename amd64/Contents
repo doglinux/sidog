@@ -1,7 +1,9 @@
+bin/dash						    dash
 bin/elogind-inhibit					    elogind
 bin/findmnt						    mount
 bin/loginctl						    elogind
 bin/mount						    mount
+bin/sh							    dash
 bin/udevadm						    eudev
 bin/umount						    mount
 bin/usleep						    pburn
@@ -169,6 +171,7 @@ lib/elogind/elogind-uaccess-command			    elogind
 lib/elogind/libelogind-shared-241.1.so			    elogind
 lib/elogind/libelogind-shared-241.3.so			    elogind
 lib/elogind/libelogind-shared-243.7.so			    elogind
+lib/elogind/libelogind-shared-246.10.so			    elogind
 lib/elogind/system-shutdown/.keep_dir			    elogind
 lib/elogind/system-sleep/.keep_dir			    elogind
 lib/i386-linux-gnu/libudev.so.1				    libeudev1
@@ -222,6 +225,7 @@ lib/udev/rules.d/60-serial.rules			    eudev
 lib/udev/rules.d/64-btrfs.rules				    eudev
 lib/udev/rules.d/70-joystick.rules			    eudev
 lib/udev/rules.d/70-mouse.rules				    eudev
+lib/udev/rules.d/70-power-switch.rules			    elogind
 lib/udev/rules.d/70-touchpad.rules			    eudev
 lib/udev/rules.d/70-uaccess.rules			    elogind
 lib/udev/rules.d/71-seat.rules				    elogind
@@ -245,9 +249,11 @@ lib/udev/scsi_id					    eudev
 lib/udev/udev-finish					    eudev
 lib/udev/v4l_id						    eudev
 lib/udev/write_net_rules				    eudev
+lib/x86_64-linux-gnu/libelogind.so.0			    libelogind0
+lib/x86_64-linux-gnu/libelogind.so.0.29.0		    libelogind0
 lib/x86_64-linux-gnu/libpng12.so.0			    libpng12-0
 lib/x86_64-linux-gnu/libpng12.so.0.50.0			    libpng12-0
-lib/x86_64-linux-gnu/libsystemd.so.0			    libelogind0
+lib/x86_64-linux-gnu/libsystemd.so.0			    libelogind-compat,libelogind0
 lib/x86_64-linux-gnu/libsystemd.so.0.25.0		    libelogind0
 lib/x86_64-linux-gnu/libudev.so.0			    libudev0
 lib/x86_64-linux-gnu/libudev.so.0.13.0			    libudev0
@@ -548,7 +554,17 @@ opt/tmp/snapexit					    porteusbootscripts
 opt/tmp/snapmergepuppy					    porteusbootscripts
 opt/tmp/wmpoweroff					    porteusbootscripts
 opt/tmp/wmreboot					    porteusbootscripts
+root/.alsa-capture					    alsa-capture
+root/.alsacap/.asoundrc.base				    alsacapgui
+root/.alsacap/.asoundrc.capture				    alsacapgui
+root/.alsacap2/.asoundrc.base				    alsacapgui2
+root/.alsacap2/.asoundrc.capture0			    alsacapgui2
+root/.alsacap2/.asoundrc.capture1			    alsacapgui2
+root/.alsacap2/.asoundrc.capture2			    alsacapgui2
+root/.alsacap2/.asoundrc.capture3			    alsacapgui2
 root/.asoundrc						    peasymp3
+root/.asoundrc.base					    alsa-capture
+root/.asoundrc.capture					    alsa-capture
 root/.config/autostart/screener.desktop.bak		    screener
 root/.config/rox.sourceforge.net/MIME-types/application	    jwm-setup,jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwm-setup,jwmconf
@@ -929,6 +945,7 @@ usr/include/elogind/sd-id128.h				    libelogind-dev
 usr/include/elogind/sd-journal.h			    libelogind-dev
 usr/include/elogind/sd-login.h				    libelogind-dev
 usr/include/elogind/sd-messages.h			    libelogind-dev
+usr/include/elogind/sd-path.h				    libelogind-dev
 usr/include/elogind/systemd/_sd-common.h		    libelogind-dev
 usr/include/elogind/systemd/sd-bus-protocol.h		    libelogind-dev
 usr/include/elogind/systemd/sd-bus-vtable.h		    libelogind-dev
@@ -941,6 +958,7 @@ usr/include/elogind/systemd/sd-id128.h			    libelogind-dev
 usr/include/elogind/systemd/sd-journal.h		    libelogind-dev
 usr/include/elogind/systemd/sd-login.h			    libelogind-dev
 usr/include/elogind/systemd/sd-messages.h		    libelogind-dev
+usr/include/elogind/systemd/sd-path.h			    libelogind-dev
 usr/include/evince/2.32/evince-document.h		    evince
 usr/include/evince/2.32/evince-view.h			    evince
 usr/include/evince/2.32/libdocument/ev-annotation.h	    evince
@@ -4727,6 +4745,8 @@ usr/lib/x86_64-linux-gnu/libcdio_paranoia.so.1		    libcdio-paranoia1
 usr/lib/x86_64-linux-gnu/libcdio_paranoia.so.1.0.0	    libcdio-paranoia1
 usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0		    libssl1.0.0
 usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.2		    libssl1.0.2
+usr/lib/x86_64-linux-gnu/libcrystalhd.so.3		    libcrystalhd3
+usr/lib/x86_64-linux-gnu/libcrystalhd.so.3.6		    libcrystalhd3
 usr/lib/x86_64-linux-gnu/libdirect-1.2.so.9		    libdirectfb-1.2-9
 usr/lib/x86_64-linux-gnu/libdirect-1.2.so.9.0.1		    libdirectfb-1.2-9
 usr/lib/x86_64-linux-gnu/libdirectfb-1.2.so.9		    libdirectfb-1.2-9
@@ -5097,6 +5117,9 @@ usr/local/bin/CPUtemp					    cputemp
 usr/local/bin/CPUtemp.hlp				    cputemp
 usr/local/bin/Readme_loadsfs-fuse-writesfs		    portablesfs-loadsfs-fuse
 usr/local/bin/SaveFolderBackup				    SaveFolderBackup
+usr/local/bin/alsa-capture				    alsa-capture
+usr/local/bin/alsacapgui				    alsacapgui
+usr/local/bin/alsacapgui2				    alsacapgui2
 usr/local/bin/alsamixertray				    alsamixer-tray
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
@@ -8160,6 +8183,8 @@ usr/share/applications/Yalarm Alarm scheduler.desktop	    yalarm
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/YouTube-Get3.desktop		    youtube-get3
+usr/share/applications/alsacap.desktop			    alsacapgui
+usr/share/applications/alsacap2.desktop			    alsacapgui2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/audio-converter.desktop		    audio-converter
@@ -8493,6 +8518,7 @@ usr/share/dbus-1/system-services/org.freedesktop.nm_dispatcher.service network-m
 usr/share/dbus-1/system.d/nm-dispatcher.conf		    network-manager
 usr/share/dbus-1/system.d/org.freedesktop.NetworkManager.conf network-manager
 usr/share/dbus-1/system.d/org.freedesktop.login1.conf	    elogind
+usr/share/debianutils/shells.d/dash			    dash
 usr/share/desktop-directories/dog-accessories.directory	    jwm-setup-dd64,jwmconf,jwm-setup
 usr/share/desktop-directories/dog-development.directory	    jwm-setup-dd64,jwmconf,jwm-setup
 usr/share/desktop-directories/dog-education.directory	    jwm-setup-dd64,jwmconf,jwm-setup
@@ -8568,6 +8594,12 @@ usr/share/doc/bluealsa/changelog.gz			    bluealsa
 usr/share/doc/bluealsa/copyright			    bluealsa
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
+usr/share/doc/dash/NEWS.Debian.gz			    dash
+usr/share/doc/dash/README.Debian.diet			    dash
+usr/share/doc/dash/README.source			    dash
+usr/share/doc/dash/changelog.Debian.gz			    dash
+usr/share/doc/dash/changelog.gz				    dash
+usr/share/doc/dash/copyright				    dash
 usr/share/doc/elogind/NEWS.gz				    elogind
 usr/share/doc/elogind/README.gz				    elogind
 usr/share/doc/elogind/README.md.gz			    elogind
@@ -8701,6 +8733,8 @@ usr/share/doc/libcdio13/changelog.Debian.amd64.gz	    libcdio13
 usr/share/doc/libcdio13/changelog.Debian.gz		    libcdio13
 usr/share/doc/libcdio13/changelog.gz			    libcdio13
 usr/share/doc/libcdio13/copyright			    libcdio13
+usr/share/doc/libcrystalhd3/changelog.Debian.gz		    libcrystalhd3
+usr/share/doc/libcrystalhd3/copyright			    libcrystalhd3
 usr/share/doc/libdirectfb-1.2-9/README.gz		    libdirectfb-1.2-9
 usr/share/doc/libdirectfb-1.2-9/README.screenshots	    libdirectfb-1.2-9
 usr/share/doc/libdirectfb-1.2-9/changelog.Debian.gz	    libdirectfb-1.2-9
@@ -8712,6 +8746,9 @@ usr/share/doc/libdvdread4/README.css			    libdvdread4
 usr/share/doc/libdvdread4/changelog.Debian.gz		    libdvdread4
 usr/share/doc/libdvdread4/changelog.gz			    libdvdread4
 usr/share/doc/libdvdread4/copyright			    libdvdread4
+usr/share/doc/libelogind-compat/README.Debian		    libelogind-compat
+usr/share/doc/libelogind-compat/changelog.Debian.gz	    libelogind-compat
+usr/share/doc/libelogind-compat/copyright		    libelogind-compat
 usr/share/doc/libelogind-dev/changelog.Debian.gz	    libelogind-dev
 usr/share/doc/libelogind-dev/copyright			    libelogind-dev
 usr/share/doc/libelogind0/README.Debian			    libelogind0
@@ -10298,6 +10335,7 @@ usr/share/initramfs-tools/hooks/udev			    eudev
 usr/share/initramfs-tools/scripts/init-bottom/udev	    eudev
 usr/share/initramfs-tools/scripts/init-top/udev		    eudev
 usr/share/lintian/overrides/aufs-tools			    aufs-tools
+usr/share/lintian/overrides/dash			    dash
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/eudev			    eudev
 usr/share/lintian/overrides/firefox-esr			    firefox-esr
@@ -10698,6 +10736,7 @@ usr/share/locale/pl/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/ps/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ps/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/pt/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/pt/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pt/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/pt/LC_MESSAGES/leafpad.mo		    leafpad
@@ -10937,6 +10976,7 @@ usr/share/man/man1/auibusy.1.gz				    aufs-tools
 usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/busctl.1.gz				    elogind
 usr/share/man/man1/ceni.1p.gz				    ceni
+usr/share/man/man1/dash.1.gz				    dash
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/empty.1.gz				    empty-expect
@@ -10966,6 +11006,7 @@ usr/share/man/man1/pipe-viewer.1p			    pipe-viewer
 usr/share/man/man1/roxterm-config.1.gz			    roxterm-common
 usr/share/man/man1/roxterm.1.gz				    roxterm-common
 usr/share/man/man1/sessreg.1.gz				    x11-xserver-utils
+usr/share/man/man1/sh.1.gz				    dash
 usr/share/man/man1/showrgb.1.gz				    x11-xserver-utils
 usr/share/man/man1/straw-viewer.1p			    straw-viewer
 usr/share/man/man1/thunar-settings.1.gz			    thunar
@@ -11108,6 +11149,7 @@ usr/share/menu/ceni					    ceni
 usr/share/menu/conkyclock				    conkyclock
 usr/share/menu/conkyclock2				    conkyclock2
 usr/share/menu/conv-sfs					    edit-sfs-pcmanfm,edit-sfs-thunar
+usr/share/menu/dash					    dash
 usr/share/menu/desktop_view_edit			    desktop-editor
 usr/share/menu/dogradio					    dogradio
 usr/share/menu/domycommand				    domycommand
@@ -11309,6 +11351,8 @@ usr/share/pixmaps/MPlayer.png				    gmplayer
 usr/share/pixmaps/PackIt.png				    pack-it
 usr/share/pixmaps/UExtract.png				    uextract
 usr/share/pixmaps/abc.png				    font-viewer
+usr/share/pixmaps/acap.png				    alsacapgui
+usr/share/pixmaps/acap2.png				    alsacapgui2
 usr/share/pixmaps/alarm_142x164.png			    yalarm
 usr/share/pixmaps/alsamixertray.png			    alsamixer-tray
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
