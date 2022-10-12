@@ -5940,6 +5940,22 @@ SHA256: 4c49132877de89330917a43c46540e27ee98f16463fe9e6475d4e403c14745c7
 SHA512: a1e0f3269ba9eebcfeadaae1db24941d53aefb666171d722f2ee994ba06a254ce527b069e2c9ef63bc8081e70365386b836edf02820856d7ea71061029f03116
 Description: pBurn - Burning gui
 
+Package: pburn
+Architecture: amd64
+Version: 4.3.3-2
+Priority: extra
+Section: system
+Maintainer: root@wheezy
+Installed-Size: 754
+Depends: libc6, libgtk2.0-0, gtkdialog, dvd+rw-tools, pfind, vamps
+Filename: ./pburn_4.3.3-2_amd64.deb
+Size: 247096
+MD5sum: 20a3f5f255b77d891bbd84060a3abe73
+SHA1: 6cc301d60096a2d20975c21f9d2198fe09de58af
+SHA256: c07d94c5fdb68927223c7a77e9c492039f66148eee5a85b1333222b7bfa1570a
+SHA512: a430ea3159ee12bf937dc009afca2715bdee4bdc88b6910661c7dc0547e7d67a73532f93e430b55e16a6ac5ab6eae26be7da358787dc1ed665449cb7810b1820
+Description: pBurn - Burning gui
+
 Package: peasy-dvd-iso-maker
 Architecture: all
 Version: 1.0
