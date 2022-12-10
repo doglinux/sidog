@@ -7216,17 +7216,17 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
 
 Package: porteusbootscripts
 Architecture: all
-Version: 1.1.4
+Version: 1.1.5
 Section: checkinstall
 Maintainer: root@jessie
 Installed-Size: 56
 Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
-Filename: ./porteusbootscripts_1.1.4_all.deb
-Size: 20872
-MD5sum: 8c8959aa82854c003e15d1656391b111
-SHA1: aded5b8aff1c5ca3bd64ea16e549bbfecf6d5f99
-SHA256: 429e55cf3d38d8da9df96b80da9419342b58518bbfd12eafbfa649789b4b2e3f
-SHA512: 4358ca54a46adbdc829be8699de2f4b2ee8c6ce5bdb6ad201d5be2bac2ef7bc16ff95598a5ea4e2de35f9d41606d29ce507668d35f004361688ff19e83c2ca4b
+Filename: ./porteusbootscripts_1.1.5_all.deb
+Size: 20868
+MD5sum: 280aab2b27b3ec57c164772775579728
+SHA1: 3e6871da6fb3eaef08aa4690749086ab9b8ff917
+SHA256: d1eb14ad51d5e2409f5ee6d67c952cc48ad927b2c4c5a6956fff9587488df10f
+SHA512: f5c336f084db328eb7f2c8b3ce4b30ac3fb0f2da1671bdfb7a48bd8f3ad7d044b8fb2e4a770b7fa159a3591c6a184c3890c205a59217675d986b0dcb1bd2d1f7
 Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  This version has included the scripts for the new-save-setup
  Note: Removing this package does not make any change.
