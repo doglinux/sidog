@@ -9,35 +9,35 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sat, 04 Feb 2023 14:45:26 +0000
+Date: Sat, 04 Feb 2023 20:10:33 +0000
 MD5Sum:
- 78a1f1d337f3efa139b7ec7a11cf93b8           443049 Packages
- f0b630378d4e3cfc9a3b02cc14f5ae87           145783 Packages.gz
- 05120705bec1dcfa4e8342bb0f77c27b              186 Release
- f0b630378d4e3cfc9a3b02cc14f5ae87           145783 Translation-en.gz
+ ceb8f3886fd4fe6e5d78661c2dd4bc5b           441515 Packages
+ 20357fe263502ab9d02233558624fffb           145277 Packages.gz
+ 1d0b535c81c0b5f05da92b5dbd2fe755              186 Release
+ 20357fe263502ab9d02233558624fffb           145277 Translation-en.gz
 SHA1:
- 1ba2b99c34a181d23ef478c3de5ad6df1665860b           443049 Packages
- c549e1b5e5b074aee2e2d37bbc988b8315090a50           145783 Packages.gz
- 298af9b259b1a00eedb871c97d67ea2b35612e66              186 Release
- c549e1b5e5b074aee2e2d37bbc988b8315090a50           145783 Translation-en.gz
+ 5714072f2db12af7516f4fb7cebabd60bf235c7f           441515 Packages
+ e0a44c7b78122f8109afc2b26fc3465ff8b454ac           145277 Packages.gz
+ 3da77efe918e3cdde9081d53383899f30c29fc31              186 Release
+ e0a44c7b78122f8109afc2b26fc3465ff8b454ac           145277 Translation-en.gz
 SHA256:
- 88ba5884e476e3bb1bf62439deee3b348d82d7097ab3b2dbdc107af46c05acce           443049 Packages
- 393dc675b654b2e80dfc72b468f214c0dc5a67e4b3fe097340acd3deabcdaf22           145783 Packages.gz
- f63aa90a94b196fa75b9f9f90431ef44f02a0b0845c4e5af2e6d05c21b9ad76e              186 Release
- 393dc675b654b2e80dfc72b468f214c0dc5a67e4b3fe097340acd3deabcdaf22           145783 Translation-en.gz
+ 62db27fb54b6a4e0b08cbb785dc815550ddfba7d1f00819547f3689a498dd70a           441515 Packages
+ 5c9b679e63da9a59e9b818527c162c758969725de4ef6125821e5961401a6ef7           145277 Packages.gz
+ cad0dd5423740d8a25b2c556ed9bb7c1aaa50da869b7ea5175a59ee9dfd5d25d              186 Release
+ 5c9b679e63da9a59e9b818527c162c758969725de4ef6125821e5961401a6ef7           145277 Translation-en.gz
 SHA512:
- a38472431863f54c9c903ccdb6a3ea0f8dc903dce0458d888aa0196970af5a0276640f8de6c1ea7b0545d3273738ee68baaf4fd75414d08d45baee5a6029ffbf           443049 Packages
- e4ec6921f7fa41a45e0e5ad53358fcc186d229e04d1aa9cbf7d5aa462b517ee640e7adf9605a95abb98fbd9f7e6199f17bd0e77215530233554821d227f151c7           145783 Packages.gz
- 4977001aff2a824cede61748bd66c57a68eb7a6aea018f9b4ebf4ab3141fd8237d6e2635c52bb5a9e49c1d92cafb29fefc5c07cd48d72df4e8128e166164e77a              186 Release
- e4ec6921f7fa41a45e0e5ad53358fcc186d229e04d1aa9cbf7d5aa462b517ee640e7adf9605a95abb98fbd9f7e6199f17bd0e77215530233554821d227f151c7           145783 Translation-en.gz
+ 509928c339a065fdb66062dfc6a9da2712f342211e7446e39a7434bf50c5966157d0d0bdaae44116843c2288e598df931df3cf4c72a1dd9bae02144a8743fc41           441515 Packages
+ 1744721ef9440b57cf21c2ad02af382758cf75b1c0eeadc3dc20931a573dfe5e57857e089a596a1b934b50f9383dfe1401eadc21a3724d5a46c3fc48a44bce8f           145277 Packages.gz
+ c252275fc19cc8108ce9518cd376c8feaf257398f3613336b66e7594f473e43ae3cc26c433a375410afeae288a0c59d729b60b7f5110c6b6f37b4f1fb0d8aac3              186 Release
+ 1744721ef9440b57cf21c2ad02af382758cf75b1c0eeadc3dc20931a573dfe5e57857e089a596a1b934b50f9383dfe1401eadc21a3724d5a46c3fc48a44bce8f           145277 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmPeb4YACgkQrYe8en1z
-CB1yuggApwbNRNies001JDiXyz8Mso5ej11KHeQoT+j0HtNir2G+Gp2pZZSMPHms
-53Bn0o6WiWpYl2TyLIsRuPLy1Ki8u73mGPdVH5tIN6TaVeEchT5oUNLZh08UGJxr
-Pi7HTxKgt+jU/iaUU/YlHxWYgm5yKvLoBRlPKgEpEX7HNYsaYucZIODsJt7hOOVq
-K/vxQacMivevmYePQXcrq+dGaTwyrDFIwNuyGIDaPBKZJWibEX1CCA8Bem5YTrI3
-xHX3tRb4LvxAthyYVOQGbnm1qYbR2XgcEG5V3y/2Wst/H7eap1N/uUb5IAcHHLEU
-adu1TG18qi3hIDT9LBLWY4Gl1TuRcA==
-=73Lo
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmPeu7kACgkQrYe8en1z
+CB2Ewwf+KSI3OJtqG3YAvoqPkfabQuHlFl7GjdCXQ6mwzpwdr9kOBk7JIUuT0g+5
+mei6NmPjphUhSAmAavtGfTee6/EvfUxLWwrerNDjze5qTJottEcC3rCVUZ/jXEqa
+c1hKr3eFGw6CGRjFkZv6/0dimXQzPTIZue6j9G7JvbhKhR2NoxUiGG5zsiIZAUAc
+3iwoeqHoG25sYahh4kmbXozmecTBTzDHe9Y5e7HVj0YXdMlmhNcr/UzF8UtQoyW7
+52HCPobME2k973yYVm30dCKDkStanmcIZyRZkQ4gAIf8tqEydw/egSiq2Xz8WcR0
+JINPZimdxFCsiFjlIRJobtVPmxDvoQ==
+=8gW4
 -----END PGP SIGNATURE-----
