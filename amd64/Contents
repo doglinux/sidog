@@ -44,7 +44,6 @@ etc/init.d/start-pup-volume-monitor			    pup-volume-monitor
 etc/init.d/start-tzupdate				    tzupdate
 etc/init.d/udev						    eudev
 etc/menu-methods/openbox				    openbox
-etc/mpv/encoding-profiles.conf				    mpv
 etc/pam.d/elogind-user					    libpam-elogind
 etc/pavrecord/.pavrecordrc				    pavrecord
 etc/ppp/chatscripts/gprs-connect-chat			    frisbee
@@ -837,7 +836,6 @@ usr/bin/md2html-gui					    md2html
 usr/bin/min						    min
 usr/bin/mkplaylist					    ffconvert
 usr/bin/mplayer						    gmplayer
-usr/bin/mpv						    mpv
 usr/bin/netmon_wce					    frisbee
 usr/bin/netmon_wpoll					    frisbee
 usr/bin/network_tray					    frisbee
@@ -1233,7 +1231,6 @@ usr/lib/lua/5.3/iuplua.so				    iuplua-core-stretch-gtk2
 usr/lib/lua/5.3/iupluacontrols.so			    iupluacontrols-stretch-gtk2
 usr/lib/mime/packages/epdfview				    epdfview
 usr/lib/mime/packages/firefox-esr			    firefox-esr
-usr/lib/mime/packages/mpv				    mpv
 usr/lib/min/LICENSE					    min
 usr/lib/min/LICENSES.chromium.html			    min
 usr/lib/min/blink_image_resources_200_percent.pak	    min
@@ -8988,7 +8985,6 @@ usr/share/applications/mmview.desktop			    mm-view
 usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/mplayer.desktop			    gmplayer
-usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/notecase.desktop			    notecase
 usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup-dd64,jwm-setup
@@ -11018,7 +11014,6 @@ usr/share/icons/hicolor/16x16/apps/firefox-esr.png	    firefox-esr
 usr/share/icons/hicolor/16x16/apps/gnome-mplayer.png	    gnome-mplayer-1.0.6
 usr/share/icons/hicolor/16x16/apps/leafpad.png		    leafpad
 usr/share/icons/hicolor/16x16/apps/mplayer.png		    gmplayer
-usr/share/icons/hicolor/16x16/apps/mpv.png		    mpv
 usr/share/icons/hicolor/16x16/apps/palemoon.png		    palemoon
 usr/share/icons/hicolor/16x16/apps/yad.png		    yad
 usr/share/icons/hicolor/192x192/apps/deadbeef.png	    deadbeef-static
@@ -11047,7 +11042,6 @@ usr/share/icons/hicolor/32x32/apps/firefox-esr.png	    firefox-esr
 usr/share/icons/hicolor/32x32/apps/gnome-mplayer.png	    gnome-mplayer-1.0.6
 usr/share/icons/hicolor/32x32/apps/leafpad.png		    leafpad
 usr/share/icons/hicolor/32x32/apps/mplayer.png		    gmplayer
-usr/share/icons/hicolor/32x32/apps/mpv.png		    mpv
 usr/share/icons/hicolor/32x32/apps/palemoon.png		    palemoon
 usr/share/icons/hicolor/32x32/apps/yad.png		    yad
 usr/share/icons/hicolor/36x36/apps/deadbeef.png		    deadbeef-static
@@ -11090,7 +11084,6 @@ usr/share/icons/hicolor/48x48/mimetypes/utility24.png	    jwm-setup-dd64,jwmconf
 usr/share/icons/hicolor/64x64/apps/ceni.png		    ceni
 usr/share/icons/hicolor/64x64/apps/deadbeef.png		    deadbeef-static
 usr/share/icons/hicolor/64x64/apps/firefox-esr.png	    firefox-esr
-usr/share/icons/hicolor/64x64/apps/mpv.png		    mpv
 usr/share/icons/hicolor/72x72/apps/deadbeef.png		    deadbeef-static
 usr/share/icons/hicolor/72x72/apps/findnrun.png		    findnrun
 usr/share/icons/hicolor/96x96/apps/deadbeef.png		    deadbeef-static
@@ -12342,7 +12335,6 @@ usr/share/pixmaps/mk-initrd.png				    upgrade-kernel
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
 usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get,youtube-get3
-usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/netmon_wce/cell1_0.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_1.svg		    frisbee
 usr/share/pixmaps/netmon_wce/cell1_2.svg		    frisbee
