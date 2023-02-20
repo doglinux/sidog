@@ -2382,6 +2382,25 @@ Description: Wireless Network manager
 
 Package: frisbee
 Architecture: amd64
+Version: 1.4.9-2
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, yad
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./frisbee_1.4.9-2_amd64.deb
+Size: 157768
+MD5sum: cd3d2eb7193e072279efc6a5f5a9a6cd
+SHA1: c51790a0fbfb732e6632d05633d98fde2b0eef5d
+SHA256: 9491aad9e4f206aba7f12032333364a352fa196b828cc66ae283888476d6d9eb
+SHA512: f05dd83bd770eaf67f399dca2bc22192661aec1a29b3ac85e7b2b65df25e5560e99056d762e85d0b65250d25971ee1c64d09596ef18038edb7122a36f22c54c2
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
+Package: frisbee
+Architecture: amd64
 Version: 1.4.9
 Priority: extra
 Section: checkinstall
