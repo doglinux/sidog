@@ -1407,6 +1407,8 @@ usr/lib/i386-linux-gnu/libffi.so.6			    libffi6
 usr/lib/i386-linux-gnu/libffi.so.6.0.4			    libffi6
 usr/lib/i386-linux-gnu/libfusion-1.2.so.9		    libdirectfb-1.2-9
 usr/lib/i386-linux-gnu/libfusion-1.2.so.9.0.1		    libdirectfb-1.2-9
+usr/lib/i386-linux-gnu/libgiblib.so.1			    giblib1
+usr/lib/i386-linux-gnu/libgiblib.so.1.0.6		    giblib1
 usr/lib/i386-linux-gnu/libgnome-keyring.so.0		    libgnome-keyring0
 usr/lib/i386-linux-gnu/libgnome-keyring.so.0.2.0	    libgnome-keyring0
 usr/lib/i386-linux-gnu/libgnutls-deb0.so.28		    libgnutls-deb0-28
@@ -6999,6 +7001,9 @@ usr/share/doc/firefox-esr/MPL-2.0.gz			    firefox-esr
 usr/share/doc/firefox-esr/README.Debian			    firefox-esr
 usr/share/doc/firefox-esr/changelog.Debian.gz		    firefox-esr
 usr/share/doc/firefox-esr/copyright			    firefox-esr
+usr/share/doc/giblib1/changelog.Debian.gz		    giblib1
+usr/share/doc/giblib1/changelog.gz			    giblib1
+usr/share/doc/giblib1/copyright				    giblib1
 usr/share/doc/gtk2desklet/help.txt			    gtkdesklet
 usr/share/doc/help/C/grub4dos.html			    grub4dosconfig
 usr/share/doc/help/C/grub4dosconfig.html		    grub4dosconfig
@@ -9993,6 +9998,7 @@ usr/share/lintian/overrides/dash			    dash
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/eudev			    eudev
 usr/share/lintian/overrides/firefox-esr			    firefox-esr
+usr/share/lintian/overrides/giblib1			    giblib1
 usr/share/lintian/overrides/libdirectfb-1.2-9		    libdirectfb-1.2-9
 usr/share/lintian/overrides/libeudev-dev		    libeudev-dev
 usr/share/lintian/overrides/libeudev1			    libeudev1

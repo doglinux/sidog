@@ -2672,6 +2672,27 @@ SHA512: 94c2fa4ca7a165c1837a19ec815bb611bcc2c7db22487c4541e3e27d38eb560be9436bc2
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
+Package: giblib1
+Architecture: i386
+Version: 1.2.4-13
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: giblib
+Maintainer: Eric Dorland <eric@debian.org>
+Installed-Size: 71
+Depends: libc6 (>= 2.4), libimlib2 (>= 1.4.5)
+Filename: ./giblib1_1.2.4-13_i386.deb
+Size: 20560
+MD5sum: 55e9d3141243b5cf1c5776b4ec6afc9f
+SHA1: fb8f4a361efc278f9a91cd8016f7e1d0749d1aca
+SHA256: 01cdba790c87c09ef5774049c796ad55810d7fb40d9eb0487aac8ce64aae5ae9
+SHA512: 5046c8de8b59c60e5ff10fc45ab15947d25fad865d5d89e7c692243d788e8e8a2ffa04c288cce839c10657339392fcce4b11a0869e9dc0f4448fd778cae149e0
+Homepage: http://linuxbrit.co.uk/giblib/
+Description: wrapper library for imlib2, and other stuff
+ giblib is a library of handy stuff. Contains an imlib2 wrapper to avoid the
+ context stuff, doubly-linked lists and font styles.
+
 Package: gifdance
 Architecture: i386
 Version: 1.0.0
