@@ -9,35 +9,35 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Wed, 15 Mar 2023 15:02:06 +0000
+Date: Wed, 15 Mar 2023 15:04:20 +0000
 MD5Sum:
  7baf2a832d5be258164536aed0a54d04           444474 Packages
- d227987ccec61d48c3a7b405adca6d07           146236 Packages.gz
- 32fc6d9be6a4a6e3f0b2ac5d4944dadd              186 Release
- d227987ccec61d48c3a7b405adca6d07           146236 Translation-en.gz
+ af4c82a53cf74ec158e792182f9b7689           146236 Packages.gz
+ 1636c432ed635815ce315ed3bae6bcb7              186 Release
+ af4c82a53cf74ec158e792182f9b7689           146236 Translation-en.gz
 SHA1:
  4343637568bf24d4505bdc56bb30a74e97fb2a78           444474 Packages
- f47cea782a3e908df2ba4426476b78941aa08ccc           146236 Packages.gz
- b6fab4e47aecaf835a56e6004a1997cfd6a38d82              186 Release
- f47cea782a3e908df2ba4426476b78941aa08ccc           146236 Translation-en.gz
+ c344629848cf27223c2327ea55dec84b77bd9766           146236 Packages.gz
+ 87aa59d3e323aab7d731413d0e6e28194d1d281d              186 Release
+ c344629848cf27223c2327ea55dec84b77bd9766           146236 Translation-en.gz
 SHA256:
  92526f9bfba6c26b2c40693309d33d947cbaa1a32c28664a68208db8f0d1e943           444474 Packages
- 8777bca802c32731e2c6dbafd483f5733119c097828ed4f708212692b643e00f           146236 Packages.gz
- df2db5849f86e9e987f2f1b28d8df0c723d47047dd04cb363a41c52d7a578329              186 Release
- 8777bca802c32731e2c6dbafd483f5733119c097828ed4f708212692b643e00f           146236 Translation-en.gz
+ 33b8d8744903c34a0f41ea60b67acf4906e099c49769cdc6490ed47051adb306           146236 Packages.gz
+ 7d4d0ea13e116a638223311c59348f1d10fb1544e5c5a0445be03adc83604987              186 Release
+ 33b8d8744903c34a0f41ea60b67acf4906e099c49769cdc6490ed47051adb306           146236 Translation-en.gz
 SHA512:
  801bd353debceb8a560770935f9508b031bcaee804883bd360d2d40000ec66a9a940905087a94cde4ae68c8b89b1eea2cba99e7806b36444b1dfb4e41a1395e4           444474 Packages
- ce3b2508d0b7e220ad2c31b40ebcd547091f406c198980704ec8fd7553c7e424ef785b13a55f262355f5fb0eca13ccaa79e2a521504b5b29708cab3500310961           146236 Packages.gz
- ecf1e30eb8de6a76a29408cfe46a4f25119753149d30638605e94b32084be50b0bc14aa6e185d3ca2f5248d33d76d6944f7fdfbc6842a7fbaa3ac3796d9e83e8              186 Release
- ce3b2508d0b7e220ad2c31b40ebcd547091f406c198980704ec8fd7553c7e424ef785b13a55f262355f5fb0eca13ccaa79e2a521504b5b29708cab3500310961           146236 Translation-en.gz
+ c53848afb6c4cd93194d85ed4246735bfd8c8d4fbbef47213b6b14e0bfa2ca168e7ad955725b007e11dd2331844d7189d476753ce6f4e9269624b25aab83119d           146236 Packages.gz
+ a05ed1cd11fe84c19669d99e8aeb334ed1adfcfeb919e081685570e4d10e9ee457d26cbd66267569b5a645d5412f975e8bbb1c4e3a36305da69276b3e0147115              186 Release
+ c53848afb6c4cd93194d85ed4246735bfd8c8d4fbbef47213b6b14e0bfa2ca168e7ad955725b007e11dd2331844d7189d476753ce6f4e9269624b25aab83119d           146236 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmQR3e4ACgkQrYe8en1z
-CB3hEAgAr3DZJ3aliwYu5B5qCeS0Oez2/05B95Hvs0JirTLF6ybMHFJ7WRLCi4C2
-ONZ5ft/Dp8BVk5skwr1AUxCz3xCdMK5OPlaYIxFSa4mhN9L9cmHafS2r1tFo8rV/
-aSvjWZ5wpMOZhxa3nOJ2TNjdxQ1fEPUOgBKrZOLZOsKpnMC6dZ4LYS2RmjoazPTB
-BJnUX1XbtN0mylcwGIm6XPcvJLyMWbavEkX+jZe5GuBg03Iwxjd/i/5eIKO/y8YG
-yiSAh2DRTvgI+l0onvEoz8MY0gzYEnbccoQVvz7EdNzGUZmoykbhcKCNp4KHskX6
-AKFgU6wVSfxlqCvq6lsOAdEHPFNTkQ==
-=W3Xi
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmQR3nQACgkQrYe8en1z
+CB0yJQf/SD8Y9cutQJLCurtEROci8FLjpTqKrzi2+VQn5s9b4JTI4tAheB0EWIuw
+kf1atk+VqNRpwOn0DpZ/9K1PWwX5LYyuq6uuo68zyFww0S75pgM5LQ1PDaJO6mo+
+1wY7i8UxCF9GeyTAmZBkPF81MWMco/Eo63D94BeCp/OprRBDGoLX9rwMT/JDmjcA
+DnDA2GqJ5PLtxcY0s4YVV6oezL06CdL0yPpxwENLt22SMaMe3Y6qp2GTxBzTvR1g
+4E7vOStJ7pAQaCDbuqJjhms+qb600nXYu68+cp6BxK0oHtmc9wRv8kKsFk7PxEzO
+w01s9nRUEPUmoH7AJl7jtw4IRnfcBQ==
+=cHD2
 -----END PGP SIGNATURE-----
