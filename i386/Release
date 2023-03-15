@@ -6,3 +6,24 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
+Date: Wed, 15 Mar 2023 15:01:29 +0000
+MD5Sum:
+ 5bb31a1aedd6c246ee3dd166e7f9668e           469127 Packages
+ 4eb74b1784891aeae133d8342b6d9b69           157002 Packages.gz
+ 5be6ca07dcbadd4e965281c1da936b0e              186 Release
+ 4eb74b1784891aeae133d8342b6d9b69           157002 Translation-en.gz
+SHA1:
+ e2d24dd528101e644bfcf43e06f80a30c496e03f           469127 Packages
+ 11b4a32a64e2364eaa301a8bd91a2f9b6523682d           157002 Packages.gz
+ c02af5c78003b7719172767bbd9e6ca6256b9975              186 Release
+ 11b4a32a64e2364eaa301a8bd91a2f9b6523682d           157002 Translation-en.gz
+SHA256:
+ 17914ba574267544d90d5723b92ec7fc25ca869d9f7ee8f12b34be3a2ca9705e           469127 Packages
+ 9eb597b2baf8c77d0cc91f740b714dfad8d0ce3c7ce70daf8318f3d938d92504           157002 Packages.gz
+ d4134d3cdcd39e6065b86572c378abb42b883bf661a8846310b151aaf45cc856              186 Release
+ 9eb597b2baf8c77d0cc91f740b714dfad8d0ce3c7ce70daf8318f3d938d92504           157002 Translation-en.gz
+SHA512:
+ 007d10fdf21f4273c0440f339014956f3a29b033a5d7bdf10fbe6e8ed30434a18976b0fca5ee1e2a088251bcbadfbdee403ca4dc7d9d414a5b9d9d46d4f3aacb           469127 Packages
+ 582190b39e906a9dfd9aead78ef4d9d71e6c0403d298ed673bd8d2b7c9b0513827114e2a22ef7a518093fbeddb58a1ce32145d23caf497bea895968375d1ce09           157002 Packages.gz
+ e299e85a5f3d492c8af3542d8756ab720a8137571f9e6aab06f5dd5a6d78765f19ec8485d1a9f1dcb379647c8ed6ef03ec4d00c1d7758f7de74d07f20849ffed              186 Release
+ 582190b39e906a9dfd9aead78ef4d9d71e6c0403d298ed673bd8d2b7c9b0513827114e2a22ef7a518093fbeddb58a1ce32145d23caf497bea895968375d1ce09           157002 Translation-en.gz
