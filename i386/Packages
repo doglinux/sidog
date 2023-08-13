@@ -3032,6 +3032,24 @@ SHA256: c7d31e8b01e1813d3f3247b2470e8bac45daef98d73108bd3f0507fd22e277a9
 SHA512: aded5256e7d52144bc18a2f954df24ddb26695db3fa58b3d23819ed2d6747cd7c2871f7eed62a5f48143913a61f3d9658f148bf9ce389075062fd0b8a922c580
 Description: Media player small version for DebianDog
 
+Package: gnome-mplayer-1.0.7
+Architecture: i386
+Version: 1:1.0.6.6
+Priority: extra
+Section: system
+Maintainer: root@wheezy
+Installed-Size: 9500
+Depends: dbus-x11, libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmusicbrainz3-6, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, liba52-0.7.4, libdvdread4, libenca0, libfaad2, libfribidi0, libogg0, libpng12-0, libtheora0, libvorbis0a, libxext6, libxinerama1, libxv1, libxvidcore4, libcdio-paranoia1, libssl1.0.2, libcurl4, libldap-2.4-2
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable
+Filename: ./gnome-mplayer-1.0.7_1.0.6.6_i386.deb
+Size: 3829632
+MD5sum: 5287f019820562f947df0e7b3a771bb8
+SHA1: f5644f62eef617bda94f47546cb6f036f6af4ccc
+SHA256: 6dd6ebbda7525439a3369541c70593f8fb4b941ffd2dc3a54333c868d927e537
+SHA512: 7732e83ba0930f2464668575a78976e9d2a99763a44ac984f315cea344c056b097e19742fbb2cf1eaef44969b01fe17f32e17268e0bdc4f216252a9360061a0e
+Description: Media player small version for DebianDog
+
 Package: googledrivegui2
 Architecture: i386
 Version: 2.1.0
@@ -4630,6 +4648,30 @@ Description: Independent JPEG Group's JPEG runtime library
  .
  This package contains the shared library.
 
+Package: libldap-2.4-2
+Architecture: i386
+Version: 2.4.57+dfsg-3+deb11u1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openldap
+Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+Installed-Size: 577
+Depends: libc6 (>= 2.28), libgnutls30 (>= 3.7.0), libsasl2-2 (>= 2.1.27+dfsg)
+Recommends: libldap-common
+Conflicts: ldap-utils (<= 2.1.23-1)
+Replaces: libldap-2.3-0, libldap2
+Filename: ./libldap-2.4-2_2.4.57+dfsg-3+deb11u1_i386.deb
+Size: 244268
+MD5sum: 66a3d86ef4ad6ef2d2fb7471e709d28e
+SHA1: d99e1e2a76b26010ecc2b3be99eb199c89cd4161
+SHA256: 57fb9c537059cfcde023e6b3ad1c4dd7ed7d7f54a0aba2c4f3d1390b90c944ab
+SHA512: e579ac8d9d3e964f989fac519ce7902603842aeb9bd829474f69702e23515e59dc8cfa4114587b58db3750456efaeb46038d5e394b8b0f61a247e1e7465cebc4
+Homepage: https://www.openldap.org/
+Description: OpenLDAP libraries
+ These are the run-time libraries for the OpenLDAP (Lightweight Directory
+ Access Protocol) servers and clients.
+
 Package: libmac2
 Architecture: i386
 Version: 4.11-u4-b5-s7-dmo3
@@ -4681,6 +4723,31 @@ Description: library to access the MusicBrainz.org database
  comprehensive music information site.
  .
  This package contains the library to access the data from C or C++.
+
+Package: libncurses5
+Architecture: i386
+Version: 6.4-4
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: ncurses
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 326
+Depends: libtinfo5 (= 6.4-4), libc6 (>= 2.34)
+Recommends: libgpm2
+Filename: ./libncurses5_6.4-4_i386.deb
+Size: 104196
+MD5sum: 8c2096ab913d34bb1dd23deb7cf1de47
+SHA1: 81f3b28e2e47a23e31b5382f7bef5cd2613f028c
+SHA256: a4199b312b4641fb617c781b667d7b34cc04e74942a1a7a6b0b23e1e7ae7d0d0
+SHA512: 41a486d9ead0119a180882ca39bdb846697cf691360b67b7de2a70bab34d556307929418bb40f94345531373c179766c1248cbe7dbba050b3c110c897a736cf9
+Homepage: https://invisible-island.net/ncurses/
+Description: shared libraries for terminal handling (legacy version)
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the legacy shared libraries necessary to run
+ programs compiled with ncurses.
 
 Package: libnetpbm10
 Architecture: i386
@@ -5322,6 +5389,30 @@ Description: Tag Image File Format (TIFF) library (old version)
  libtiff is a library providing support for the Tag Image File Format
  (TIFF), a widely used format for storing image data.  This package
  includes the shared library.
+
+Package: libtinfo5
+Architecture: i386
+Version: 6.4-4
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: ncurses
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 505
+Depends: libc6 (>= 2.34)
+Filename: ./libtinfo5_6.4-4_i386.deb
+Size: 329064
+MD5sum: 1e8c2d3dcf73d94234f13eada0de76a1
+SHA1: fb3015b50b184783104109ca048f198bc9cd121d
+SHA256: dc615c2119b11b5ac6c6b56c359e423378ef5c87e5f2ff6a9adef11bc6262496
+SHA512: 9a791611d02c7141df06cdf0d9b0dd4b7e1372c37c3c3e726dbe24117e8e9e8efaa9dd96efdbb31b757cc326410adb604d03868ebbacd12596a88e00c21d340c
+Homepage: https://invisible-island.net/ncurses/
+Description: shared low-level terminfo library (legacy version)
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the legacy version of the shared low-level
+ terminfo library.
 
 Package: libudev-dev
 Architecture: i386
