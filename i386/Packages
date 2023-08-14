@@ -1171,32 +1171,6 @@ SHA256: 045ff34febef783039e15908e6018b9204ae52688ec45cc1246af4618a3b5ebc
 SHA512: 2fe2a68afb64146684b86205f9d4eb9ac76dac5efde35dc860550a55f0c5a546fae58bd3fe5c89c4afe2b5453a188bdcbd064fbfb0b1fea23ddc02d2059556b3
 Description: Dancing Letters Generator (forum and HTML)
 
-Package: dash
-Architecture: i386
-Version: 1:0.5.11+git20210903+057cd650a4ed-8
-Multi-Arch: foreign
-Priority: required
-Essential: yes
-Section: shells
-Maintainer: Andrej Shadura <andrewsh@debian.org>
-Installed-Size: 221
-Pre-Depends: libc6 (>= 2.33)
-Depends: debianutils (>= 5.6-0.1), dpkg (>= 1.19.1)
-Filename: ./dash_0.5.11+git20210903+057cd650a4ed-8_i386.deb
-Size: 120596
-MD5sum: 2c1dd30f43ff47f7151ab35521a22ce3
-SHA1: 79fb14543da85d045e21e34eff14b3622196d2d7
-SHA256: 32e45ae862a97eb7c6f032187b505063bf85c4698594235bf65463dfa27f93a2
-SHA512: e1c14bbe762bcfbb916dacb723110619b22d3504fc86fa4be66cf762214ee25fee08673769dc51f96781d170087e892c2d61a6ff110a0fad8cfbd2c6f0dc274f
-Homepage: http://gondor.apana.org.au/~herbert/dash/
-Description: POSIX-compliant shell
- The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
- from ash.
- .
- Since it executes scripts faster than bash, and has fewer library
- dependencies (making it more robust against software or hardware
- failures), it is used as the default system shell on Debian systems.
-
 Package: deadbeef-static
 Architecture: i386
 Version: 0.7.2-2
