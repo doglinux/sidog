@@ -6,24 +6,24 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sun, 13 Aug 2023 19:48:38 +0000
+Date: Mon, 14 Aug 2023 09:48:19 +0000
 MD5Sum:
  585a4cbe551639cb7d35e6bb155ea333           500586 Packages
- 683662ff7986397d6cd1ed0dba57eb08           166039 Packages.gz
- a3343e0d43a16afce4bf8697961ac029              186 Release
- 683662ff7986397d6cd1ed0dba57eb08           166039 Translation-en.gz
+ 859785ccd0251342842d16ad6a2c0310           166039 Packages.gz
+ cf1b18268a4215cc30cef656196be32f              186 Release
+ 859785ccd0251342842d16ad6a2c0310           166039 Translation-en.gz
 SHA1:
  e21c7f2c7821824cf5a9c64f5b0d1ac7020b4bff           500586 Packages
- ed7a289d1644b6e6c75fc5a0d973c7cadb8a8795           166039 Packages.gz
- 7584aaad9dde20966e4b514ebeac69b91a35d56a              186 Release
- ed7a289d1644b6e6c75fc5a0d973c7cadb8a8795           166039 Translation-en.gz
+ 80638262719d7ff3f49e032ba0dc4e596d792c90           166039 Packages.gz
+ bb8dd8813f4f84a32df56f5b3803b8cf1402918e              186 Release
+ 80638262719d7ff3f49e032ba0dc4e596d792c90           166039 Translation-en.gz
 SHA256:
  cf32a4f791e50f4f212a03fd7675d3d2a53a67d16df6c3ad3df58e92e0c4fa19           500586 Packages
- 04ceec594c06d1cd4faf6bc443290d57621e5c6206a51b51842633a23fc719a3           166039 Packages.gz
- f59c12a9bd8845b15044fa1e1d475a88b2bff2300becdb6e8cadae470fb666d8              186 Release
- 04ceec594c06d1cd4faf6bc443290d57621e5c6206a51b51842633a23fc719a3           166039 Translation-en.gz
+ 824bf0daaca6ee3ce5698408ba9ff7e3c4434bb1644d2e2ce0083a336051683d           166039 Packages.gz
+ 7867c0a614f0f7867c09305139b5ccadadb62bed60bbf4be56761b9e7ba676c9              186 Release
+ 824bf0daaca6ee3ce5698408ba9ff7e3c4434bb1644d2e2ce0083a336051683d           166039 Translation-en.gz
 SHA512:
  9bb8ca9661bccf4e4a1e25777cc25177caff54a2998e73c5eedace44374c08f9566033036a652eca550de642434faa966558e4101bb6c0dbde6a2e6428782297           500586 Packages
- c9c147bc7a8584ffc08c8ba5b012bae6c5ed1de47a69d9fdd311495cef415a318f0ef1fbd34d7ee8d9f1a095814cf3869063e986027079da8e3411cea320c3b4           166039 Packages.gz
- e97a038e933538f7dd1f0ac00f81ffd8d793c83e963d96874bd534f9b7734e804cbe28a81ad4b1c9facf9623dcd881cf0285800c51d055688b0ebbf231ba92a0              186 Release
- c9c147bc7a8584ffc08c8ba5b012bae6c5ed1de47a69d9fdd311495cef415a318f0ef1fbd34d7ee8d9f1a095814cf3869063e986027079da8e3411cea320c3b4           166039 Translation-en.gz
+ 418623d1ff483040a37db327afbf07a6b0f1fb9ab4f9414b92d7ae6f099e7f4bf796a776efddee9de3e2a9169591427916cfad24f377ee9695a03deab201791b           166039 Packages.gz
+ 5097e89279ab46e5945e6b718165678535a0ecfd230a5f50b56d4f0145b8f2f205f7ebb942bf91affdf41a4277753301d0161b671e447fe298159f3dcdd19edd              186 Release
+ 418623d1ff483040a37db327afbf07a6b0f1fb9ab4f9414b92d7ae6f099e7f4bf796a776efddee9de3e2a9169591427916cfad24f377ee9695a03deab201791b           166039 Translation-en.gz

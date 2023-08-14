@@ -264,6 +264,7 @@ lib/x86_64-linux-gnu/libudev.so.0			    libudev0
 lib/x86_64-linux-gnu/libudev.so.0.13.0			    libudev0
 lib/x86_64-linux-gnu/libudev.so.1			    libeudev1
 lib/x86_64-linux-gnu/libudev.so.1.6.3			    libeudev1
+lib/x86_64-linux-gnu/libudev.so.1.7.7			    libeudev1
 lib/x86_64-linux-gnu/security/pam_elogind.so		    libpam-elogind
 lib/x86_64-linux-gnu/security/pam_systemd.so		    libpam-elogind-compat
 opt/apps/make-deb-package/.DirIcon			    makedebpackage
