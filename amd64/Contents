@@ -1,9 +1,7 @@
-bin/dash						    dash
 bin/elogind-inhibit					    elogind
 bin/findmnt						    mount
 bin/loginctl						    elogind
 bin/mount						    mount
-bin/sh							    dash
 bin/udevadm						    eudev
 bin/umount						    mount
 bin/usleep						    pburn
@@ -9330,7 +9328,6 @@ usr/share/dbus-1/system-services/org.freedesktop.nm_dispatcher.service network-m
 usr/share/dbus-1/system.d/nm-dispatcher.conf		    network-manager
 usr/share/dbus-1/system.d/org.freedesktop.NetworkManager.conf network-manager
 usr/share/dbus-1/system.d/org.freedesktop.login1.conf	    elogind
-usr/share/debianutils/shells.d/dash			    dash
 usr/share/desktop-directories/dog-accessories.directory	    jwm-setup-dd64,jwmconf,jwm-setup
 usr/share/desktop-directories/dog-development.directory	    jwm-setup-dd64,jwmconf,jwm-setup
 usr/share/desktop-directories/dog-education.directory	    jwm-setup-dd64,jwmconf,jwm-setup
@@ -9406,12 +9403,6 @@ usr/share/doc/bluealsa/changelog.gz			    bluealsa
 usr/share/doc/bluealsa/copyright			    bluealsa
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
-usr/share/doc/dash/NEWS.Debian.gz			    dash
-usr/share/doc/dash/README.Debian.diet			    dash
-usr/share/doc/dash/README.source			    dash
-usr/share/doc/dash/changelog.Debian.gz			    dash
-usr/share/doc/dash/changelog.gz				    dash
-usr/share/doc/dash/copyright				    dash
 usr/share/doc/elogind/NEWS.gz				    elogind
 usr/share/doc/elogind/README.gz				    elogind
 usr/share/doc/elogind/README.md.gz			    elogind
@@ -11217,7 +11208,6 @@ usr/share/initramfs-tools/hooks/udev			    eudev
 usr/share/initramfs-tools/scripts/init-bottom/udev	    eudev
 usr/share/initramfs-tools/scripts/init-top/udev		    eudev
 usr/share/lintian/overrides/aufs-tools			    aufs-tools
-usr/share/lintian/overrides/dash			    dash
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/eudev			    eudev
 usr/share/lintian/overrides/firefox-esr			    firefox-esr
@@ -11934,7 +11924,6 @@ usr/share/man/man1/auibusy.1.gz				    aufs-tools
 usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/busctl.1.gz				    elogind
 usr/share/man/man1/ceni.1p.gz				    ceni
-usr/share/man/man1/dash.1.gz				    dash
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/empty.1.gz				    empty-expect
@@ -11977,7 +11966,6 @@ usr/share/man/man1/roxterm-config.1.gz			    roxterm-common
 usr/share/man/man1/roxterm.1.gz				    roxterm-common
 usr/share/man/man1/sct.1.gz				    sct
 usr/share/man/man1/sessreg.1.gz				    x11-xserver-utils
-usr/share/man/man1/sh.1.gz				    dash
 usr/share/man/man1/showrgb.1.gz				    x11-xserver-utils
 usr/share/man/man1/straw-viewer.1p			    straw-viewer
 usr/share/man/man1/thunar-settings.1.gz			    thunar
@@ -12120,7 +12108,6 @@ usr/share/menu/ceni					    ceni
 usr/share/menu/conkyclock				    conkyclock
 usr/share/menu/conkyclock2				    conkyclock2
 usr/share/menu/conv-sfs					    edit-sfs-pcmanfm,edit-sfs-thunar
-usr/share/menu/dash					    dash
 usr/share/menu/desktop_view_edit			    desktop-editor
 usr/share/menu/dogradio					    dogradio
 usr/share/menu/domycommand				    domycommand
