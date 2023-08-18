@@ -10,6 +10,8 @@ etc/NetworkManager/dispatcher.d/01-ifupdown		    network-manager
 etc/X11/app-defaults/Xvidtune				    x11-xserver-utils
 etc/X11/openbox						    openbox
 etc/alsa/conf.d/20-bluealsa.conf			    bluealsa
+etc/apt-fast.conf					    apt-fast
+etc/bash_completion.d/apt-fast				    apt-fast
 etc/dbus-1/system.d/bluealsa.conf			    bluealsa
 etc/default/aufs					    aufs-tools
 etc/dhcpcd_dropwait_secs				    frisbee
@@ -5923,6 +5925,7 @@ usr/local/bin/alsa-capture				    alsa-capture
 usr/local/bin/alsacapgui				    alsacapgui
 usr/local/bin/alsacapgui2				    alsacapgui2
 usr/local/bin/alsamixertray				    alsamixer-tray
+usr/local/bin/apt-fast					    apt-fast
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/audio-converter				    audio-converter

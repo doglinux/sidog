@@ -9,35 +9,35 @@ Codename: buster
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Mon, 14 Aug 2023 16:13:07 +0000
+Date: Fri, 18 Aug 2023 14:09:08 +0000
 MD5Sum:
- 3aaa906fdcd26d933d203b3a9b25b87d           501885 Packages
- b891f7b67031c221752d32874047f2a6           165952 Packages.gz
- 4b53bf35d147effd9789ac309704eb1f              186 Release
- b891f7b67031c221752d32874047f2a6           165952 Translation-en.gz
+ 62f38b9da0a5413eefd02667920d6ffd           502389 Packages
+ 60eb6ca29b2b1c79279e38e77b9ed2d7           166224 Packages.gz
+ ff30ac4853e6ca059a803d09ff775629              186 Release
+ 60eb6ca29b2b1c79279e38e77b9ed2d7           166224 Translation-en.gz
 SHA1:
- 5e00fa87d81647b16e6c04d5e0a156ff7f0b5670           501885 Packages
- 9e1385b986aca524f82630d2042e1431dd3edf65           165952 Packages.gz
- 004eaafeda32991ecbb20fe7bd86f7b7f9ab858c              186 Release
- 9e1385b986aca524f82630d2042e1431dd3edf65           165952 Translation-en.gz
+ b525d8b141cc6d64b2279ebfe9fe42d5036eb111           502389 Packages
+ 1bac3530353224d87055e14e9ff068f372dbdc1a           166224 Packages.gz
+ a3d1f564f641f026a205f8442297b0f252bfe894              186 Release
+ 1bac3530353224d87055e14e9ff068f372dbdc1a           166224 Translation-en.gz
 SHA256:
- 5ad660354878654a963548e0c159bc9ed519c1477e6dec1b5f937a6eaccd3761           501885 Packages
- b3880648f441daa50447a7ebf0f4558bb7eaef6ae96dcad926376ee92b458967           165952 Packages.gz
- eaf2cb8fde00c8c60f2b4b4f8231f8901f61d82a7d9412580e583ff1440678ae              186 Release
- b3880648f441daa50447a7ebf0f4558bb7eaef6ae96dcad926376ee92b458967           165952 Translation-en.gz
+ 1ca98ed16066b6a04c8b3e24df9c8dcb94d4e29e87e70a39347351d7644ebb6c           502389 Packages
+ a58b422fb101e94a5b8c87a9ac0b1a7d96026b8fe837e260a3e3b4af47b9f887           166224 Packages.gz
+ 2f94bbbc2bb93c86d6f3add2a40dab47bf65c83de04a8ac8afd659f1ab536032              186 Release
+ a58b422fb101e94a5b8c87a9ac0b1a7d96026b8fe837e260a3e3b4af47b9f887           166224 Translation-en.gz
 SHA512:
- 9a399057b6bf44e25ad226cc4ec24f48318d19a760faef80bb7aaab8e61ef9ded07164b5edcb7aa6503e7a4c9b7aa44aa7c4f31b826b52aa134e0c1e9078f8ac           501885 Packages
- 04fcd9e63ddc0f1f2bc951f518a95f5f6f68b5953b196efc86d167aa95d149e7397403d4d0cfe7f343bff1db863e1b6dc11425c05dd6ea852ed6bd2610cbe426           165952 Packages.gz
- 76debc476e8c001dc1b3f8258292f76507f740191586dd92bdc7055c2b08ff5a5a4926b003e582aad04127b4c1da95db97266237c1d8ab1501bfb1a86b8d920d              186 Release
- 04fcd9e63ddc0f1f2bc951f518a95f5f6f68b5953b196efc86d167aa95d149e7397403d4d0cfe7f343bff1db863e1b6dc11425c05dd6ea852ed6bd2610cbe426           165952 Translation-en.gz
+ 02fb2f4ba8af6910dddc58a9bfde899cf1705d1e488769abda7724a576c21dcd0083c9c1bca5afc9325fa9fb5c8c7b6f1b94811d288f5ae05279bc795a31c2c9           502389 Packages
+ e649ed1328e5050fcdfe3e888e6377742252e34dfd9c9cc78dc9294ac30129b1af7c3ab6af2708bc0e42d718a35bfb0e4dcb4085aa34ef7f4c838b2781e9ce3d           166224 Packages.gz
+ ee831c0323a5aa70f768546924999e44985e282c3a8c30796ffc7b4b8725b113a5d5f6572476a51b2c0e28ed20e725c9259b20533d3c7b76ded564508e04a56a              186 Release
+ e649ed1328e5050fcdfe3e888e6377742252e34dfd9c9cc78dc9294ac30129b1af7c3ab6af2708bc0e42d718a35bfb0e4dcb4085aa34ef7f4c838b2781e9ce3d           166224 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmTaUpMACgkQrYe8en1z
-CB28JAf/ZF5qz354MUz+a/S7xzEkgNzGDYgPR0rZTeVNNdJpCehm8vZMD+ebp0vr
-A2X1cIhffVoOwqBEfy2f0ZsMzcRpJ0xV04w1t2qHAgpwG2LFwPhUTSYrDG0I8I33
-9al/IttERkvHcxPuxN4fy4d9Kf13yu+tm3UNQ6/jcxelpDBDhRSb17eFI4BbSD1m
-ojzUl0BsrS4Mict3iz2ZN6a8XpjQuvdU/bJSk/tDLlfQla+vwFqO5xhNAurwC/7o
-IYlMbpUo9h6kPHHNd09mVdduoV2Vj81p1QBwhK5Bvycpx9BKC5jjkbTnN/Ry4QlR
-hNvyg8Un1ZsbfW9lBZatv2CiygNRXg==
-=Je1j
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAmTfe4QACgkQrYe8en1z
+CB2kMwgAh7DeQ4WlHHhgpB1EcPIWWI7ikiO2PlI53vyJk5RPa2c+5xlrR/7o/PYx
+UBA5VsmS6iopOA80rnAwNKGAAloT9Ay1YMv/tcEgQWIVMcBnwSCvvLZBGl9D0zyQ
+nHuRu3wFItiXVUuAsJ5uENCc1CRr/VhU+j6i2y7IS+5Fh9fJorB2Uivr3pC095m0
+UVWujSeLZrwXpN/my8P1GvTHz3EeE6/ctp2Az1BgftjeP3NBnRqCnkgpw73HCFU9
+PF2EOfZNs+3Po7SQf8TRdT7D3yRxMNK2hBlgS7io6Kz/tHDXUN8JPpOl2mnEq29+
+WZxHsTZAIIkT7LbNmHyGKIrcBAI6Tg==
+=l+vM
 -----END PGP SIGNATURE-----

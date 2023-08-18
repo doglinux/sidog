@@ -109,6 +109,21 @@ SHA256: 748ff9e94a9e957b80daf55b029c67cfccc69f3390c18717f709f0c5e885c13d
 SHA512: 668d8628243cb935e38a4f28183b36d43ca4ba65c6eb19424c563a5a2ff9993c9638ab87da835ec1f42ba191b36b57be8d05697f62926e27183cae24f177c542
 Description: Volume control for system tray
 
+Package: apt-fast
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: fredx181
+Depends: aria2, apt
+Filename: ./apt-fast_1.0_all.deb
+Size: 9260
+MD5sum: 8243543fdc71643e5912c72b2d5b8ff2
+SHA1: 861cc86bd68e4e9e0bfbe40586d5241385da6a5e
+SHA256: 5fa014d97ef54e3ab2f67cc033e8587e852f564079796ddd6b64e20e06516f7f
+SHA512: a1d00b15dde5654d3a2cc8f54b94e0040097777d160248d510eac4f58c4cf0aab1efa501948ee92a5ab493b4c60e6b9f604a68f3b7876dd94644e5645ca6d291
+Description: faster download with apt
+
 Package: apt2sfs
 Architecture: i386
 Version: 1.1.2

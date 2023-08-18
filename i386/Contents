@@ -21,6 +21,8 @@ etc/X11/xdm/xdm-config					    xdm
 etc/X11/xdm/xdm.options					    xdm
 etc/X11/xinit/xinitrc					    xinit
 etc/X11/xinit/xserverrc					    xinit
+etc/apt-fast.conf					    apt-fast
+etc/bash_completion.d/apt-fast				    apt-fast
 etc/conky/conky.conf					    conky-all,conky-std,conky-cli
 etc/conky/conky_no_x11.conf				    conky-all,conky-std,conky-cli
 etc/daemons.conf					    wifibox-dhcpcd,wifibox
@@ -2884,6 +2886,7 @@ usr/local/bin/alsa-capture				    alsa-capture
 usr/local/bin/alsacapgui				    alsacapgui
 usr/local/bin/alsacapgui2				    alsacapgui2
 usr/local/bin/alsamixertray				    alsamixer-tray
+usr/local/bin/apt-fast					    apt-fast
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/audio-converter				    audio-converter
