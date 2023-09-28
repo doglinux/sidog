@@ -2437,51 +2437,6 @@ SHA256: 03ceb7fdc978b2985cf3004d9f1c342b42b579fbb0225635310c259d02325e5f
 SHA512: e238573bce0d5950eb998a1304e19dc8444718fb90e093e898fad68040ae85fb9974318d040bc147ed06acfb8f7deb67399cd652312988f3b258f6bfce64eb5f
 Description: DebianDog deb + dependencies install utility from Fredx181
 
-Package: flashplayerchoice
-Architecture: amd64
-Version: 1.0.4
-Maintainer: root
-Installed-Size: 38
-Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
-Filename: ./flashplayerchoice_1.0.4_amd64.deb
-Size: 5782
-MD5sum: 3c0da03cab18818b8a0da8d8d4ce6480
-SHA1: cf9abc0dbe09dfc5760ddb0268f2bc7f02e2f73d
-SHA256: c90d33292a21ac50c0885daaba87500b55b9c1ff26e04377d8ab60796107d9f9
-SHA512: aa331aa124c6cd22c5f4c35400b7605de10332567def704966bb21c4dd0df328b98057353216c12381a5a486be16679b84e9730b4d908c6a371c0f83580a3e05
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - Latest version from Adobe (= 16 Mb uncompressed)
-
-Package: flashplayerchoice
-Architecture: amd64
-Version: 1.0.5
-Maintainer: root
-Installed-Size: 38
-Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu, elinks
-Filename: ./flashplayerchoice_1.0.5_amd64.deb
-Size: 5896
-MD5sum: 43a131b54a2c1d965523f9f5c2595979
-SHA1: afd13b8e421609fbf7469a35037620fb279d2930
-SHA256: a2fd27947f086c0ecca3a79172875a02c5e0843ba4ec50987acec5409791f591
-SHA512: c301a3439cdfa03dab8261e8feac6b726a7136ce3b26dcc3c114e64a9df1b896f8ef51f662f1141417ac6d102de161545d622721017b1a14b20d378277a2e1ed
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - Latest version from Adobe (= 16 Mb uncompressed)
-
-Package: flashplayerchoice
-Architecture: amd64
-Version: 1.0.6
-Maintainer: root
-Installed-Size: 38
-Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu, elinks
-Filename: ./flashplayerchoice_1.0.6_amd64.deb
-Size: 5820
-MD5sum: 2ab51f68db2d5d2d31a888f40aed50d6
-SHA1: c310b82432d3a684c45f9c007ba5fd313015c7e9
-SHA256: 261b8447d90f788f3784981b418e1461f5f59d590b66ffa1347aba50cf13eeda
-SHA512: 25dd6ca9f37da8a655c258ad50eac862b338dcf652b3acdc7c41dc90e4daedad726a2a5843ee8576f06cd33ca1b9d1cbead75ef49e5722cf15ae5802f624eab9
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - Latest version from Adobe (= 16 Mb uncompressed)
-
 Package: font-viewer
 Architecture: all
 Version: 0.0.1
@@ -2865,41 +2820,6 @@ SHA256: ea39b03cc59d991b1d5c36c88c1be142e62afa9ab7d50c65d458ec652ea72e86
 SHA512: c108eb93855c73ed26561a76469ceba9a5d61fbd30f173214fdf861b1010c81f3263f2a5f2ffc9537b64a8f8f30f1c9bb1be74177e98e3984e4d5a159b96b668
 Description: Display Animated Gif on Desktop
 
-Package: gmplayer
-Architecture: i386
-Version: 37926-6.3.4
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 1700
-Depends: libsndio6.1, libbluray1, libdvdread4, libcdio-cdda1, libcdio13, libcdio-paranoia1, libfribidi0, libass5, libenca0, libmad0, libvorbisenc2, libvorbis0a, libogg0, libgsm1, libtheora0, liba52-0.7.4, libmpeg2-4, libdca0, libopus0, libbs2b0, libopencore-amrnb0, libopencore-amrwb0, libxvidcore4, libvpx4, libdvdnav4, libdirectfb-1.2-9, libvdpau1, libesd0, libaudio2, libjack-jackd2-0, libopenal1, libdvdcss, librtmp1, libncurses5
-Conflicts: gnome-mplayer-1.0.7, mplayer
-Replaces: gnome-mplayer-1.0.7, mplayer
-Filename: ./gmplayer_37926-6.3.4_i386.deb
-Size: 6240456
-MD5sum: 9cf7f8ee16a294d4ed3753d8a2646df3
-SHA1: acc42a5124912e5419278ede06107f2dff0826fa
-SHA256: 2da95eb252bb8cd7461c6360d7d3b44606044119506598f240364b29bacfc3d8
-SHA512: 0bbad5f8bc44594014927c7119440ee59becff3baafb56cb7058f367ef6f588b0780145d3276d3d5364605a6616f0cb9fc671089d912af8ae48fcaa356b6b3bc
-Description: Mplayer SVN-r37926, mediaplayer
-
-Package: gmplayer
-Architecture: amd64
-Version: 37957-6.3.2
-Priority: optional
-Section: utilities
-Maintainer: root
-Installed-Size: 2000
-Depends: liba52-0.7.4, libaa1, libasound2, libass5, libatk1.0-0, libaudio2, libbluray1, libbs2b0, libc6, libcaca0, libcairo2, libcdio-cdda1, libcdio-paranoia1, libcdio13, libcrystalhd3, libdca0, libdirectfb-1.2-9, libdv4, libdvdnav4, libdvdread4, libenca0, libesd0, libfaac0, libfaad2, libfontconfig1, libfreetype6, libfribidi0, libgdk-pixbuf2.0-0, libgif7, libgl1-mesa-glx, libglib2.0-0, libgnutls30, libgsm1, libgtk2.0-0, libjack0 | libjack-jackd2-0, libjpeg62-turbo, liblirc-client0, liblzo2-2, libmad0, libmp3lame0, libmpeg2-4, libmpg123-0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libopus0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libpng16-16, libpulse0, libroar-compat2, librtmp1, libsdl1.2debian, libspeex1, libtheora0, libtinfo5, libvdpau1, libvorbisidec1, libvpx4, libx11-6, libx264-148, libxext6, libxinerama1, libxss1, libxt6, libxv1, libxvidcore4, libxxf86dga1, libxxf86vm1, libdvdcss
-Conflicts: gnome-mplayer-1.0.6, mplayer
-Filename: ./gmplayer_37957-6.3.2_amd64.deb
-Size: 6890620
-MD5sum: c2851e042cb38b8f463d8f5b60a61975
-SHA1: 949452339ea25c2588bfe98ae3e3f51fcada526d
-SHA256: 36eca3234b1bdaf8cf8f44057755187202f21f25b1038cef71adc61b3c646ec5
-SHA512: c2878614fcad63f32d8009e1b43773f9ceefc2d249a5c0082faaacb569faea814ec0ddc9d7f63c5926d04b82f38ea32c3ba8f94249ee76b3f32b8124de85cd37
-Description: Mplayer SVN-r37957, mediaplayer
-
 Package: gnetcat
 Architecture: all
 Version: 1.3-1
@@ -3040,6 +2960,35 @@ MD5sum: fbb3a92da6be49680d46ebe2a8843f65
 SHA1: 1e971dfb9ee379ac4c458173d72c525bd4ab8695
 SHA256: 3b5f8a4dc66cd2f677097ad15bbb685af1a8f68648ca179c5412b8a41cb11fcc
 SHA512: 0535bfe0321ca5c6cded0f8d8c52c34dabf6e67e170ecc7cc591e61b1a3177a027985ccb555f00bbaddd7210a47e60555b61f8f8257c5c4e00f66a44742ae612
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
+
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.9-3
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: mplayer, libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, libxss1, libnotify4, libpulse-mainloop-glib0
+Suggests: gecko-mediaplayer
+Filename: ./gnome-mplayer-1.0.6_1.0.9-3_amd64.deb
+Size: 177300
+MD5sum: b5803dcdf033ed74dd16eb2667ba2b53
+SHA1: db8d3d27d770201dbfbb1d325f1b48b4dda3019c
+SHA256: b5d291b31f5a895c89d40d3afcdacc371507e07bbb7f2f0130f60c447a0ce037
+SHA512: e2f5a42b1af3064c4175c19d06839869a2c93bce7745622a4f8d9f5ac6af438a560244c3a0594baeff49d8731b45aa36088fc8ffc5895fa56db5c557df01d766
 Homepage: http://code.google.com/p/gnome-mplayer
 Description: GTK+ interface for MPlayer
  The power of MPlayer combined with a friendly interface for your desktop.
@@ -7072,6 +7021,21 @@ SHA1: df27345cb9b104510f7c42507b69bec9834c884c
 SHA256: 98c885631b1fb0640e4cad9c0c8d96c0ba1e8d3ae8123ff77bd968e476587002
 SHA512: 47b496146f0ea2724067fd2d7ac7ab7724bb42f93f14a297302327a2bdf9263ba724128d3adfa4e11477ece45b9bc5c1725836bf800d4e5e5dd1784e233b3056
 Description: Information about drive partitions
+
+Package: peasypdf
+Architecture: all
+Version: 5.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc, xdialog3
+Filename: ./peasypdf-gtk3_5.0_all.deb
+Size: 7320
+MD5sum: fb0db05319ad00c89712dc28a4fc0fd6
+SHA1: 2c2415eb9f26d172496b6f3e0f99dcfa1b07f298
+SHA256: ba116a6859e546147d5c2e2ee7a1bff8698080b96fa427d460fa920f00abf768
+SHA512: 33f1b506a87d6b6463188932d4010bb2cf49d57a9c35689774751fc3cb9c225e6d9b3033ffc5a44a87a2b8c4defa81110935b72309aaad13b31a9fec4a571abc
+Description: Manipulate PDF documents
 
 Package: peasypdf
 Architecture: all
