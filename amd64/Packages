@@ -1890,6 +1890,31 @@ Description: user, seat and session management daemon
  elogind is a session management daemon extracted from systemd project's
  logind
 
+Package: elogind
+Architecture: amd64
+Version: 252.9-1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 2514
+Pre-Depends: debconf, init-system-helpers (>= 1.54~)
+Depends: libacl1 (>= 2.2.23), libc6 (>= 2.34), libcap2 (>= 1:2.10), libmount1 (>= 2.19.1), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libudev1, libelogind0 (= 252.9-1), dbus (>= 1.9.14)
+Recommends: libpam-elogind, polkitd
+Breaks: udev (<< 1:3.2.2+devuan1)
+Replaces: udev (<< 1:3.2.2+devuan1)
+Filename: ./elogind_252.9-1_amd64.deb
+Size: 716380
+MD5sum: 9448978d26460497e2a28b563b977cc5
+SHA1: b7642ee6d4b8cba178fe0b0a3d194894e6200ee3
+SHA256: 6b49f19a7f3c25380d7579060f7579aab4e75ec807ab64a63e4cf17149b5e965
+SHA512: a2684278eb4042af753068fbab563860c8af27e3c24280d6f6ad8b5c5cf18635828ba00b6033fb80cc8e7d2c7901bb00ec2ca0b598f44a903e59bb8f8f634449
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systemd project's
+ "logind"
+
 Package: emelfm2
 Architecture: amd64
 Version: 0.9.1-1~trusty~ppa1
@@ -3920,6 +3945,34 @@ Description: user, seat and session management library compatibility
  to work with libelogind0. For full details of the compatibility see
  README.Debian.
 
+Package: libelogind-compat
+Architecture: amd64
+Version: 252.9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 18
+Provides: libsystemd0 (= 500:254)
+Depends: libelogind0
+Conflicts: libsystemd0
+Breaks: libelogind0 (<< 246.10-4~)
+Replaces: libsystemd0
+Filename: ./libelogind-compat_252.9-1_amd64.deb
+Size: 5536
+MD5sum: f2cec046c34225c24f80786d0447fdd7
+SHA1: 7c09a7375ca547077561d77b2c1168e17045bdb4
+SHA256: c03ed22f88933355604ad312c021a7c9eceb0729eed1f1c5e83b760834843c6d
+SHA512: 81e6ece7b6ad80deb42f050485b60dc68968186c2a7d5b410a5df7c66448a93fbbc351861e4eec03376ced45e729092e1d09f1da5afa26b0cb05191eb8d2452f
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library compatibility
+ The libelogind0 library is ABI compatible with libsystemd0. This package
+ provides the necessary symlinks to allow binaries linked against libsystemd0
+ to work with libelogind0. For full details of the compatibility see
+ README.Debian.
+
 Package: libelogind-dev
 Architecture: amd64
 Version: 243.7-1.0antix1
@@ -4105,6 +4158,27 @@ MD5sum: ec3eabcd0181f1232be4948ae9e3d35b
 SHA1: ad8930b81d3a15b29be5ea35ee067a62db74367b
 SHA256: 28471a058515a3b901a725916a7cff403f302d9a6a26fa4aba0991179778adf1
 SHA512: 48bdb2f7ccc4d2227ae409174dd57877a5f7b91a6f9a149782f7163a9ab6d0cd3255c1f0f5222a4aaa0608f27166c58690431f8570171fbbfbe0b9c921402c3c
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+
+Package: libelogind0
+Architecture: amd64
+Version: 252.9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 730
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10)
+Filename: ./libelogind0_252.9-1_amd64.deb
+Size: 266180
+MD5sum: 847ddb4e54990d44c7e70a62b10e4c52
+SHA1: 95bd94f041dfe2761682eb09db8001948214525e
+SHA256: 41cf66ed1db66e038376c71a1f2d1c05b69dd1a59532f98c2c25fff2ed30e6e0
+SHA512: b2fd5d343ac5169592b8d09d433da8d152afad01fb87a757b72fffb88af45969eb6ef135dcc78a6352d58e1c98bed0a4e3e382c977ea086336b203ac8981273c
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library
  This library provides runtime access to elogind session management.
@@ -5027,6 +5101,31 @@ MD5sum: 5638262e807a4d24593396efbbce66c1
 SHA1: 37281fc5527aa963d29236147c70f639b923d8cf
 SHA256: 03865e3c100f86aa24aee780d61989a80a315826879b20861d89f0b730672e19
 SHA512: a5d34b96ae2d7bd68d850728dbf6fc361f8cd15813910bec1bbad999abc81d2131ede8ff4b34d01d4cf2e43bcd800ba2464b5e50fa90e93daa03b655ba8d1e20
+Homepage: https://github.com/elogind/elogind
+Description: elogind PAM module
+ Plugable Authentication Module to register a session with elogind
+
+Package: libpam-elogind
+Architecture: amd64
+Version: 252.9-1
+Multi-Arch: same
+Priority: optional
+Section: admin
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 526
+Provides: default-logind, libpam-systemd, logind
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), elogind (= 252.9-1), libelogind-compat, libpam-runtime
+Conflicts: libpam-ck-connector
+Breaks: libpam-systemd
+Replaces: libpam-systemd
+Filename: ./libpam-elogind_252.9-1_amd64.deb
+Size: 198636
+MD5sum: 4afc5de95e1a43cc076aac63415ce8b3
+SHA1: a15032a8516e29c5021e629d740ba77c98d3cf87
+SHA256: 9ea0f972f0b6598872fbc1a5312c754d72feca791fa034cc556accfee44f3b7c
+SHA512: 58e3729225bf9fb3a2e2877ed33a0f164a1cc157f03815026f49b48a3aee95cb068cc4d302b864fa36a886e2d814fd22a8974e33a94433122ca78c2566fe7b98
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind

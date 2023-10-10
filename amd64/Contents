@@ -21,6 +21,7 @@ etc/domycommand/domycommand_default.rc			    domycommand
 etc/domyfile/cmd_lists/CMD1_combo			    domyfile
 etc/domyfile/domyfile_default.rc			    domyfile
 etc/elogind/logind.conf					    elogind
+etc/elogind/sleep.conf					    elogind
 etc/esound/esd.conf					    esound-common
 etc/firefox-esr/firefox-esr.js				    firefox-esr
 etc/frisbee/dhcpcd.conf					    frisbee
@@ -250,8 +251,10 @@ lib/udev/scsi_id					    eudev
 lib/udev/udev-finish					    eudev
 lib/udev/v4l_id						    eudev
 lib/udev/write_net_rules				    eudev
+lib/x86_64-linux-gnu/elogind/libelogind-shared-252.9.so	    elogind
 lib/x86_64-linux-gnu/libelogind.so.0			    libelogind0
 lib/x86_64-linux-gnu/libelogind.so.0.29.0		    libelogind0
+lib/x86_64-linux-gnu/libelogind.so.0.35.0		    libelogind0
 lib/x86_64-linux-gnu/libncurses.so.5			    libncurses5
 lib/x86_64-linux-gnu/libncurses.so.5.9			    libncurses5
 lib/x86_64-linux-gnu/libpng12.so.0			    libpng12-0
@@ -9311,6 +9314,7 @@ usr/share/azpainter/tr/pt_BR.mtr			    azpainter
 usr/share/azpainter/tr/ru.mtr				    azpainter
 usr/share/azpainter/tr/uk.mtr				    azpainter
 usr/share/azpainter/tr/zh_CN.mtr			    azpainter
+usr/share/bash-completion/completions/busctl		    elogind
 usr/share/bash-completion/completions/loginctl		    elogind
 usr/share/bash-completion/completions/nmcli		    network-manager
 usr/share/binfmts/python2.7				    python2.7-minimal
@@ -11202,6 +11206,7 @@ usr/share/initramfs-tools/hooks/udev			    eudev
 usr/share/initramfs-tools/scripts/init-bottom/udev	    eudev
 usr/share/initramfs-tools/scripts/init-top/udev		    eudev
 usr/share/lintian/overrides/aufs-tools			    aufs-tools
+usr/share/lintian/overrides/elogind			    elogind
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/eudev			    eudev
 usr/share/lintian/overrides/firefox-esr			    firefox-esr
@@ -11393,6 +11398,7 @@ usr/share/locale/es/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/es/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/et/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/et/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/et/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/et/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/et/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/et/LC_MESSAGES/synaptic.mo		    synaptic
@@ -11410,6 +11416,7 @@ usr/share/locale/fa/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/fa/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fi/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/fi/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/fi/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/fi/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/fi/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/fi/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
@@ -11536,8 +11543,10 @@ usr/share/locale/ja/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/ja_JP/LC_MESSAGES/madedit.mo		    madedit
 usr/share/locale/ka/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/ka/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/ka/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/ka/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ka/LC_MESSAGES/synaptic.mo		    synaptic
+usr/share/locale/kab/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/kk/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/km/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/km/LC_MESSAGES/synaptic.mo		    synaptic
@@ -11617,6 +11626,7 @@ usr/share/locale/ne/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/ne/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/nl/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/nl/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/nl/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/nl/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/nl/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/nl/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
@@ -11642,6 +11652,7 @@ usr/share/locale/or/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/or/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pa/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/pa/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/pa/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/pa/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pa/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/pa/LC_MESSAGES/synaptic.mo		    synaptic
@@ -11715,6 +11726,7 @@ usr/share/locale/rw/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/rw/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/sc/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/si/LC_MESSAGES/GConf2.mo		    gconf2-common
+usr/share/locale/si/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/si/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/si/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sk/LC_MESSAGES/GConf2.mo		    gconf2-common
@@ -12051,11 +12063,15 @@ usr/share/man/man5/NetworkManager.conf.5.gz		    network-manager
 usr/share/man/man5/aufs.5.gz				    aufs-tools
 usr/share/man/man5/fstab.5.gz				    mount
 usr/share/man/man5/logind.conf.5.gz			    elogind
+usr/share/man/man5/logind.conf.d.5.gz			    elogind
 usr/share/man/man5/nm-settings-dbus.5.gz		    network-manager
 usr/share/man/man5/nm-settings-keyfile.5.gz		    network-manager
 usr/share/man/man5/nm-settings-nmcli.5.gz		    network-manager
 usr/share/man/man5/nm-settings.5.gz			    network-manager
 usr/share/man/man5/nm-system-settings.conf.5.gz		    network-manager
+usr/share/man/man5/org.freedesktop.login1.5.gz		    elogind
+usr/share/man/man5/sleep.conf.5.gz			    elogind
+usr/share/man/man5/sleep.conf.d.5.gz			    elogind
 usr/share/man/man5/udev.conf.5.gz			    eudev
 usr/share/man/man7/elogind.directives.7.gz		    elogind
 usr/share/man/man7/elogind.index.7.gz			    elogind
@@ -13112,6 +13128,7 @@ usr/share/xlunch/icons/restart_32x32.png		    xlunch
 usr/share/xlunch/icons/shutdown_32x32.png		    xlunch
 usr/share/xlunch/icons/vlc_32x32.png			    xlunch
 usr/share/xsessions/openbox.desktop			    openbox
+usr/share/zsh/site-functions/_busctl			    elogind
 usr/share/zsh/site-functions/_loginctl			    elogind
 usr/src/aufs-4.19+20190103/Makefile			    aufs-dkms
 usr/src/aufs-4.19+20190103/config.mk			    aufs-dkms
