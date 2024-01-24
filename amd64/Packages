@@ -1892,7 +1892,7 @@ Description: user, seat and session management daemon
 
 Package: elogind
 Architecture: amd64
-Version: 252.9-1
+Version: 1:252.9-1
 Multi-Arch: foreign
 Priority: optional
 Section: admin
@@ -1905,15 +1905,15 @@ Recommends: libpam-elogind, polkitd
 Breaks: udev (<< 1:3.2.2+devuan1)
 Replaces: udev (<< 1:3.2.2+devuan1)
 Filename: ./elogind_252.9-1_amd64.deb
-Size: 716380
-MD5sum: 9448978d26460497e2a28b563b977cc5
-SHA1: b7642ee6d4b8cba178fe0b0a3d194894e6200ee3
-SHA256: 6b49f19a7f3c25380d7579060f7579aab4e75ec807ab64a63e4cf17149b5e965
-SHA512: a2684278eb4042af753068fbab563860c8af27e3c24280d6f6ad8b5c5cf18635828ba00b6033fb80cc8e7d2c7901bb00ec2ca0b598f44a903e59bb8f8f634449
+Size: 717728
+MD5sum: f365195e430742bd3db5e81201b89db9
+SHA1: 5d7d2b58e113e1bb62748f2c4ce5c1f0dc1897d7
+SHA256: fa3d56a92e0bcbb005774135e8f6d794dd711a0899e4f19195f158b11524bbf0
+SHA512: 5ae87ddfc9e43ecf84b445ed272ad247075548995ee320892b67f2c6ee05e79502bdfa8c2bf7dbc57c2faaf8bb0dcf0c1b1b77206a3a21d30b54c74d27587b8b
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management daemon
  elogind is a session management daemon extracted from systemd project's
- "logind"
+ logind
 
 Package: emelfm2
 Architecture: amd64
