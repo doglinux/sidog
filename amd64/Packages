@@ -4182,7 +4182,7 @@ Description: user, seat and session management library
 
 Package: libelogind0
 Architecture: amd64
-Version: 252.9-1
+Version: 1:252.9-1
 Multi-Arch: same
 Priority: optional
 Section: libs
@@ -4192,11 +4192,11 @@ Maintainer: Mark Hindley <mark@hindley.org.uk>
 Installed-Size: 730
 Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10)
 Filename: ./libelogind0_252.9-1_amd64.deb
-Size: 266180
-MD5sum: 847ddb4e54990d44c7e70a62b10e4c52
-SHA1: 95bd94f041dfe2761682eb09db8001948214525e
-SHA256: 41cf66ed1db66e038376c71a1f2d1c05b69dd1a59532f98c2c25fff2ed30e6e0
-SHA512: b2fd5d343ac5169592b8d09d433da8d152afad01fb87a757b72fffb88af45969eb6ef135dcc78a6352d58e1c98bed0a4e3e382c977ea086336b203ac8981273c
+Size: 265784
+MD5sum: 91813263104a16d0af455546de66afac
+SHA1: f1e319dbf36eb0b70880637a7d41f1eea1fa2493
+SHA256: 3110d07c91fc33bd8768bf3b4aa5c18234c29b1f056b140701dc53c76dc855e4
+SHA512: 667a2d219f4fd10276dc928292e9f714bbc77d3998535662b0db937e2f71c609fd08623e2712b65a1152fa260ac312bb63f62aa4a7543372d56799326b13eca7
 Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library
  This library provides runtime access to elogind session management.
@@ -5125,7 +5125,7 @@ Description: elogind PAM module
 
 Package: libpam-elogind
 Architecture: amd64
-Version: 252.9-1
+Version: 1:252.9-1
 Multi-Arch: same
 Priority: optional
 Section: admin
@@ -5139,11 +5139,11 @@ Conflicts: libpam-ck-connector
 Breaks: libpam-systemd
 Replaces: libpam-systemd
 Filename: ./libpam-elogind_252.9-1_amd64.deb
-Size: 198636
-MD5sum: 4afc5de95e1a43cc076aac63415ce8b3
-SHA1: a15032a8516e29c5021e629d740ba77c98d3cf87
-SHA256: 9ea0f972f0b6598872fbc1a5312c754d72feca791fa034cc556accfee44f3b7c
-SHA512: 58e3729225bf9fb3a2e2877ed33a0f164a1cc157f03815026f49b48a3aee95cb068cc4d302b864fa36a886e2d814fd22a8974e33a94433122ca78c2566fe7b98
+Size: 198924
+MD5sum: 70395a154a8abbc235d76ec8940d1d47
+SHA1: c6d7f72f7755f1ee6bf2e47088dfff6e0f5e8aaa
+SHA256: 7260e2974a5487b5a5f168139b3028d1e03ee3882493282082ef7967cd6ac794
+SHA512: 0c01bfdc504cfdf09579e56d1244a88c0de594f0f505d1e2875cc264539357cf6937b0697bf2f1fe37a18b3970bc1419564ea29849bb472931b669a533b033f5
 Homepage: https://github.com/elogind/elogind
 Description: elogind PAM module
  Plugable Authentication Module to register a session with elogind
