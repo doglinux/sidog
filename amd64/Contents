@@ -178,8 +178,12 @@ lib/elogind/libelogind-shared-243.7.so			    elogind
 lib/elogind/libelogind-shared-246.10.so			    elogind
 lib/elogind/system-shutdown/.keep_dir			    elogind
 lib/elogind/system-sleep/.keep_dir			    elogind
+lib/i386-linux-gnu/libelogind.so.0			    libelogind0
+lib/i386-linux-gnu/libelogind.so.0.35.0			    libelogind0
+lib/i386-linux-gnu/libsystemd.so.0			    libelogind-compat
 lib/i386-linux-gnu/libudev.so.1				    libeudev1
 lib/i386-linux-gnu/libudev.so.1.6.3			    libeudev1
+lib/i386-linux-gnu/libudev.so.1.7.7			    libeudev1
 lib/modprobe.d/fbdev-blacklist.conf			    eudev
 lib/systemd/system/NetworkManager-dispatcher.service	    network-manager
 lib/systemd/system/NetworkManager-wait-online.service	    network-manager

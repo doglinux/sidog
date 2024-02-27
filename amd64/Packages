@@ -3991,6 +3991,34 @@ Description: user, seat and session management library compatibility
  to work with libelogind0. For full details of the compatibility see
  README.Debian.
 
+Package: libelogind-compat
+Architecture: i386
+Version: 252.9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 18
+Provides: libsystemd0 (= 500:254)
+Depends: libelogind0
+Conflicts: libsystemd0
+Breaks: libelogind0 (<< 246.10-4~)
+Replaces: libsystemd0
+Filename: ./libelogind-compat_252.9-1_i386.deb
+Size: 5540
+MD5sum: 8881e5cfc7463d458be287a4cfc75726
+SHA1: e465d2fa17e7f1efa91ca67be96442acf3b297c6
+SHA256: 64bd21ee113f9391a7e68c1a89ce82d6bb2993aaff4e75aee5b8c28ccb31c880
+SHA512: ac88b09cae3c5ed629a66db3c72bf9748c26a167513dce97104a8e9223f74e851486d358fda2480d8d667dcf8a08de1fb15ff4e47f4903db64308c8ea61f01c7
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library compatibility
+ The libelogind0 library is ABI compatible with libsystemd0. This package
+ provides the necessary symlinks to allow binaries linked against libsystemd0
+ to work with libelogind0. For full details of the compatibility see
+ README.Debian.
+
 Package: libelogind-dev
 Architecture: amd64
 Version: 243.7-1.0antix1
@@ -4201,6 +4229,27 @@ Homepage: https://github.com/elogind/elogind
 Description: user, seat and session management library
  This library provides runtime access to elogind session management.
 
+Package: libelogind0
+Architecture: i386
+Version: 1:252.9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elogind
+Origin: Devuan
+Maintainer: Mark Hindley <mark@hindley.org.uk>
+Installed-Size: 805
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10)
+Filename: ./libelogind0_252.9-1_i386.deb
+Size: 283868
+MD5sum: 7bac3fff7014142d099d653ae57d4823
+SHA1: 08caad0428265511be379f732bdf494414fe9cc5
+SHA256: 7653993b278bf52679a06bc1660fce0cdeafab3d86dedf28013b38079dc30e98
+SHA512: b29eb647dcdc45f98e121a13e618dca7096ff6c6c2534c74b98faa91277eb2c5d572b16eff0504afa69bd6b495d486638199e95af47b6673ececa285bc22ca99
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides runtime access to elogind session management.
+
 Package: libesd0
 Architecture: amd64
 Version: 0.2.41-11
@@ -4350,6 +4399,33 @@ MD5sum: ef2154a61e3d5ae92c7a74da1ecc6ab6
 SHA1: e4d0eba608ccd4663af23056e64f63de005262d0
 SHA256: aca63ad9d9758052de3e445b0dbc0192767a6df72cbd1b81449d43bcb1e4a123
 SHA512: a487cc673581b8731cc165fa45bb3d9e0250caf17f4482c7bd56d68afcdf22d53b6324a5d9447533abd3859cce38e989d4a009f61792b01bc1ff9b76e9148d19
+Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
+Description: libeudev shared library
+ eudev is a daemon which dynamically creates and removes device nodes
+ from /dev/, handles hotplug events and loads drivers at boot time.
+ .
+ This library provides access to eudev device information.
+
+Package: libeudev1
+Architecture: i386
+Version: 233:3.2.9-10
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: eudev
+Origin: Devuan
+Maintainer: Devuan Dev Team <devuan-dev@lists.dyne.org>
+Installed-Size: 232
+Provides: libudev1 (= 1:3.2.9+devuan4)
+Depends: libc6 (>= 2.17), libselinux1 (>= 2.1.9)
+Conflicts: libudev1 (<< 1:3.2.9+devuan4)
+Replaces: libudev1 (>= 215)
+Filename: ./libeudev1_3.2.9-10_i386.deb
+Size: 119124
+MD5sum: 72dcda39cf018a5a3ae1456ad4206c9d
+SHA1: 65da0132eb19d5381f07de91aa04c19676c5caac
+SHA256: 9acab9bc140f1a23e88e6544e10a7ec636d2a3d7ba47e32d0576555826527d99
+SHA512: bc302ee2d750c869a53846f3ad965c72d4c313042839dbc67b9430e9f9f2e54b99799b494fab71be9288826a4a828a59499fc4674a8df183fe35b51b2b918cd1
 Homepage: https://wiki.gentoo.org/wiki/Project:Eudev
 Description: libeudev shared library
  eudev is a daemon which dynamically creates and removes device nodes
