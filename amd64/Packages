@@ -2300,6 +2300,36 @@ SHA256: 623579ac7053665aa8c2063b58d0c710b8683454e4f0383712993575117407f7
 SHA512: 11d952ea92f8bec85084007c1e0516988f5a88f3db9a9c9fe25868ba7d6bcfb7d6939938c7eebb9104975540804d9a7355f7cb81b5648491cadf64616c7d6812
 Description: Mount images, savefile, modules
 
+Package: filemnt-pcmanfm
+Architecture: amd64
+Version: 1.0.3
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype, menu
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar
+Filename: ./filemnt-pcmanfm_1.0.3_amd64.deb
+Size: 42644
+MD5sum: 669ae1de24ef8f4c0ef8258f1880dffd
+SHA1: 5fa49bb98bc4e167b3dd38b9ba83470c916c9b7b
+SHA256: 53c2b09a546202fadcadff6ff548b9a1f564cf1a9f3693b6f5c7504e06a95203
+SHA512: 5ddf7d945625785590626ff3215ed881cbd77ef5ff4d221719b562c9ab45366b7e63d47df43bb5c4b2a6c0e676e9dfcc71a93a5bcb99adcbb822e7981a44106a
+Description: Mount images, savefile, modules
+
+Package: filemnt-rox
+Architecture: amd64
+Version: 1.0.1
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, gtkdialog, disktype, rox-filer, gsu | gksu
+Replaces: filemnt-thunar, filemnt-xfe, filemnt-pcmanfm
+Filename: ./filemnt-rox_1.0.1_amd64.deb
+Size: 42752
+MD5sum: 2cac8fee5174a2eb1157a239ad2f2d70
+SHA1: 0dcb6cc8483ff39962bd53cc1bc6b14371f54ebf
+SHA256: 3d1615c82d3eb45041f332bd7fb705a98114f6ac500af8695be87a7b09ca1608
+SHA512: 88bee0657c474f5e1df656899925b5d0065d5a0c532c5cafe21a0a08714eee84810b38aeb2116717eb67938cf603b733524dad236fc0fc57581652e5ce5c1d70
+Description: Mount images, savefile, modules
+
 Package: filemnt-thunar
 Architecture: amd64
 Version: 1.0.1
@@ -2328,6 +2358,21 @@ MD5sum: cf231adb6fc7c889262a8b197896b7cf
 SHA1: b27294c15ab3801c0e7985c7df649b511b347269
 SHA256: a4872eb3d70d0a49135f916e1075b21aea58ed7341cb0d29af4bd4f0dcd138df
 SHA512: 704df2ee738b0045d129f3129815ba3150a451af2eff983eb799338c05a3842b415f10d0e73449e83752d1b3bf9fd6a749f87eca2d6bf2cd7a4c15a612eb8179
+Description: Mount images, savefile, modules
+
+Package: filemnt-thunar
+Architecture: amd64
+Version: 1.0.3
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, gtkdialog, disktype, thunar, gsu | gksu, menu
+Replaces: filemnt-rox, filemnt-xfe, filemnt-pcmanfm
+Filename: ./filemnt-thunar_1.0.3_amd64.deb
+Size: 42748
+MD5sum: 9520cf632b8f7fc32e02b460daceab7e
+SHA1: e9aa55bc9266c3af9b519f8edae8e0ba35269800
+SHA256: 1971d452c2fb076cd2f5f7934aa003e8523958a42a2f06eb949daafa21b71b7c
+SHA512: 918f3d52f83776de402643b312bbb7da221d82a85f96d5250eb88112f2dd6cffe85494897fc13aa9899ecdfa7cb18fb4658c23298ede58b229937e751931f3c1
 Description: Mount images, savefile, modules
 
 Package: findnrun-doc
@@ -8682,6 +8727,40 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
  Version 1.2.7, run save2flash in case of booting with EXIT parameter
  Version 1.3.0, added info message about priority and order of kernel .squashfs
+
+Package: quick-remaster
+Architecture: all
+Version: 1.4.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./quick-remaster_1.4.0_all.deb
+Size: 3961944
+MD5sum: e839a283a49bee1a09ba8db20f2113df
+SHA1: d086c88713ea0f00a3ee36f35a67099f8bee1f1d
+SHA256: c2f3afa28afd2cf1b2e0ef6104b594e4a8259c909ff02ee23a63bf7e166dfa0a
+SHA512: 145be0346858a453e7ab7583ea289de0bc227353275863a3e9f8f701ede58c6a367b0019d9717f3fd39113dac7ef7946f38112d9f1800deb31e1912e1721c6b5
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now 
+ Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
+ Version 1.2.7, run save2flash in case of booting with EXIT parameter
+ Version 1.3.0, added info message about priority and order of kernel .squashfs
+ Version 1.4.0, Added UEFI support for creating ISO
 
 Package: redshift-gui-lite
 Architecture: amd64
