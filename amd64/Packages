@@ -865,6 +865,31 @@ SHA256: cd948a895f999f152329e5b147e8228f5fcd7db73b544bc99eb0a55c5c727ba0
 SHA512: 76ea136d762ea623e35ab496abe7e4281e92f4a2cc5a8a8443685c841f5764e1399e38b0bbde9ef7d91b8b4d735f4f0560107769dd88f345b9d508617858e5f0
 Description: chpupsocket
 
+Package: conky
+Architecture: all
+Version: 1.19.4-1
+Priority: optional
+Section: oldlibs
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 30
+Depends: conky-std | conky-cli | conky-all
+Filename: ./conky_1.19.4-1_all.deb
+Size: 19384
+MD5sum: 6e53e8420008aaa9fcd61492254788dd
+SHA1: 7ce1ebbfc84a253eaa54cc22d70621d467525bbc
+SHA256: e129b4d30591ecf001c0a87487e0f06e5cbdb616d5752611aa71f7cd0cb46b72
+SHA512: e2fac13376bba2c92e0222a704df94d5a91e57b3fe234178645e66684d5105914ce8a2af129f8232751e37774d109eba1995a4e7e5b25bb8dbeac58ae5434a9a
+Homepage: https://github.com/brndnmtthws/conky
+Description: highly configurable system monitor (transitional package)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ Lua support).
+ .
+ This is a dummy package to ease transition to the new packaging scheme.
+ It may be safely removed after upgrade/installation.
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -6208,6 +6233,26 @@ SHA256: cad578b4b96d55e5a993564cb80120f50da81a537f5edd3b6061aefbde5c44e2
 SHA512: 42c869660ba97c31e0f1e4b47132b3a8d16f92dddde744221f6f59d6451e0e317a24a82fd7970a5ca564bd5741196a735882742f7969acb8df65f8f26edf4994
 Description: Joins media files
 
+Package: mime-support
+Architecture: all
+Version: 3.66
+Multi-Arch: foreign
+Priority: optional
+Section: oldlibs
+Maintainer: Mime-Support Packagers <team+debian-mimesupport-packagers@tracker.debian.org>
+Installed-Size: 17
+Depends: mailcap, media-types
+Filename: ./mime-support_3.66_all.deb
+Size: 10916
+MD5sum: 70f7f4f6c213664480ae79fedd3687f5
+SHA1: b47831959eb182e371f3d8cb004a42622407b339
+SHA256: b964e671e6c47674879a3e54130b6737e8760fbd3da6afcc015faa174af98ba0
+SHA512: dad0499cf44486d9ab4db7f517e9aabc1207b0580ba7f52fdd389d7890721686ebfdc4a9fd965c5741b489f7ffa5d1c8bde88284845c5cba71fc1e6fcca64732
+Description: transitional package
+ This is a transitional package. It will be possible to remove it
+ safely once its dependency chain has adjusted to depend on mailcap
+ or media-types directly.
+
 Package: min
 Architecture: amd64
 Version: 1.7.0-1
@@ -9026,6 +9071,34 @@ SHA1: c0db4ff79e40f4dd5e745872bc90ecbd86b6f052
 SHA256: e207e0922c5e3fd43b9e9dc7835c6e79aa2ea1c9ef483d58fa84caf56ed82fd5
 SHA512: 417850802b3f7a30f63f3ddd7dc1742ed9974bf8da6c9ec02f8a8123ea6083b8ad67e9343521dc465eb2ca62a2b6532e7fb3b437e6f9c5c3427839cc2a69e875
 Description: Utilty for save file resizing.
+
+Package: rox-filer
+Architecture: amd64
+Version: 1:2.11-7
+Priority: optional
+Section: x11
+Source: rox
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 3898
+Depends: libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libsm6, libx11-6, libxml2 (>= 2.7.4), shared-mime-info, sensible-utils
+Recommends: zeroinstall-injector
+Suggests: file
+Filename: ./rox-filer_1%3a2.11-7_amd64.deb
+Size: 1037932
+MD5sum: f70cd663011f3640cb666008d39814d2
+SHA1: b5762cfa5536ec090b4cc97135f915f8b4eb15c9
+SHA256: 226ff80c17cc110a324e1610ae811b639cdac4e9fd9a4a04d1975415c86cfc2f
+SHA512: 78f40a099b49373b8ba585d1929ab531d4321fed14d15449e3a5d2338f80ba2ea06d66d3a5e53a25339b54a4f385a890e960bc5dfc0d678be4e9f83022210e8e
+Homepage: http://rox.sourceforge.net/desktop/ROX-Filer
+Description: simple graphical file manager for X11
+ ROX-Filer is a simple and easy to use graphical file manager
+ for X11 based on the GTK2 library. It uses a uniform
+ drag-and-drop approach for every operation.
+ .
+ It is also the core component of the ROX Desktop Environment.
+ .
+ Invoking rox opens each directory or file listed,  or  the
+ current working directory if no arguments are given.
 
 Package: roxterm-common
 Architecture: all
