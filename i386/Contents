@@ -871,6 +871,7 @@ root/Startup/xscreener					    screener
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwm-setup,jwmconf
+sbin/MAKEDEV						    makedev
 sbin/auibusy						    aufs-tools
 sbin/aumvdown						    aufs-tools
 sbin/auplink						    aufs-tools
@@ -6646,6 +6647,7 @@ usr/share/applications/qtweb.desktop			    qtweb
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/repo-conf.desktop		    repo-conf
 usr/share/applications/resize-save.desktop		    resize-save-file
+usr/share/applications/rox-filer.desktop		    rox-filer
 usr/share/applications/rox.desktop			    jwmconf,rox-filer
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
 usr/share/applications/rshift.desktop			    redshift-gui-lite
@@ -7364,6 +7366,10 @@ usr/share/doc/lumina/ROADMAP				    lumina-desktop-debdog
 usr/share/doc/madedit/changelog.Debian.gz		    madedit
 usr/share/doc/madedit/changelog.gz			    madedit
 usr/share/doc/madedit/copyright				    madedit
+usr/share/doc/makedev/changelog.Debian.gz		    makedev
+usr/share/doc/makedev/copyright				    makedev
+usr/share/doc/mime-support/changelog.gz			    mime-support
+usr/share/doc/mime-support/copyright			    mime-support
 usr/share/doc/monkeys-audio/AUTHORS			    monkeys-audio
 usr/share/doc/monkeys-audio/NEWS.gz			    monkeys-audio
 usr/share/doc/monkeys-audio/README			    monkeys-audio
@@ -7435,6 +7441,17 @@ usr/share/doc/python2.7/copyright			    python2.7
 usr/share/doc/python2/README.Debian			    python2
 usr/share/doc/python2/changelog.Debian.gz		    python2
 usr/share/doc/python2/copyright				    python2
+usr/share/doc/rox-filer/README				    rox-filer
+usr/share/doc/rox-filer/README-es			    rox-filer
+usr/share/doc/rox-filer/README.Debian			    rox-filer
+usr/share/doc/rox-filer/TODO				    rox-filer
+usr/share/doc/rox-filer/changelog.Debian.gz		    rox-filer
+usr/share/doc/rox-filer/changelog.gz			    rox-filer
+usr/share/doc/rox-filer/copyright			    rox-filer
+usr/share/doc/rox-filer/html/Manual-fr.html		    rox-filer
+usr/share/doc/rox-filer/html/Manual-it.html		    rox-filer
+usr/share/doc/rox-filer/html/Manual.html		    rox-filer
+usr/share/doc/rox-filer/html/style.css			    rox-filer
 usr/share/doc/roxterm-common/changelog.Debian.gz	    roxterm-common
 usr/share/doc/roxterm-common/changelog.gz		    roxterm-common
 usr/share/doc/roxterm-common/copyright			    roxterm-common
@@ -10125,6 +10142,7 @@ usr/share/lintian/overrides/libssl1.0.2			    libssl1.0.2
 usr/share/lintian/overrides/libtiff4			    libtiff4
 usr/share/lintian/overrides/libxml2			    libxml2
 usr/share/lintian/overrides/linux-user-chroot		    linux-user-chroot
+usr/share/lintian/overrides/makedev			    makedev
 usr/share/lintian/overrides/openbox			    openbox
 usr/share/lintian/overrides/palemoon			    palemoon
 usr/share/lintian/overrides/python2			    python2
@@ -10209,6 +10227,7 @@ usr/share/locale/cs/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/cs/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/cs/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/cs/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/cs/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/cs/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/cs/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/cs/LC_MESSAGES/xfe.mo			    xfe
@@ -10221,6 +10240,7 @@ usr/share/locale/da/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/da/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/da/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/da/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/da/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/da/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/da/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/da/LC_MESSAGES/xfe.mo			    xfe
@@ -10236,6 +10256,7 @@ usr/share/locale/de/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/de/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/de/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/de/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/de/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/de/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -10289,6 +10310,7 @@ usr/share/locale/es/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/es/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/es/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/es/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/es/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/es/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/es/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/es/LC_MESSAGES/uextract.mo		    uextract
@@ -10304,12 +10326,14 @@ usr/share/locale/et/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/et/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/et/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/et/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
+usr/share/locale/et_EE/LC_MESSAGES/rox.mo		    rox-filer
 usr/share/locale/eu/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/eu/LC_MESSAGES/NetworkManager.mo	    network-manager
 usr/share/locale/eu/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/eu/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/eu/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/eu/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/eu/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/eu/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/eu/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/fa/LC_MESSAGES/GConf2.mo		    gconf2-common
@@ -10323,6 +10347,7 @@ usr/share/locale/fi/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fi/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/fi/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/fi/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/fi/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/fi/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fi/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/fil/LC_MESSAGES/synaptic.mo		    synaptic
@@ -10341,6 +10366,7 @@ usr/share/locale/fr/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/fr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/fr/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/fr/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/fr/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/fr/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
@@ -10363,6 +10389,7 @@ usr/share/locale/gl/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/gl/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/gl/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/gl/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
+usr/share/locale/gl/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/gl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/gl_ES/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/gu/LC_MESSAGES/GConf2.mo		    gconf2-common
@@ -10397,6 +10424,7 @@ usr/share/locale/hu/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/hu/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/hu/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/hu/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/hu/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/hu/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/hu/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/hu/LC_MESSAGES/xfe.mo			    xfe
@@ -10425,6 +10453,7 @@ usr/share/locale/it/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/it/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/it/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/it/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/it/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/it/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/it/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/it/LC_MESSAGES/xfe.mo			    xfe
@@ -10439,6 +10468,7 @@ usr/share/locale/ja/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ja/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/ja/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/ja/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/ja/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/ja/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ja/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/ja/LC_MESSAGES/xfe.mo			    xfe
@@ -10526,6 +10556,7 @@ usr/share/locale/nl/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/nl/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/nl/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/nl/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/nl/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/nl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/nl/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/nl/LC_MESSAGES/xfe.mo			    xfe
@@ -10536,6 +10567,7 @@ usr/share/locale/nn/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/nn/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/nn/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/no/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/no/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/no/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/no/LC_MESSAGES/xfe.mo			    xfe
 usr/share/locale/oc/LC_MESSAGES/GConf2.mo		    gconf2-common
@@ -10561,6 +10593,7 @@ usr/share/locale/pl/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/pl/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/pl/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/pl/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/pl/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/pl/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pl/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/pl/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -10583,12 +10616,14 @@ usr/share/locale/pt_BR/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/pt_BR/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/pt_BR/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/pt_BR/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/pt_BR/LC_MESSAGES/rox.mo		    rox-filer
 usr/share/locale/pt_BR/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/pt_BR/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt_BR/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/pt_BR/LC_MESSAGES/xfe.mo		    xfe
 usr/share/locale/pt_BR/LC_MESSAGES/yad.mo		    yad
 usr/share/locale/pt_PT/LC_MESSAGES/epdfview.mo		    epdfview
+usr/share/locale/pt_PT/LC_MESSAGES/rox.mo		    rox-filer
 usr/share/locale/pt_PT/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt_PT/LC_MESSAGES/xfe.mo		    xfe
 usr/share/locale/qu/LC_MESSAGES/synaptic.mo		    synaptic
@@ -10596,6 +10631,7 @@ usr/share/locale/ro/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/ro/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/ro/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/ro/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/ro/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/ro/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ro/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/ru/LC_MESSAGES/GConf2.mo		    gconf2-common
@@ -10609,6 +10645,7 @@ usr/share/locale/ru/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/ru/LC_MESSAGES/mount-wizard.mo		    mount-wizard
 usr/share/locale/ru/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/ru/LC_MESSAGES/packit.mo		    pack-it
+usr/share/locale/ru/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/ru/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/ru/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ru/LC_MESSAGES/uextract.mo		    uextract
@@ -10663,6 +10700,7 @@ usr/share/locale/sv/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/sv/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/sv/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/sv/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/sv/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/sv/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/sv/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/sv/LC_MESSAGES/xfe.mo			    xfe
@@ -10704,6 +10742,7 @@ usr/share/locale/uk/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/uk/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/uk/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/uk/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/uk/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/uk/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/uk/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/uk/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
@@ -10720,6 +10759,7 @@ usr/share/locale/vi/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/vi/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/vi/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/vi/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/vi/LC_MESSAGES/rox.mo			    rox-filer
 usr/share/locale/vi/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/vi/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/wa/LC_MESSAGES/NetworkManager.mo	    network-manager
@@ -10738,6 +10778,7 @@ usr/share/locale/zh_CN/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-comm
 usr/share/locale/zh_CN/LC_MESSAGES/libgnutls26.mo	    libgnutls26
 usr/share/locale/zh_CN/LC_MESSAGES/madedit.mo		    madedit
 usr/share/locale/zh_CN/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/zh_CN/LC_MESSAGES/rox.mo		    rox-filer
 usr/share/locale/zh_CN/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/zh_CN/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/zh_CN/LC_MESSAGES/xfe.mo		    xfe
@@ -10756,6 +10797,7 @@ usr/share/locale/zh_TW/LC_MESSAGES/leafpad.mo		    leafpad
 usr/share/locale/zh_TW/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/zh_TW/LC_MESSAGES/madedit.mo		    madedit
 usr/share/locale/zh_TW/LC_MESSAGES/openbox.mo		    openbox
+usr/share/locale/zh_TW/LC_MESSAGES/rox.mo		    rox-filer
 usr/share/locale/zh_TW/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/zh_TW/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin-mod,xfce4-whiskermenu-plugin
 usr/share/locale/zh_TW/LC_MESSAGES/xfe.mo		    xfe
@@ -10988,6 +11030,7 @@ usr/share/man/man7/elogind.time.7.gz			    elogind
 usr/share/man/man7/hwdb.7.gz				    eudev
 usr/share/man/man7/nmcli-examples.7.gz			    network-manager
 usr/share/man/man7/udev.7.gz				    eudev
+usr/share/man/man8/MAKEDEV.8.gz				    makedev
 usr/share/man/man8/NetworkManager.8.gz			    network-manager
 usr/share/man/man8/aumvdown.8.gz			    aufs-tools
 usr/share/man/man8/auplink.8.gz				    aufs-tools
@@ -11084,6 +11127,7 @@ usr/share/menu/youtube-get2				    youtube-get2
 usr/share/metainfo/elogind.metainfo.xml			    elogind
 usr/share/metainfo/org.xfce.thunar.appdata.xml		    thunar
 usr/share/mime/packages/notecase.xml			    notecase-portable,notecase
+usr/share/mime/packages/rox.xml				    rox-filer
 usr/share/motion-trunkREV561/examples/motion.init-Debian    motion-light
 usr/share/motion-trunkREV561/examples/thread1.conf	    motion-light
 usr/share/motion-trunkREV561/examples/thread2.conf	    motion-light
@@ -11732,6 +11776,10 @@ usr/share/qt3/lib/libqt-mt.so.3.3			    libqt3-mt
 usr/share/qt3/lib/libqui.so.1				    libqt3-mt
 usr/share/qt3/lib/libqui.so.1.0				    libqt3-mt
 usr/share/rox/.DirIcon					    rox-filer
+usr/share/rox/AppInfo.xml				    rox-filer
+usr/share/rox/Choices/MIME-types/application_postscript	    rox-filer
+usr/share/rox/Choices/MIME-types/text			    rox-filer
+usr/share/rox/Choices/MIME-types/text_html		    rox-filer
 usr/share/rox/Help/COPYING				    rox-filer
 usr/share/rox/Help/Changes				    rox-filer
 usr/share/rox/Help/Manual-fr.html			    rox-filer
@@ -11872,6 +11920,7 @@ usr/share/rox/ROX/MIME/video-mpeg.png			    rox-filer
 usr/share/rox/ROX/MIME/video-quicktime.png		    rox-filer
 usr/share/rox/ROX/MIME/video-x-generic.png		    rox-filer
 usr/share/rox/ROX/index.theme				    rox-filer
+usr/share/rox/Templates.ui				    rox-filer
 usr/share/rox/images/application.png			    rox-filer
 usr/share/rox/images/dirs.png				    rox-filer
 usr/share/rox/images/iconified.png			    rox-filer

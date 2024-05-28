@@ -6189,6 +6189,31 @@ SHA512: 44f6c34c78ba2c072001d4865fd00a1b914f22441c3e9bc24d6328af97070c771350b4a4
 Description: The makedebpackage (re)builds a debian package 
  makedebpackage by MakeDEBPackage-GUI.
 
+Package: makedev
+Architecture: all
+Version: 2.3.1-97
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Maintainer: Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>
+Installed-Size: 99
+Depends: base-passwd (>= 3.0.4)
+Conflicts: udev (<= 0.024-7)
+Filename: ./makedev_2.3.1-97_all.deb
+Size: 41564
+MD5sum: 6cedb76bba6eb5be6e1b71cd843a32e8
+SHA1: 74423b21290ecfac400db5df20507d5d85c39d4a
+SHA256: 460c8c870ec4da13c59f2bcdd3263755bfb58ddab67a6769194e82b5bfdf26d9
+SHA512: d36637f04b92fc7fa539eb7bbc05f58ce42b16fe4528691198fa01f24df2ffa205ee5a7865b539f503e16b860c7b46f3df81dd045213b9cabb655a9b91ceb711
+Description: creates device files in /dev
+ The MAKEDEV executable is used to create device files, often in /dev.
+ .
+ Device files are special files through which applications can interact
+ with hardware.
+ .
+ This package is not necessary for most modern Linux systems, where the udev
+ subsystem provides a more dynamic mechanism for device file management.
+
 Package: makeswap
 Architecture: all
 Version: 1.0.2

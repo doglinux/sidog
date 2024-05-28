@@ -763,6 +763,7 @@ root/Startup/xscreener					    screener
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwm-setup-dd64,jwmconf,jwm-setup
+sbin/MAKEDEV						    makedev
 sbin/auibusy						    aufs-tools
 sbin/aumvdown						    aufs-tools
 sbin/auplink						    aufs-tools
@@ -9797,6 +9798,8 @@ usr/share/doc/linux-user-chroot/copyright		    linux-user-chroot
 usr/share/doc/madedit/changelog.Debian.gz		    madedit
 usr/share/doc/madedit/changelog.gz			    madedit
 usr/share/doc/madedit/copyright				    madedit
+usr/share/doc/makedev/changelog.Debian.gz		    makedev
+usr/share/doc/makedev/copyright				    makedev
 usr/share/doc/mime-support/changelog.gz			    mime-support
 usr/share/doc/mime-support/copyright			    mime-support
 usr/share/doc/min/copyright				    min
@@ -11272,6 +11275,7 @@ usr/share/lintian/overrides/libroar2			    libroar2
 usr/share/lintian/overrides/libssl1.0.2			    libssl1.0.2
 usr/share/lintian/overrides/libtiff4			    libtiff4
 usr/share/lintian/overrides/linux-user-chroot		    linux-user-chroot
+usr/share/lintian/overrides/makedev			    makedev
 usr/share/lintian/overrides/min				    min
 usr/share/lintian/overrides/mount			    mount
 usr/share/lintian/overrides/openbox			    openbox
@@ -12156,6 +12160,7 @@ usr/share/man/man7/elogind.time.7.gz			    elogind
 usr/share/man/man7/hwdb.7.gz				    eudev
 usr/share/man/man7/nmcli-examples.7.gz			    network-manager
 usr/share/man/man7/udev.7.gz				    eudev
+usr/share/man/man8/MAKEDEV.8.gz				    makedev
 usr/share/man/man8/NetworkManager.8.gz			    network-manager
 usr/share/man/man8/aumvdown.8.gz			    aufs-tools
 usr/share/man/man8/auplink.8.gz				    aufs-tools
