@@ -2751,6 +2751,42 @@ Description: GNOME configuration database system (common files)
  .
  This package is for legacy applications and no longer used by GNOME.
 
+Package: geany-common
+Architecture: all
+Version: 2.0-1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: geany
+Maintainer: Geany Packaging Team <pkg-geany-team@lists.alioth.debian.org>
+Installed-Size: 10676
+Breaks: geany (<< 0.21-1~)
+Replaces: geany (<< 0.21-1~)
+Filename: ./geany-common_2.0-1_all.deb
+Size: 3060184
+MD5sum: e425ef4a4e3f867f9c3d241f0055ba2c
+SHA1: 58d3067f495a755944a48a1019775321f15f96e5
+SHA256: 2cfed449daef218f13c4401f17ea32f70b0a6be5aaed6415c1281eaf5078aae1
+SHA512: 0339579c24f632313f49c7dfcf384a06787007baaf2fa41530f2dad49e9fa26f1a7ade33d77c104db50e0d2d6a0e9379e126496731871c23b19807b7e5a3309b
+Homepage: http://www.geany.org
+Description: fast and lightweight IDE -- common files
+ Geany is a small and lightweight integrated development environment.
+ It was developed to provide a small and fast IDE, which has only a
+ few dependencies from other packages. It is using only the GTK3 toolkit
+ and therefore you need only the GTK3 runtime libraries to run Geany.
+ .
+ The basic features of Geany are:
+  - syntax highlighting
+  - code completion
+  - auto completion of constructs like if, for and while, XML and HTML
+  - call tips
+  - folding
+  - many supported filetypes like C, Java, PHP, HTML, Python, Perl, Pascal
+  - symbol lists
+  - embedded terminal emulation
+ .
+ This package contains arch independent files.
+
 Package: geany
 Architecture: amd64
 Version: 2.0-1+b1
@@ -3989,6 +4025,26 @@ Description: library to read and control CD-ROM
  so applications that use this library also have the ability to read
  disc images as though they were CD's.
 
+Package: libcpufreq0
+Architecture: amd64
+Version: 008-2
+Priority: optional
+Section: libs
+Source: cpufrequtils
+Maintainer: Seunghun Han <kkamagui@gmail.com>
+Installed-Size: 49
+Depends: libc6 (>= 2.14)
+Filename: ./libcpufreq0_008-2_amd64.deb
+Size: 14088
+MD5sum: c17796e87c5c82081c39739eafa59eb2
+SHA1: b5539fbf885fddbe1b0a53fa5b55ea27e984e430
+SHA256: 74f1210427cba9ce4f9fe5289e34f0e93010005ae9fd87322579179dfc86e8b6
+SHA512: 2ef284f8a11c7d6d03103e8fdf9b2556e8c327d377c9e6b05abd1b7bcc099ead84c73c8af4308a84c97d18590b6da7bd4e6d6672ae8361c6a03ec536aa2e8698
+Homepage: http://kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html
+Description: shared library to deal with the cpufreq Linux kernel feature
+ This library provide an unified method to access the CPUFreq kernel
+ interface.
+
 Package: libcrystalhd3
 Architecture: amd64
 Version: 1:0.0~git20110715.fdd2f19-13
@@ -4840,6 +4896,29 @@ Description: library for GIF images (library)
  images.
  .
  This package contains the library.
+
+Package: libglade2-0
+Architecture: amd64
+Version: 1:2.6.4-2.4+b1
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: libglade2 (1:2.6.4-2.4)
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 171
+Depends: libatk1.0-0t64 (>= 1.12.4), libc6 (>= 2.14), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.38.0), libgtk2.0-0t64 (>= 2.8.0), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
+Filename: ./libglade2-0_2.6.4-2.4+b1_amd64.deb
+Size: 77088
+MD5sum: 6b2e86438aa7f51e3ea3adcf64d5b681
+SHA1: ac8d9f71702741aef6020ee0765ed9506af0c149
+SHA256: 8ccab2f9be50eb5b3b0a7ff53e732d74e0944a557ec3c132ea2d74f753d54109
+SHA512: 09e616a6e1941cc987cfe49b5176056ce1f073ff30cae297be95fd812c928ea0d716b4525d07b33d2f220e2f23d2367564abd93388822cde8cc269d4d26591c5
+Description: library to load .glade files at runtime
+ This library allows one to load externally stored user interfaces into
+ programs. This allows alteration of the interface without recompilation
+ of the program.
+ .
+ The interfaces can also be edited with GLADE.
 
 Package: libgmlib0
 Architecture: amd64
