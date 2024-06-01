@@ -6605,6 +6605,7 @@ usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/notecase.desktop			    notecase-portable,notecase
 usr/share/applications/obkey.desktop			    obkey
+usr/share/applications/openb.desktop			    jwm-setup
 usr/share/applications/openbox.desktop			    jwm-setup
 usr/share/applications/osmo.desktop			    osmo-portable
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server

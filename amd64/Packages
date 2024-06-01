@@ -997,6 +997,30 @@ SHA256: 5df56263a23ef5df28093751e757bfff1a05f1ed95f57db3a6c47f3272c2f7bc
 SHA512: 903ff1d3e6fab3de46c5c4513a3e1e8af0313b7514e21146a5a1c48526967093983baddadd6b174449b65a9f245ed2d54960954d3d6081616e6b74c2be69b1c5
 Description: Conky-clock, choose analog clock display on the Desktop
 
+Package: cpufrequtils
+Architecture: amd64
+Version: 008-2
+Priority: optional
+Section: admin
+Maintainer: Seunghun Han <kkamagui@gmail.com>
+Installed-Size: 179
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.7), libcpufreq0 (>= 006), debconf (>= 0.5) | debconf-2.0, lsb-base (>= 3.0)
+Filename: ./cpufrequtils_008-2_amd64.deb
+Size: 36572
+MD5sum: 5d7adc578cd7ecc135e6715796763f4a
+SHA1: 48143ce392385583879b92e9f0ea5f0b1fb5269c
+SHA256: cc910c68306974cd9887e5df3e7f6c3841de04b4c42932eaf41a9cbefea761f6
+SHA512: ca263a970c871bbe580b4e032c698743e55d25f18a3c1b53bc5c5620e87665c1f89f2382b6924fa5050592796a73af4341539dd900230e170d564e56e900a685
+Homepage: http://kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html
+Description: utilities to deal with the cpufreq Linux kernel feature
+ This package contains two utilities for inspecting and setting the
+ CPU frequency through both the sysfs and procfs CPUFreq kernel
+ interfaces.
+ .
+ By default, it also enables CPUFreq at boot time if the correct CPU
+ driver is found.
+
 Package: cputemp
 Architecture: amd64
 Version: 3.1-2
@@ -1150,6 +1174,33 @@ SHA1: f5d946b87f357c6fc47da96d53a57e4f56b9d5e1
 SHA256: b2e5daf10d74781703698de2435e91ca392b631bb99f5ee40ace81e969a80c10
 SHA512: 453cd377baff5899fecd3a1d0e6f360754fe38b6d1d1483eef2adf9d18ec4004e73cd18015464cb3d4b579c97a203a0ae72cccaef7d0575d1916106adfa05ee8
 Description: older cryptsetup for creating encrypted savefile on busterdog
+
+Package: curlftpfs
+Architecture: amd64
+Version: 0.9.2-9+b1
+Priority: optional
+Section: utils
+Source: curlftpfs (0.9.2-9)
+Maintainer: Vincent Bernat <bernat@debian.org>
+Installed-Size: 83
+Depends: libc6 (>= 2.14), libcurl3-gnutls (>= 7.16.2), libfuse2 (>= 2.6), libglib2.0-0 (>= 2.12.0), fuse
+Filename: ./curlftpfs_0.9.2-9+b1_amd64.deb
+Size: 32082
+MD5sum: e87810af78e8da3eb3c31b3d5a7c2e36
+SHA1: 24fed0e0b82f4e11427649a3f91316210d251060
+SHA256: 55449ce91bf422999bab5b684997a8a5bd7b8748cd69a07ad33f67e652628cb0
+SHA512: 5a222aa4c27b48675b43b03c38a595e9a41cae24024a9478568aa908d29367823ee25f48e6bf0cb4f1fc049067181f2e4b21a788a4f13e2ceafda8137b060622
+Homepage: http://curlftpfs.sourceforge.net
+Description: filesystem to access FTP hosts based on FUSE and cURL
+ CurlFtpFS is a tool to mount FTP hosts as local directories. It connects
+ to a FTP server and maps its directory structure to the local filesystem.
+ .
+ Based on FUSE (filesystem in userspace) and the cURL library, CurlFtpFS
+ has some features that distinguish it over other FTP filesystems:
+  * support for SSLv3 and TLSv1
+  * connecting through tunneling HTTP proxies
+  * automatic reconnection if the server times out
+  * conversion of absolute symlinks to point back into the FTP filesystem
 
 Package: dancing-letters
 Architecture: amd64
@@ -2700,6 +2751,42 @@ Description: GNOME configuration database system (common files)
  .
  This package is for legacy applications and no longer used by GNOME.
 
+Package: geany
+Architecture: amd64
+Version: 2.0-1+b1
+Priority: optional
+Section: devel
+Source: geany (2.0-1)
+Maintainer: Geany Packaging Team <pkg-geany-team@lists.alioth.debian.org>
+Installed-Size: 4836
+Provides: geany-abi-18688, geany-api-247
+Depends: libatk1.0-0t64 (>= 1.12.4), libc6 (>= 2.34), libcairo2 (>= 1.8.0), libgcc-s1 (>= 3.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.64.0), libgtk-3-0t64 (>= 3.21.5), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.14.0), libstdc++6 (>= 11), geany-common (= 2.0-1)
+Recommends: sensible-utils
+Suggests: libvte9, doc-base
+Breaks: geany-plugins-common (<< 0.21)
+Filename: ./geany_2.0-1+b1_amd64.deb
+Size: 2026880
+MD5sum: 484221a15e707afffaf65f97211aea91
+SHA1: 31372447b79d01470a8fa1a29a1ff045d29762dd
+SHA256: 1a9eb7102bb898ff50578c648ebccdce411601b9ee955e8e304e9aa57c12f120
+SHA512: 42f41ae12d691280819aca6b3cd56d37d54b3daa4fdee7e465406739b848d207a64de81aa92ab36f363bdf2ddef120525c968798b72849c7b6dd70f7d010df0b
+Homepage: http://www.geany.org
+Description: fast and lightweight IDE
+ Geany is a small and lightweight integrated development environment.
+ It was developed to provide a small and fast IDE, which has only a
+ few dependencies from other packages. It is using only the GTK3 toolkit
+ and therefore you need only the GTK3 runtime libraries to run Geany.
+ .
+ The basic features of Geany are:
+  - syntax highlighting
+  - code completion
+  - auto completion of constructs like if, for and while, XML and HTML
+  - call tips
+  - folding
+  - many supported filetypes like C, Java, PHP, HTML, Python, Perl, Pascal
+  - symbol lists
+  - embedded terminal emulation
+
 Package: gftp-common
 Architecture: amd64
 Version: 2.0.19-4
@@ -3666,6 +3753,25 @@ MD5sum: eb40d2b7cce9d90de1176e731b7c33ba
 SHA1: 1f102e8dd79cad537be30fab4e62bac49417e00d
 SHA256: b723c5aba96f46ff46ab7cfbf45fd0648225bd754820af98e51a431281356091
 SHA512: 56d1eff2d00449d54d4949d057c647a9b1af1d13284db1bf3828848fb85cf95c8a14c0fe26564f25194fef2eae6fe4d5444cfd5ca3e81ff93dd0c44521ae869e
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
+Package: jwm-setup
+Architecture: amd64
+Version: 0.0.6
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
+Filename: ./jwm-setup_0.0.6_amd64.deb
+Size: 701384
+MD5sum: ff6192662b947f447e9a1be6e37a4b93
+SHA1: acfc70904a057494d74ce3209d8fbe1112155c5d
+SHA256: 4df44b7071b3c0b681a87e7521dcfa15e28415fd82fd574aa7ec151569f50a9f
+SHA512: b9199c797b0053077342006c05e9a6127fdb41c746ce99dd1ffcac1b10c64a3b42fc9e2bc548a2285077379dd8df52c4e2a4097ebb608e5035d1edf74d82fd9f
 Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
@@ -11165,6 +11271,32 @@ SHA1: 63b4547ac39d5352493c2e8daf273c4b9a23522e
 SHA256: 36ff4c8364b39505fe2e1556b78081c8d8c946af5c658e620cad35e3d2ee1e1d
 SHA512: ccd968209fa84541e1cfdd88215511b30c123024e68b309ef6354d28fd99a5379334cd72181a605d4a77ddd658bd7bdecc962d02021afd07faece7b90ff63102
 Description: Screen snapshot tool from jamesbond
+
+Package: xserver-xorg-video-openchrome
+Architecture: amd64
+Version: 1:0.6.0-5
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 640
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.14), libdrm2 (>= 2.3.1), libx11-6 (>= 2:1.4.99.1), libxext6, libxvmc1 (>= 2:1.0.12), xorg-video-abi-25, xserver-xorg-core (>= 2:21.1.1)
+Filename: ./xserver-xorg-video-openchrome_1%3a0.6.0-5_amd64.deb
+Size: 262964
+MD5sum: 913245005d45d67ae1c64e24164c262c
+SHA1: 4cd2d7be83e020f921d085bcd051dc08a36284bd
+SHA256: 5ecb14f49eba1bacee04e1d32b4846f89f28b0ffffd26b7bf9c154f2af436cb1
+SHA512: c2b9b8309ef0b5e25c65cbd3e4c8aeb5dfcfee360848ae856b0aeb268fb435f3f8dfd9e9e1c996480d404a7726d04839b09621ec8ed4237a0c7e4b964842a0d0
+Homepage: https://www.freedesktop.org/wiki/Openchrome/
+Description: X.Org X server -- OpenChrome display driver
+ This package provides the 'openchrome' driver for the VIA Technologies
+ UniChrome and Chrome9 IGPs chipsets. The following chips should be
+ supported: CLE266, KM400(A), KN400(A), P4M800, K8M800, K8N800, PM800,
+ PN800, PM880, CN333, CN400, P4M800 Pro, VN800, CN700, CX700, VX700,
+ P4M890, VN890, CN800, K8M890, K8N890, P4M900, VN896, CN896, VX800, VX820,
+ VX855, VX875, VX900.
+ .
+ This package is built from the FreeDesktop.org xf86-video-openchrome driver.
 
 Package: xvidcap
 Architecture: amd64

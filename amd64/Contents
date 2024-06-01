@@ -33,11 +33,13 @@ etc/gftp/gftprc						    gftp-common
 etc/hostapd.conf.open					    wlanmaker
 etc/hostapd.conf.wpa2					    wlanmaker
 etc/hp/hplip.conf					    hplip-print-scan
+etc/init.d/cpufrequtils					    cpufrequtils
 etc/init.d/elogind					    elogind
 etc/init.d/eudev					    eudev
 etc/init.d/firewall-ng.sh				    firewall-ng
 etc/init.d/firewall.sh					    peasyfwmon
 etc/init.d/frisbee					    frisbee
+etc/init.d/loadcpufreq					    cpufrequtils
 etc/init.d/network-manager				    network-manager
 etc/init.d/rc.network-start				    PeasyWiFi
 etc/init.d/rc.yassm					    yassm
@@ -797,6 +799,10 @@ usr/bin/cddetect					    pburn
 usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
 usr/bin/ceni						    ceni
+usr/bin/cpufreq-aperf					    cpufrequtils
+usr/bin/cpufreq-info					    cpufrequtils
+usr/bin/cpufreq-set					    cpufrequtils
+usr/bin/curlftpfs					    curlftpfs
 usr/bin/defaultconnect					    frisbee
 usr/bin/domycommand					    domycommand
 usr/bin/domyfile					    domyfile
@@ -821,6 +827,7 @@ usr/bin/frisbee-tray					    frisbee
 usr/bin/frisbee-wifi-connect				    frisbee
 usr/bin/frisbee-wifi-disconnect				    frisbee
 usr/bin/gdm-control					    openbox
+usr/bin/geany						    geany
 usr/bin/gftp						    gftp-common
 usr/bin/gftp-gtk					    gftp-gtk
 usr/bin/gftp-text					    gftp-text
@@ -5394,6 +5401,12 @@ usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-evoldap.so gconf-service
 usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-oldxml.so  gconf-service
 usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-xml.so	    gconf-service
 usr/lib/x86_64-linux-gnu/gconf/gconfd-2			    gconf-service
+usr/lib/x86_64-linux-gnu/geany/classbuilder.so		    geany
+usr/lib/x86_64-linux-gnu/geany/export.so		    geany
+usr/lib/x86_64-linux-gnu/geany/filebrowser.so		    geany
+usr/lib/x86_64-linux-gnu/geany/htmlchars.so		    geany
+usr/lib/x86_64-linux-gnu/geany/saveactions.so		    geany
+usr/lib/x86_64-linux-gnu/geany/splitwindow.so		    geany
 usr/lib/x86_64-linux-gnu/gio/modules/libpup-volume-monitor.a pup-volume-monitor
 usr/lib/x86_64-linux-gnu/gio/modules/libpup-volume-monitor.la pup-volume-monitor
 usr/lib/x86_64-linux-gnu/gio/modules/libpup-volume-monitor.so pup-volume-monitor
@@ -5409,6 +5422,12 @@ usr/lib/x86_64-linux-gnu/libcdio_cdda.so.1		    libcdio-cdda1
 usr/lib/x86_64-linux-gnu/libcdio_cdda.so.1.0.0		    libcdio-cdda1
 usr/lib/x86_64-linux-gnu/libcdio_paranoia.so.1		    libcdio-paranoia1
 usr/lib/x86_64-linux-gnu/libcdio_paranoia.so.1.0.0	    libcdio-paranoia1
+usr/lib/x86_64-linux-gnu/libchromeXvMC.so		    xserver-xorg-video-openchrome
+usr/lib/x86_64-linux-gnu/libchromeXvMC.so.1		    xserver-xorg-video-openchrome
+usr/lib/x86_64-linux-gnu/libchromeXvMC.so.1.0.0		    xserver-xorg-video-openchrome
+usr/lib/x86_64-linux-gnu/libchromeXvMCPro.so		    xserver-xorg-video-openchrome
+usr/lib/x86_64-linux-gnu/libchromeXvMCPro.so.1		    xserver-xorg-video-openchrome
+usr/lib/x86_64-linux-gnu/libchromeXvMCPro.so.1.0.0	    xserver-xorg-video-openchrome
 usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0		    libssl1.0.0
 usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.2		    libssl1.0.2
 usr/lib/x86_64-linux-gnu/libcrystalhd.so.3		    libcrystalhd3
@@ -5439,6 +5458,9 @@ usr/lib/x86_64-linux-gnu/libgbm.so.1			    libgbm1
 usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0		    libgbm1
 usr/lib/x86_64-linux-gnu/libgconf-2.so.4		    libgconf-2-4
 usr/lib/x86_64-linux-gnu/libgconf-2.so.4.1.5		    libgconf-2-4
+usr/lib/x86_64-linux-gnu/libgeany.so			    geany
+usr/lib/x86_64-linux-gnu/libgeany.so.0			    geany
+usr/lib/x86_64-linux-gnu/libgeany.so.0.0.0		    geany
 usr/lib/x86_64-linux-gnu/libgiblib.so.1			    giblib1
 usr/lib/x86_64-linux-gnu/libgiblib.so.1.0.6		    giblib1
 usr/lib/x86_64-linux-gnu/libgif.so.4			    libgif4
@@ -5548,6 +5570,7 @@ usr/lib/x86_64-linux-gnu/perl5/5.30/Gtk2/SimpleList.pm	    libgtk2-perl
 usr/lib/x86_64-linux-gnu/perl5/5.30/Gtk2/SimpleMenu.pm	    libgtk2-perl
 usr/lib/x86_64-linux-gnu/perl5/5.30/Gtk2/TestHelper.pm	    libgtk2-perl
 usr/lib/x86_64-linux-gnu/perl5/5.30/auto/Gtk2/Gtk2.so	    libgtk2-perl
+usr/lib/x86_64-linux-gnu/pkgconfig/geany.pc		    geany
 usr/lib/x86_64-linux-gnu/pkgconfig/libelogind.pc	    libelogind-dev
 usr/lib/x86_64-linux-gnu/pkgconfig/libudev.pc		    libeudev-dev
 usr/lib/x86_64-linux-gnu/roaraudio/compbins/artscat	    libroar-compat2
@@ -5581,6 +5604,7 @@ usr/lib/x86_64-linux-gnu/sane/libsane-hpaio.so		    hplip-print-scan
 usr/lib/x86_64-linux-gnu/sane/libsane-hpaio.so.1	    hplip-print-scan
 usr/lib/x86_64-linux-gnu/x264-10bit/libx264.so.148	    libx264-148
 usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libthunar-tpa.so thunar
+usr/lib/xorg/modules/drivers/openchrome_drv.so		    xserver-xorg-video-openchrome
 usr/lib64/evince/3/backends/comicsdocument.evince-backend   evince
 usr/lib64/evince/3/backends/djvudocument.evince-backend	    evince
 usr/lib64/evince/3/backends/libcomicsdocument.so	    evince
@@ -9068,6 +9092,7 @@ usr/share/applications/firewallstatus.desktop		    firewall-ng
 usr/share/applications/fixdepinstall.desktop		    fixdepinstall
 usr/share/applications/font-viewer.desktop		    font-viewer
 usr/share/applications/frisbee.desktop			    frisbee
+usr/share/applications/geany.desktop			    geany
 usr/share/applications/gfontview.desktop		    font-viewer
 usr/share/applications/gftp.desktop			    gftp-gtk
 usr/share/applications/gnetcat.desktop			    gnetcat
@@ -9092,6 +9117,7 @@ usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/notecase.desktop			    notecase
 usr/share/applications/obkey.desktop			    obkey
+usr/share/applications/obox.desktop			    jwm-setup
 usr/share/applications/openbox.desktop			    jwm-setup-dd64,jwm-setup
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server
 usr/share/applications/palemoon.desktop			    palemoon
@@ -9360,6 +9386,7 @@ usr/share/bug/firefox-esr/script			    firefox-esr
 usr/share/bug/libdvdread4				    libdvdread4
 usr/share/bug/libgbm1/control				    libgbm1
 usr/share/bug/libgbm1/script				    libgbm1
+usr/share/bug/xserver-xorg-video-openchrome/script	    xserver-xorg-video-openchrome
 usr/share/cups/drv/hp/hpcups.drv			    hplip-print-scan
 usr/share/dbus-1/services/org.gnome.GConf.service	    gconf-service
 usr/share/dbus-1/system-services/org.freedesktop.login1.service elogind
@@ -9445,6 +9472,16 @@ usr/share/doc/ceni/copyright				    ceni
 usr/share/doc/conky/NEWS.Debian.gz			    conky
 usr/share/doc/conky/changelog.Debian.gz			    conky
 usr/share/doc/conky/copyright				    conky
+usr/share/doc/cpufrequtils/README.Debian		    cpufrequtils
+usr/share/doc/cpufrequtils/changelog.Debian.gz		    cpufrequtils
+usr/share/doc/cpufrequtils/copyright			    cpufrequtils
+usr/share/doc/cpufrequtils/examples/cpufrequtils.loadcpufreq.sample cpufrequtils
+usr/share/doc/cpufrequtils/examples/cpufrequtils.sample	    cpufrequtils
+usr/share/doc/curlftpfs/README				    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.amd64.gz	    curlftpfs
+usr/share/doc/curlftpfs/changelog.Debian.gz		    curlftpfs
+usr/share/doc/curlftpfs/changelog.gz			    curlftpfs
+usr/share/doc/curlftpfs/copyright			    curlftpfs
 usr/share/doc/elogind/NEWS.gz				    elogind
 usr/share/doc/elogind/README.gz				    elogind
 usr/share/doc/elogind/README.md.gz			    elogind
@@ -9531,6 +9568,13 @@ usr/share/doc/gconf2-common/changelog.Debian.gz		    gconf2-common
 usr/share/doc/gconf2-common/changelog.gz		    gconf2-common
 usr/share/doc/gconf2-common/copyright			    gconf2-common
 usr/share/doc/gconf2-common/evoldap.schema		    gconf2-common
+usr/share/doc/geany/NEWS.gz				    geany
+usr/share/doc/geany/README.gz				    geany
+usr/share/doc/geany/TODO				    geany
+usr/share/doc/geany/changelog.Debian.amd64.gz		    geany
+usr/share/doc/geany/changelog.Debian.gz			    geany
+usr/share/doc/geany/changelog.gz			    geany
+usr/share/doc/geany/copyright				    geany
 usr/share/doc/gftp-common/README.gz			    gftp-common
 usr/share/doc/gftp-common/THANKS			    gftp-common
 usr/share/doc/gftp-common/TODO				    gftp-common
@@ -9980,6 +10024,11 @@ usr/share/doc/xlockmore-5.43/TODO			    xlockmore
 usr/share/doc/xlockmore-5.43/cell_automata		    xlockmore
 usr/share/doc/xlockmore-5.43/xlock.hlp			    xlockmore
 usr/share/doc/xlockmore-5.43/xlock.html			    xlockmore
+usr/share/doc/xserver-xorg-video-openchrome/NEWS.gz	    xserver-xorg-video-openchrome
+usr/share/doc/xserver-xorg-video-openchrome/README.gz	    xserver-xorg-video-openchrome
+usr/share/doc/xserver-xorg-video-openchrome/changelog.Debian.gz xserver-xorg-video-openchrome
+usr/share/doc/xserver-xorg-video-openchrome/changelog.gz    xserver-xorg-video-openchrome
+usr/share/doc/xserver-xorg-video-openchrome/copyright	    xserver-xorg-video-openchrome
 usr/share/enscript/hl/bacon.st				    bacon
 usr/share/epdfview/pixmaps/icon_epdfview-24.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-32.png		    epdfview
@@ -11259,6 +11308,7 @@ usr/share/initramfs-tools/hooks/udev			    eudev
 usr/share/initramfs-tools/scripts/init-bottom/udev	    eudev
 usr/share/initramfs-tools/scripts/init-top/udev		    eudev
 usr/share/lintian/overrides/aufs-tools			    aufs-tools
+usr/share/lintian/overrides/cpufrequtils		    cpufrequtils
 usr/share/lintian/overrides/elogind			    elogind
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/eudev			    eudev
@@ -11283,6 +11333,7 @@ usr/share/lintian/overrides/palemoon			    palemoon
 usr/share/lintian/overrides/python2			    python2
 usr/share/lintian/overrides/python2.7			    python2.7
 usr/share/lintian/overrides/python2.7-minimal		    python2.7-minimal
+usr/share/lintian/overrides/xserver-xorg-video-openchrome   xserver-xorg-video-openchrome
 usr/share/locale/af/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/af/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/af/LC_MESSAGES/synaptic.mo		    synaptic
@@ -11342,6 +11393,7 @@ usr/share/locale/bs/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/bs/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/ca/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/ca/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/ca/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/ca/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/ca/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ca/LC_MESSAGES/evince.mo		    evince
@@ -11357,6 +11409,7 @@ usr/share/locale/ckb/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/crh/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/cs/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/cs/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/cs/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/cs/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/cs/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/cs/LC_MESSAGES/evince.mo		    evince
@@ -11383,6 +11436,7 @@ usr/share/locale/da/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/da/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/de/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/de/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/de/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/de/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/de/LC_MESSAGES/emelfm2.mo		    emelfm2
 usr/share/locale/de/LC_MESSAGES/epdfview.mo		    epdfview
@@ -11489,6 +11543,7 @@ usr/share/locale/fil/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fo/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/fr/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/fr/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/fr/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/fr/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/fr/LC_MESSAGES/emelfm2.mo		    emelfm2
 usr/share/locale/fr/LC_MESSAGES/epdfview.mo		    epdfview
@@ -11581,6 +11636,7 @@ usr/share/locale/is/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/is/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/it/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/it/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/it/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/it/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/it/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/it/LC_MESSAGES/evince.mo		    evince
@@ -11743,6 +11799,7 @@ usr/share/locale/ps/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ps/LC_MESSAGES/synaptic.mo		    synaptic
 usr/share/locale/pt/LC_MESSAGES/GConf2.mo		    gconf2-common
 usr/share/locale/pt/LC_MESSAGES/NetworkManager.mo	    network-manager
+usr/share/locale/pt/LC_MESSAGES/cpufrequtils.mo		    cpufrequtils
 usr/share/locale/pt/LC_MESSAGES/elogind.mo		    elogind
 usr/share/locale/pt/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/pt/LC_MESSAGES/gftp.mo			    gftp-common
@@ -12008,6 +12065,10 @@ usr/share/man/man1/auibusy.1.gz				    aufs-tools
 usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/busctl.1.gz				    elogind
 usr/share/man/man1/ceni.1p.gz				    ceni
+usr/share/man/man1/cpufreq-aperf.1.gz			    cpufrequtils
+usr/share/man/man1/cpufreq-info.1.gz			    cpufrequtils
+usr/share/man/man1/cpufreq-set.1.gz			    cpufrequtils
+usr/share/man/man1/curlftpfs.1.gz			    curlftpfs
 usr/share/man/man1/elogind-inhibit.1.gz			    elogind
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/empty.1.gz				    empty-expect
@@ -12016,6 +12077,7 @@ usr/share/man/man1/evince.1				    evince
 usr/share/man/man1/fdkaac.1.gz				    fdkaac
 usr/share/man/man1/firefox-esr.1.gz			    firefox-esr
 usr/share/man/man1/gdm-control.1.gz			    openbox
+usr/share/man/man1/geany.1.gz				    geany
 usr/share/man/man1/gftp-gtk.1.gz			    gftp-gtk
 usr/share/man/man1/gftp-text.1.gz			    gftp-text
 usr/share/man/man1/gftp.1.gz				    gftp-common
@@ -12138,6 +12200,7 @@ usr/share/man/man3/WWW::YoutubeViewer::Subscriptions.3pm    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Utils.3pm	    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::VideoCategories.3pm  youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Videos.3pm	    youtube-viewer
+usr/share/man/man4/openchrome.4.gz			    xserver-xorg-video-openchrome
 usr/share/man/man5/NetworkManager.conf.5.gz		    network-manager
 usr/share/man/man5/aufs.5.gz				    aufs-tools
 usr/share/man/man5/fstab.5.gz				    mount
@@ -12509,6 +12572,7 @@ usr/share/pixmaps/floppy24.png				    mount-wizard
 usr/share/pixmaps/folder24.png				    jwm-setup,jwmconf
 usr/share/pixmaps/folder48.png				    jwm-setup,jwmconf
 usr/share/pixmaps/frisbee.png				    frisbee
+usr/share/pixmaps/geany.xpm				    geany
 usr/share/pixmaps/gftp.png				    gftp-gtk
 usr/share/pixmaps/gftp.xpm				    gftp-gtk
 usr/share/pixmaps/gif-file.png				    gifondesktop
