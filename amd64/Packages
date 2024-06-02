@@ -3337,6 +3337,22 @@ SHA256: c57cf010917b899e57698da3d7f8cbd9b9f9e7caec65b5937bc8fed7e389a0b2
 SHA512: c47627f5d4c6e379b7b0ca0d166d55e514e36b881513602824f9cb9f8c9c9e88a29b20a175dac62ab6bfda8d95a8cb0933e11eb9b511b53f13c46116745e4d0b
 Description: greybird-theme-dd-jessie: A minimal greybird theme
 
+Package: greybird-theme-dd-stretch
+Architecture: all
+Version: 0.0.2
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 386
+Depends: libc6, gtk2-engines-pixbuf, gtk2-engines-murrine
+Conflicts: greybird-gtk-theme
+Replaces: greybird-gtk-theme
+Filename: ./greybird-theme-dd-stretch_0.0.2_all.deb
+Size: 579996
+MD5sum: a9b60e558e42040d2aa72b0ace47cd1a
+SHA1: 9b8591a6f3a0c3d6f6304107a50c5d7d0be963b8
+SHA256: 1be1892e3f833a4657b115b5e0195710cc9e36b7dcdae4db7c349f70f2cdab9a
+SHA512: 0c68369b89f891fca596de361235978a422fd94eb7ce257d2d382605564a43d6c67676fb252747d0cf0cabcf5f80a5e54c885949238a8e6324c747cd5e65fac4
+Description: greybird-theme-dd-jessie: A minimal greybird theme
+
 Package: grub4dosconfig
 Architecture: amd64
 Version: 1.8.9-1
