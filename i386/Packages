@@ -1013,6 +1013,23 @@ Description: Conky-clock v2 Luxe edition, choose analog clock display on the Des
  Choice from 300 clock images with the appropriate hands
  Option to display the date on the clock
 
+Package: conkyclock2
+Architecture: all
+Version: 1.0.4
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 13900
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot
+Recommends: imagemagick
+Filename: ./conkyclock2_1.0.4_all.deb
+Size: 13053624
+MD5sum: a34e39ae76f131c796e6c0e2dab804f5
+SHA1: 28a7f7759b04839135872a5f3f35a7300720625e
+SHA256: 3800660692f262a6f117c88f7ecede7b99d7d8677b71201d27a190a55dffc510
+SHA512: 6fa49962bf99e7d26ace540a2e791ef282aa8217047aedb98b1fe4c385f2ce0079de86275673153c5fb0dee438fbca28dde2ce8abf8b0b268edea281a6a83c99
+Description: Conky-clock v2 Luxe edition, choose analog clock display on the Desktop
+ Choice from 300 clock images with the appropriate hands
+ Option to display the date on the clock
+
 Package: conkyclock
 Architecture: all
 Version: 0.0.2
@@ -1067,6 +1084,20 @@ MD5sum: b4a7f68230cb09a5a02229d4472153bb
 SHA1: 7a7795de487fe60dee50e315002d5b8e15a02612
 SHA256: 5df56263a23ef5df28093751e757bfff1a05f1ed95f57db3a6c47f3272c2f7bc
 SHA512: 903ff1d3e6fab3de46c5c4513a3e1e8af0313b7514e21146a5a1c48526967093983baddadd6b174449b65a9f245ed2d54960954d3d6081616e6b74c2be69b1c5
+Description: Conky-clock, choose analog clock display on the Desktop
+
+Package: conkyclock
+Architecture: all
+Version: 0.0.6
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 2700
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot, menu
+Filename: ./conkyclock_0.0.6_all.deb
+Size: 2682436
+MD5sum: 25a254de3fe7740e6ea100b6503373a5
+SHA1: aa2909d556ef4855e1f485dcdf4edb146dfaaf63
+SHA256: fc0e86d67775c8f1ff2a69ed03723e67b51f00472bbe8421d19ce8ffa76b5482
+SHA512: c55b49ecb2a4d2a7fa9f90dc7bba32b0cf7492f17f1d549138d5bc047e1febb53ed10ab54483ecd4470648ad6d1760510eb736aba57c500b9e25abb757620866
 Description: Conky-clock, choose analog clock display on the Desktop
 
 Package: cputemp
@@ -8465,6 +8496,32 @@ Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
  v1.1.6: bug fix for snapmergepuppy script
  v1.1.7: bug fix for snapmergepuppy script
  v1.1.8: bug fix for snapmergepuppy script
+
+Package: porteusbootscripts
+Architecture: all
+Version: 1.1.9
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync, cryptsetup-dd
+Filename: ./porteusbootscripts_1.1.9_all.deb
+Size: 20920
+MD5sum: c620eb4b0a495c9757c7feef2717b005
+SHA1: 3ea400dd41772d4f37bdaea8131e5ddd09ef0b17
+SHA256: 2ccb6601dd4e7d5850efa16d89a583f2455f26d875103db13b1c7b1d7376bf3a
+SHA512: 1a076810cf2dec95dbfb2d8ba7a5c14d420460c0eda0c07b26bb9552529e9c0b88803b74db334ef267ad6bce55d883a89ed26343809313f2cb784c19c3754e45
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ v1.1.0:
+ improved snapmergepuppy script (for save on exit)
+ and added systemd service saveatshutdown.service (save on exit from console)
+ v1.1.3: bug fix for snapmergepuppy script
+ v1.1.6: bug fix for snapmergepuppy script
+ v1.1.7: bug fix for snapmergepuppy script
+ v1.1.8: bug fix for snapmergepuppy script
+ v1.1.9: should fix save on exit on console in case slim is installed
 
 Package: probepart
 Architecture: i386
