@@ -9097,6 +9097,43 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version 1.4.0, Added UEFI support for creating ISO
  Version 1.5.1, bug fixes for when chosen to merge modules and for ISO creation
 
+Package: quick-remaster
+Architecture: all
+Version: 1.6.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux, gtkdialog
+Filename: ./quick-remaster_1.6.1_all.deb
+Size: 3961956
+MD5sum: 61244e3a0af5091780699bdda90a6fb4
+SHA1: 43535fd5e0e8869be7687122f543d49be71b08de
+SHA256: e2f9101339efca0be12dd01a83cd53c1a995842544e023f0a7a8872c71b065bc
+SHA512: 86cd643f8bb93537616affc2186a64942c6e523e091c5fa39435b83ba425d066ebc720eb0e7779a4f84dc7df0969047e20d314a6b04cefeb9cc4ad5439337afa
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded .squashfs modules or not
+ Version 1.2.5, fix for mkiso script, should find frugal install path in any case now 
+ Version 1.2.6, instead excluding whole /lib/modules directory, exclude files only that exist in the extra loaded kernel module
+ Version 1.2.7, run save2flash in case of booting with EXIT parameter
+ Version 1.3.0, added info message about priority and order of kernel .squashfs
+ Version 1.4.0, Added UEFI support for creating ISO
+ Version 1.5.1, bug fixes for when chosen to merge modules and for ISO creation
+ Version 1.6.1, added checkbox for to create remaster in custom selected directory
+ And checkbox for more advanced cleaning options and some cosmetic changes + info button
+
 Package: redshift-gui-lite
 Architecture: i386
 Version: 0.0.3
@@ -9485,6 +9522,22 @@ MD5sum: 8ae7659d9c109ad53f565d1cb4557aa6
 SHA1: 7b369b27676444daa801fd9913f7c29153ceb9f1
 SHA256: 15a0370bc5266b8a5f8582ea19a085dad9c66bda293fede76eebb21191f908fc
 SHA512: 46e0f60fa65ccc1a8c3cd8112a8e9c04df4d5ecd566c86d71b191aaf608abcced79c15ee0f308693f4e2702cc3a9f14eb0d81ce93c0bddf300fff80d0f4a1420
+Description: Run application as unprivileged user (from root account)
+
+Package: run-as-user
+Architecture: i386
+Version: 0.0.8
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm, dbus-x11, chpupsocket
+Filename: ./run-as-user_0.0.8_i386.deb
+Size: 21352
+MD5sum: 6bba079c401e83d58cae4ead313c54bd
+SHA1: 01403e32c0c246ea789d72da8a16d2d3aace219c
+SHA256: 9add3e6e7aadb71b5e059567a31e9606dfa545086ef5e1c8ba22ce862f0fd1c1
+SHA512: aa3ed21aea153818eec3283173955dcf96ebb7e5d3bf03cad287cdd498ec5525d2962eb74e8469d59640e6a167bdfdb88b4ba8ae9caca24b512563bee7d305dd
 Description: Run application as unprivileged user (from root account)
 
 Package: samba-server-control
@@ -10914,6 +10967,39 @@ Description: Install kernel in chroot
  v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
  v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
  v1.18.0, fixed support for encrypted save file
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.19.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.19.0_all.deb
+Size: 1123236
+MD5sum: 4ac247641807ea9b6a7151bca1f9a86f
+SHA1: ce7ee8cd475c92fcea1625baafef0c3947166d50
+SHA256: a87fb05c4e0a4e90c9de4f74152e9a616aba9805ba63afdf1de730456532ae93
+SHA512: aedbe25b308f907594b99711fe6d532a7a992f4ac922a58b3d4910cac3473fcd5935cf440fe67890842509c2efaa7f09caa8a194ae409ab4efdc188ae96b60a1
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+ v1.18.0, fixed support for encrypted save file
+ v1.19.0, added support in initrd for some DELL computers (e.g. PERC5i)
 
 Package: upgrade-kernel
 Architecture: all
