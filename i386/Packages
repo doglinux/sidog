@@ -5962,6 +5962,54 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 
+Package: libxext6
+Architecture: i386
+Version: 2:1.3.4-1+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxext (2:1.3.4-1)
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 132
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0)
+Filename: ./libxext6_1.3.4-1+b2_i386.deb
+Size: 52556
+MD5sum: 673926eb458394c8ae430973e65f31a4
+SHA1: f5c99f23e17815c98da807bc1fc91ec2e59a3429
+SHA256: d8d81c58df968a83abd6a4f1533739833638d6b9694d35e3ff605679fe9099c8
+SHA512: 40fd6e15f0d5598dc1fac6523bfe02f84cdf1f91c81b8192594a384ff2e6dc74fe12bd55f461b27050a18fa7fe91113799a6a929ca9da0f1627fcfd3fa39db9c
+Description: X11 miscellaneous extension library
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXext
+
 Package: libxml2-dev
 Architecture: i386
 Version: 2.9.1+dfsg1-5+deb8u3
@@ -6019,6 +6067,30 @@ Description: GNOME XML library
  .
  This package provides a library providing an extensive API to handle
  such XML data files.
+
+Package: libxpm4
+Architecture: i386
+Version: 1:3.5.17-1+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxpm (1:3.5.17-1)
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 125
+Depends: libc6 (>= 2.38), libx11-6
+Filename: ./libxpm4_3.5.17-1+b2_i386.deb
+Size: 58304
+MD5sum: 07b441abe615bdb562aabe6b4d3a7907
+SHA1: 844238222da37aaba73acfba96d5cfbfa84f2fbb
+SHA256: 9253c530b8e8e6570d57a15666d4e5cc605a417f9c6668addfaa68e039e81d01
+SHA512: 4316325e2809d667fd1a7c198723d79b02d33bc1df51efa3aaf7630682976a57469d905b320342ddd86e71bcce9fd151ec91d1d7ffed58ba1f6e235497b64d3a
+Homepage: https://www.x.org
+Description: X11 pixmap library
+ The X PixMap image format is an extension of the monochrome X BitMap
+ format specified in the X protocol, and is commonly used in traditional
+ X applications.
+ .
+ This package provides runtime support for XPM format.
 
 Package: linux-user-chroot
 Architecture: i386
@@ -11052,6 +11124,41 @@ SHA256: 3154fb9c63559e841cd0daef7a96001eb66b38fd3d58cd40471b599c2c4f3dc9
 SHA512: 66d0e3a18d16ab8e07ac7ae41975aa06727dcb8320e56d51b43bdaff251af27875a9fe27b5ff779c6195946e89bb8d688ecc8bb7f0667c3fd2ebf90db3adf0f5
 Description: Install kernel in chroot
  And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.20.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Conflicts: upgrade-kernel
+Replaces: upgrade-kernel
+Filename: ./upgrade-kernel_1.20.0_all.deb
+Size: 1123516
+MD5sum: acee04a154b63e261490b63b9c087b0e
+SHA1: bf188dcb83f79841e12d74baa12abe516838387f
+SHA256: 77047a94dc52bc672ce98c3f503d42189fac6bbd1d13fd8dba4176e2cff87090
+SHA512: f32de30c981fedb2b2dc289fcac9fa316f135346fa780bcb3951105d51bc81c7868b1988d9acb8e6da0feb29f316184d5df288afde9a93685b64f15148425adc
+Description: Install kernel in chroot
+ And create initrd1.xz and initrd.img, modified by gumanzoy, to create much smaller initrd1.xz
+ v1.4.2, added support for booting with encrypted savefile.
+ v1.5.0, create initrd for porteus-boot method taken from Tomas M, much smaller size.
+ v1.6.0, small change for order of modules loaded in initrd1.xz.
+ v1.7.0, btrfs support.
+ v1.8.0, support for 'usr-merged' system
+ v1.9.0, small fix for partition choice
+ v1.11.0, added i915 kernel module to the initrd1.xz
+ v1.12.0, reverted changes done at v1.11.0
+ v1.14.0, when create initrd for porteus-boot it will display full .squashfs names again at boot
+ v1.15.0, pfull= option (initrd1.xz) added for 'pseudo full' install support 
+ v1.16.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=133971#p133971
+ v1.17.0, changes from gumanzoy, see https://forum.puppylinux.com/viewtopic.php?p=134361#p134361
+ v1.18.0, fixed support for encrypted save file
+ v1.19.0, added support in initrd for some DELL computers (e.g. PERC5i)
+ v1.20.0, change only for when using pfull (Pseudo full install),
+  the created initrd1.xz supports now booting (in case of used pfull=/...) without any .squashfs modules loaded
 
 Package: upgrade-kernel
 Architecture: all

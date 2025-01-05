@@ -1395,6 +1395,10 @@ usr/lib/i386-linux-gnu/i586/libcrypto.so.1.0.0		    libssl1.0.0
 usr/lib/i386-linux-gnu/i586/libssl.so.1.0.0		    libssl1.0.0
 usr/lib/i386-linux-gnu/i686/cmov/libcrypto.so.1.0.0	    libssl1.0.0
 usr/lib/i386-linux-gnu/i686/cmov/libssl.so.1.0.0	    libssl1.0.0
+usr/lib/i386-linux-gnu/libXext.so.6			    libxext6
+usr/lib/i386-linux-gnu/libXext.so.6.4.0			    libxext6
+usr/lib/i386-linux-gnu/libXpm.so.4			    libxpm4
+usr/lib/i386-linux-gnu/libXpm.so.4.11.0			    libxpm4
 usr/lib/i386-linux-gnu/libass.so.5			    libass5
 usr/lib/i386-linux-gnu/libass.so.5.3.2			    libass5
 usr/lib/i386-linux-gnu/libbluray.so.1			    libbluray1
@@ -7346,6 +7350,10 @@ usr/share/doc/libvpx4/copyright				    libvpx4
 usr/share/doc/libx264-132/changelog.Debian.gz		    libx264-132
 usr/share/doc/libx264-132/changelog.gz			    libx264-132
 usr/share/doc/libx264-132/copyright			    libx264-132
+usr/share/doc/libxext6/changelog.Debian.gz		    libxext6
+usr/share/doc/libxext6/changelog.Debian.i386.gz		    libxext6
+usr/share/doc/libxext6/changelog.gz			    libxext6
+usr/share/doc/libxext6/copyright			    libxext6
 usr/share/doc/libxml2-dev/AUTHORS			    libxml2-dev
 usr/share/doc/libxml2-dev/NEWS.gz			    libxml2-dev
 usr/share/doc/libxml2-dev/README			    libxml2-dev
@@ -7360,6 +7368,10 @@ usr/share/doc/libxml2/TODO.gz				    libxml2
 usr/share/doc/libxml2/changelog.Debian.gz		    libxml2
 usr/share/doc/libxml2/changelog.gz			    libxml2
 usr/share/doc/libxml2/copyright				    libxml2
+usr/share/doc/libxpm4/changelog.Debian.gz		    libxpm4
+usr/share/doc/libxpm4/changelog.Debian.i386.gz		    libxpm4
+usr/share/doc/libxpm4/changelog.gz			    libxpm4
+usr/share/doc/libxpm4/copyright				    libxpm4
 usr/share/doc/linux-user-chroot/NEWS.gz			    linux-user-chroot
 usr/share/doc/linux-user-chroot/README			    linux-user-chroot
 usr/share/doc/linux-user-chroot/changelog.Debian.gz	    linux-user-chroot
