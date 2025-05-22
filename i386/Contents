@@ -3,11 +3,8 @@ bin/loginctl						    elogind
 bin/udevadm						    eudev
 etc/NetworkManager/NetworkManager.conf			    network-manager
 etc/NetworkManager/dispatcher.d/01-ifupdown		    network-manager
-etc/X11/Xsession.d/20slim_locale			    slim
 etc/X11/app-defaults/Chooser				    xdm
 etc/X11/app-defaults/Xvidtune				    x11-xserver-utils
-etc/X11/autologin					    slim
-etc/X11/no-autologin					    slim
 etc/X11/openbox						    openbox
 etc/X11/xdm/Xaccess					    xdm
 etc/X11/xdm/Xreset					    xdm
@@ -58,20 +55,15 @@ etc/init.d/rc.network-start				    PeasyWiFi
 etc/init.d/rc.yassm					    yassm-smbclient-mpscan,yassm
 etc/init.d/rcS_slitaz					    wifibox-dhcpcd,wifibox
 etc/init.d/sfsunload					    sfsload
-etc/init.d/slim						    slim
 etc/init.d/sns						    sns
 etc/init.d/start-pup-volume-monitor			    pup-volume-monitor
 etc/init.d/start-tzupdate				    tzupdate
 etc/init.d/udev						    eudev
 etc/init.d/wpa_action.sh				    wifibox
 etc/init.d/xdm						    xdm
-etc/init/slim.conf					    slim
-etc/inittab-auto					    slim
-etc/inittab-noauto					    slim
 etc/insserv.conf.d/xdm					    xdm
 etc/jwm/system.jwmrc					    jwm
 etc/locale.conf						    wifibox-dhcpcd,wifibox
-etc/logrotate.d/slim					    slim
 etc/logrotate.d/xdm					    xdm
 etc/menu-methods/jwm					    jwm
 etc/menu-methods/jwm-debdog				    jwm
@@ -79,7 +71,6 @@ etc/menu-methods/openbox				    openbox
 etc/network.conf					    wifibox-dhcpcd,wifibox
 etc/networkmodules					    sns
 etc/pam.d/elogind-user					    libpam-elogind
-etc/pam.d/slim						    slim
 etc/pam.d/xdm						    xdm
 etc/pavrecord/.pavrecordrc				    pavrecord
 etc/ppp/chatscripts/gprs-connect-chat			    frisbee
@@ -137,7 +128,6 @@ etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/Startup/peasywifi_tray				    PeasyWiFi
 etc/skel/Startup/rshift-gui-lite			    redshift-gui-lite
 etc/skel/startup-jwm					    jwm-setup,jwmconf
-etc/slim.conf						    slim
 etc/slitaz/dhcpcd.conf					    wifibox-dhcpcd
 etc/slitaz/wifibox_udhcpc				    wifibox
 etc/sudoers.d/peasywifi					    PeasyWiFi
@@ -304,7 +294,6 @@ lib/modprobe.d/fbdev-blacklist.conf			    eudev
 lib/systemd/system/NetworkManager-dispatcher.service	    network-manager
 lib/systemd/system/NetworkManager-wait-online.service	    network-manager
 lib/systemd/system/NetworkManager.service		    network-manager
-lib/systemd/system/slim.service				    slim
 lib/udev/ata_id						    eudev
 lib/udev/cdrom_id					    eudev
 lib/udev/collect					    eudev
@@ -622,8 +611,6 @@ opt/deadbeef/share/locale/uk/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/vi/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/zh_CN/LC_MESSAGES/deadbeef.mo	    deadbeef-static
 opt/deadbeef/share/locale/zh_TW/LC_MESSAGES/deadbeef.mo	    deadbeef-static
-opt/docs/getty@tty1.service-autologin			    slim
-opt/docs/getty@tty1.service-no-autologin		    slim
 opt/docs/jwm-themes/jwm.tail-blood_red			    jwm-setup,jwmconf
 opt/docs/jwm-themes/jwm.tail-blue_jay			    jwm-setup,jwmconf
 opt/docs/jwm-themes/jwm.tail-calm_blue			    jwm-setup,jwmconf
@@ -1025,8 +1012,6 @@ usr/bin/roxterm-config					    roxterm-gtk2
 usr/bin/sct						    sct
 usr/bin/sessreg						    x11-xserver-utils
 usr/bin/showrgb						    x11-xserver-utils
-usr/bin/slim						    slim
-usr/bin/slimlock					    slim
 usr/bin/smbclient					    yassm-smbclient-mpscan
 usr/bin/squashfuse					    squashfuse
 usr/bin/startx						    xinit
@@ -3107,7 +3092,6 @@ usr/local/bin/st-slim					    xfce4-whiskermenu-plugin-mod
 usr/local/bin/start-jwm					    jwm-setup
 usr/local/bin/start-ntpdate				    tzupdate
 usr/local/bin/start-openbox				    jwm-setup
-usr/local/bin/start-stop-slim				    slim
 usr/local/bin/start-stop-tzupdate			    tzupdate
 usr/local/bin/syncing					    diff-sync-umount
 usr/local/bin/timidity					    timidity-old
@@ -6683,7 +6667,6 @@ usr/share/applications/snappie.desktop			    snappie
 usr/share/applications/sns.desktop			    sns
 usr/share/applications/sound-card-selector.desktop	    sound-card-selector
 usr/share/applications/start-lumina-info.desktop	    lumina-desktop-debdog
-usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/synaptic.desktop			    synaptic
 usr/share/applications/syncing.desktop			    diff-sync-umount
 usr/share/applications/tas.desktop			    takeashot
@@ -7528,13 +7511,6 @@ usr/share/doc/sct/changelog.Debian.gz			    sct
 usr/share/doc/sct/changelog.Debian.i386.gz		    sct
 usr/share/doc/sct/changelog.gz				    sct
 usr/share/doc/sct/copyright				    sct
-usr/share/doc/slim/README				    slim
-usr/share/doc/slim/README.Debian			    slim
-usr/share/doc/slim/THEMES.gz				    slim
-usr/share/doc/slim/TODO					    slim
-usr/share/doc/slim/changelog.Debian.gz			    slim
-usr/share/doc/slim/changelog.gz				    slim
-usr/share/doc/slim/copyright				    slim
 usr/share/doc/squashfs-tools/changelog.Debian.gz	    squashfs-tools
 usr/share/doc/squashfs-tools/changelog.gz		    squashfs-tools
 usr/share/doc/squashfs-tools/copyright			    squashfs-tools
@@ -10180,7 +10156,6 @@ usr/share/lintian/overrides/palemoon			    palemoon
 usr/share/lintian/overrides/python2			    python2
 usr/share/lintian/overrides/python2.7			    python2.7
 usr/share/lintian/overrides/python2.7-minimal		    python2.7-minimal
-usr/share/lintian/overrides/slim			    slim
 usr/share/locale/af/LC_MESSAGES/libgnome-keyring.mo	    libgnome-keyring-common
 usr/share/locale/af/LC_MESSAGES/openbox.mo		    openbox
 usr/share/locale/af/LC_MESSAGES/synaptic.mo		    synaptic
@@ -11519,7 +11494,6 @@ usr/share/pixmaps/leafpad.xpm				    leafpad
 usr/share/pixmaps/loadsfs.png				    portablesfs-loadsfs-fuse
 usr/share/pixmaps/locale8.png				    locale-conf
 usr/share/pixmaps/lock.png				    jwm-setup,jwmconf
-usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwm-setup,jwmconf
 usr/share/pixmaps/madedit.xpm				    madedit
 usr/share/pixmaps/makedebpkg.png			    makedebpackage
@@ -11976,11 +11950,6 @@ usr/share/screener/savers				    screener
 usr/share/screener/screener				    screener
 usr/share/screener/sxlock				    screener
 usr/share/sgml/gconf/gconf-1.0.dtd			    gconf2-common
-usr/share/slim/themes/debian-lines/COPYRIGHT.background	    slim
-usr/share/slim/themes/debian-lines/COPYRIGHT.panel	    slim
-usr/share/slim/themes/debian-lines/background.jpg	    slim
-usr/share/slim/themes/debian-lines/panel.png		    slim
-usr/share/slim/themes/debian-lines/slim.theme		    slim
 usr/share/slitaz/network.conf_migration			    wifibox-dhcpcd,wifibox
 usr/share/sounds/osmo/alarm.wav				    osmo-portable
 usr/share/synaptic/gtkbuilder/cnc.png			    synaptic

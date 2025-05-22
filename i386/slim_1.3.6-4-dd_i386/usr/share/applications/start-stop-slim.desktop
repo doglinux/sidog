@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Start/Stop Slim display-manager
+Comment=Enable or disable Slim display-manager
+Icon=login
+Exec=start-stop-slim
+Terminal=false
+StartupNotify=false
+Type=Application
+Categories=System;DebianDog
+GenericName=Start/Stop Slim display-manager

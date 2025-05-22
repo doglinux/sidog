@@ -1,0 +1,49 @@
+#!/bin/bash
+
+if [ -z `which gsu` ]; then
+[ "`whoami`" != "root" ] && exec gksu ${0} "$@"
+else
+[ "`whoami`" != "root" ] && exec gsu ${0} "$@"
+fi
+
+if grep -qw  "^1:2345:respawn:/bin/login" /etc/inittab; then
+yad --width 500 --title "Start/Stop Slim display-manager" --center --text "  Slim display-manager is currently not enabled,  \n  Enable? \t (reboot required) \n  (autologin configured from /etc/inittab will be disabled then) \n  For autologin uncomment the line 'auto_login  yes' in /etc/slim.conf "
+[ "$?" -gt 0 ] && exit
+#insserv slim
+mv -f /etc/X11/Xsession.d/20slim_locale.bak /etc/X11/Xsession.d/20slim_locale
+# For sysvinit:
+cp -fr /etc/X11/no-autologin /etc/X11/default-display-manager 
+cp -fr /etc/inittab-noauto /etc/inittab
+update-rc.d slim defaults
+
+# For systemd:
+ln -sn /lib/systemd/system/slim.service /etc/systemd/system/display-manager.service
+cp -fr /opt/docs/getty@tty1.service-no-autologin /etc/systemd/system/getty.target.wants/getty@tty1.service
+
+else
+
+	if [ "`cat /etc/X11/default-display-manager`" = "/usr/bin/slim" ]; then
+yad --width 500 --title "Start/Stop Slim display-manager" --center --text "  Slim display-manager is currently enabled,  \n  Disable? \t (reboot required) \n  (autologin configured from /etc/inittab will be enabled back again) "
+[ "$?" -gt 0 ] && exit
+#insserv -r slim
+mv -f /etc/X11/Xsession.d/20slim_locale /etc/X11/Xsession.d/20slim_locale.bak
+# For sysvinit:
+cp -fr /etc/X11/autologin /etc/X11/default-display-manager 
+cp -fr /etc/inittab-auto /etc/inittab
+update-rc.d slim remove
+# For systemd:
+rm -f /etc/systemd/system/display-manager.service
+cp -fr /opt/docs/getty@tty1.service-autologin /etc/systemd/system/getty.target.wants/getty@tty1.service
+
+	else # just in case another display-manager is the default, inform the user
+
+yad --title "Start/Stop Slim display-manager" --center --text "  It seems that another display-manager is the default, \n  If you are sure click OK to disable it \n  (autologin configured from /etc/inittab will be enabled back again) "
+[ "$?" -gt 0 ] && exit
+# For sysvinit:
+cp -fr /etc/X11/autologin /etc/X11/default-display-manager 
+cp -fr /etc/inittab-auto /etc/inittab
+update-rc.d slim remove 
+# For systemd:
+cp -fr /opt/docs/getty@tty1.service-autologin /etc/systemd/system/getty.target.wants/getty@tty1.service
+	fi
+fi
